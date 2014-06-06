@@ -54,7 +54,7 @@ laptops/desktops/CI servers.
 
 * Can easily and trasparently switch between a dedicated build server and local builds.
 
-* Open source toolchains are good, but generally hard to setup. Block/Build takes the difficulty 
+* Open source toolchains are good, but generally hard to setup. Build/Block takes the difficulty 
 out of this.
 
 * Host independence; Use Linux, OSX or Windows hosts... this will not affect the software that is 

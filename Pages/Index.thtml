@@ -1,0 +1,56 @@
+        <div id="MainMenu">
+
+            <div class="Option">
+                <a href="Platform.html">
+                    <div class="OptionText">
+                        <h1>Platform/Blocks</h1>
+                        <p>Simple, composable, open, platform-independent libraries for embedded software.</p>
+                    </div>
+                    <img src="Images/library.svg"></img>
+                </a>
+            </div>
+
+            <div class="Option">
+                <a href="Build.html">
+                    <img src="Images/stack.svg"></img>
+                    <div class="OptionText">
+                        <h1>Build/Blocks</h1>
+                        <p>A standard, open, host-independent toolchain for embedded software.</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="Option">
+                <a href="Test.html">
+                    <div class="OptionText">
+                        <h1>Test/Blocks</h1>
+                        <p>Reliable, open, system testing for embedded systems.</p>
+                    </div>
+                    <img src="Images/signup.svg"></img>
+                </a>
+            </div>
+
+            <div class="Option">
+                <a href="Job.html">
+                    <img src="Images/cogs2.svg"></img>
+                    <div class="OptionText">
+                        <h1>Job/Block</h1>
+                        <p>The simplest way to automate build and test jobs for team working.</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="Option">
+                <a href="Services.html">
+                    <img src="Images/group.svg"></img>
+                    <div class="OptionText">
+                        <h1>Services</h1>
+                        <p>Let BLOCK::WORKS design, develop, debug or simply advise on your project.</p>
+                    </div>
+                </a>
+            </div>
+
+
+        </div>
+
+

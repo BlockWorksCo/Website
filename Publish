@@ -1,0 +1,6 @@
+#!/bin/sh
+
+scp -r * zookooco@zookoo.com:~/www/blockworks
+
+
+

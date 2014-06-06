@@ -6,12 +6,12 @@ What is it?
 
 A virtual machine based toolchain with that uses common Makefile & GDB based interfaces for
 building and debugging.
-Currently supports Linux, Win32, MSP430 & STM32 platforms (AVR/Arduino, RaspberryPi and Propellor coming).
+Currently supports Linux, Win32, MSP430, STM32, AVR/Arduino platforms and RaspberryPi.
 
 How many development environments for embedded systems have you collected over the years? 
 Each has its own IDE, many versions of eclipse, all with their own perculiarities.
 
-Open; Rocket/Build is a completely open Vagrant based virtual machine description that will
+Open; Block/Build is a completely open Vagrant based virtual machine description that will
 provision a Linux based virtual machine for building software for multiple targets.
 
 Host-independent; being VM based, all dependencies on the host platform & OS have been 
@@ -54,7 +54,7 @@ laptops/desktops/CI servers.
 
 * Can easily and trasparently switch between a dedicated build server and local builds.
 
-* Open source toolchains are good, but generally hard to setup. Rocket/Build takes the difficulty 
+* Open source toolchains are good, but generally hard to setup. Block/Build takes the difficulty 
 out of this.
 
 * Host independence; Use Linux, OSX or Windows hosts... this will not affect the software that is 

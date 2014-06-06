@@ -34,7 +34,7 @@ platform switching can provide cost benefits
 on your target. Having multiple targets to test can give an extra angle on those difficult to solve
 bugs.
 
-* *Pre-tested*. All the code you can take from Rocket/Blocks is code you're not writing, debugging,
+* *Pre-tested*. All the code you can take from Platform/Block is code you're not writing, debugging,
 testing and documenting.
 
 * You benefit from all other projects contributing features & bug fixes in parallel to you.

@@ -24,6 +24,15 @@
            $(document).ready(function() 
            { 
              $('#Logo').addClass('animated bounceInDown');
+             $('#MenuBar').addClass('animated slideInDown');
+             $('.Option').mouseenter( function()
+	     {
+                $(this).addClass('animated shake');
+             } );
+             $('.Option').mouseleave( function()
+	     {
+                $(this).removeClass('animated shake');
+             } );
            });
 
         </script>
@@ -43,7 +52,7 @@
 
             <a href="Index.html">
             <div id="Title">BlockWorks</div>
-            <div id="Subtitle">A software development consultancy</div>
+            <div id="Subtitle">an embedded software development consultancy</div>
             </a>
 
         </div>
@@ -53,7 +62,7 @@
         <div id="Footer">
             <h1>Contact us...</h1>
             <p>To learn more, drop me a line at <a href="mailto:Steve@BlockWorks.co">Steve@BlockWorks.co</a></p>
-            <div id="FooterLogo">BLOCK::WORKS</div>
+            <div id="FooterLogo">BlockWorks</div>
         </div>
 
     </body>

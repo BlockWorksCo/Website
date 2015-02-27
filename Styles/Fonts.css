@@ -213,14 +213,14 @@ body
 .Option:nth-child(odd)
 {
     width:      100%;
-    background: #eeeeee;
+    background: #ff6666;
     _text-align:  left;
 }
 
 .Option:nth-child(even)
 {
     width:      100%;
-    background: #dddddd;
+    background: #eeeeee;
     _text-align:  right;
 }
 
@@ -434,7 +434,7 @@ _a:active {text-decoration:none;}  /* selected link */
     text-align: center;
     padding-left: auto;
     padding-right: auto;
-    background-color:   #dddddd;
+    background-color:   #ff6666;
     border-bottom: solid 1px black;
     height: 40px;
     padding-top:10px;

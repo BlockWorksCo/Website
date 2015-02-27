@@ -1,6 +1,6 @@
         <div id="MainMenu">
 
-            <div class="Option">
+            <div class="Option" class="animated slideInLeft" onhover="message('asdasdasd');">
                 <a href="Platform.html">
                     <div class="OptionText">
                         <h1>Platform/Blocks</h1>
@@ -10,7 +10,7 @@
                 </a>
             </div>
 
-            <div class="Option">
+            <div class="Option" class="animated slideInRight">
                 <a href="Build.html">
                     <img src="Images/stack.svg"></img>
                     <div class="OptionText">
@@ -20,7 +20,7 @@
                 </a>
             </div>
 
-            <div class="Option">
+            <div class="Option" class="animated slideInLeft">
                 <a href="Test.html">
                     <div class="OptionText">
                         <h1>Test/Blocks</h1>
@@ -30,7 +30,7 @@
                 </a>
             </div>
 
-            <div class="Option">
+            <div class="Option" class="animated slideInRight">
                 <a href="Job.html">
                     <img src="Images/cogs2.svg"></img>
                     <div class="OptionText">
@@ -40,12 +40,12 @@
                 </a>
             </div>
 
-            <div class="Option">
+            <div class="Option" class="animated slideInLeft">
                 <a href="Services.html">
                     <img src="Images/group.svg"></img>
                     <div class="OptionText">
                         <h1>Services</h1>
-                        <p>Let BLOCK::WORKS design, develop, debug or simply advise on your project.</p>
+                        <p>Let BlockWorks design, develop, debug or simply advise on your project.</p>
                     </div>
                 </a>
             </div>

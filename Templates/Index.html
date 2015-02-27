@@ -1,7 +1,9 @@
 <html>
     <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <link rel="stylesheet" href="Styles/animate.min.css">
         <link rel="shortcut icon" href="favicon.ico" >
-	    <link rel="stylesheet" href="Styles/Fonts.css" type="text/css" charset="utf-8" />
+        <link rel="stylesheet" href="Styles/Fonts.css" type="text/css" charset="utf-8" />
         <link href='http://fonts.googleapis.com/css?family=Crimson+Text' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
@@ -16,8 +18,19 @@
 
         </script>
 
+
+        <script>
+
+           $(document).ready(function() 
+           { 
+             $('#Logo').addClass('animated bounceInDown');
+           });
+
+        </script>
+
     </head>
     <body>
+
 
         <div id="MenuBar">
             <a href="About.html">About...</a>
@@ -26,11 +39,11 @@
             <a href="Manifesto.html"> Manifesto </a>
         </div>
 
-        <div>
+        <div id='Logo'>
 
             <a href="Index.html">
-            <div id="Title">BLOCK::WORKS</div>
-            <div id="Subtitle">BUILDING BLOCKS FOR EMBEDDED SYSTEMS</div>
+            <div id="Title">BlockWorks</div>
+            <div id="Subtitle">A software development consultancy</div>
             </a>
 
         </div>

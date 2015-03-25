@@ -3,7 +3,7 @@ body
 {
     margin:0;
     padding:0;
-    background: url('../Images/bg3.jpg');
+    background: url('../Images/BlockWorksHeader.jpg');
     background-position: center top;
     background-repeat: no-repeat;
     _background-color:   transparent;
@@ -31,9 +31,9 @@ body
 #DefaultTitle
 {
     position:relative;
-    color:  #222222;
+    color:  #ffffff;
     font-family: 'Crimson Text', serif;
-    font-size:   6.0em;
+    font-size:   8.7em;
     font-weight: normal;
     font-style: normal;
     top:        20px;
@@ -47,7 +47,7 @@ body
 #DefaultSubtitle
 {
     position:relative;
-    color:  #222222;
+    color:  #ffffff;
     font-family: 'Crimson Text', serif;
     font-size:   1.6em;
     font-weight: normal;
@@ -64,13 +64,13 @@ body
 #Title
 {
     position:relative;
-    color:  #222222;
+    color:  #ffffff;
     font-family: 'Crimson Text', serif;
-    font-size:   6.0em;
+    font-size:   8.7em;
     font-weight: normal;
     font-style: normal;
-    top:        100px;
-    margin-left:       auto;
+    top:        260px;
+    margin-left:       100px;
     margin-right:      auto;
     margin-bottom:      0px;
     width:      8em;
@@ -80,14 +80,14 @@ body
 #Subtitle
 {
     position:relative;
-    color:  #222222;
+    color:  #ffffff;
     font-family: 'Crimson Text', serif;
     font-size:   1.6em;
     font-weight: normal;
     font-style: normal;
     letter-spacing: 4px;
-    margin-top:       70px;
-    margin-left:       auto;
+    margin-top:       230px;
+    margin-left:       100px;
     margin-right:      auto;
     margin-bottom:      250px;
     width:      30em;
@@ -102,6 +102,7 @@ body
     _font-family: 'lane_-_narrowregular';
     font-weight: normal;
     font-style: normal;
+    padding-top: 200px;
     left:       auto;
     right:       auto;
     width:      100%;
@@ -213,7 +214,7 @@ body
 .Option:nth-child(odd)
 {
     width:      100%;
-    background: #ff6666;
+    background: #dddddd;
     _text-align:  left;
 }
 
@@ -381,7 +382,7 @@ _a:active {text-decoration:none;}  /* selected link */
 #Footer
 {
     _background: url('../Images/bg2.png');
-    background-color:   #555555;
+    background-color:   #222222;
     background-position: center top;
     background-repeat: no-repeat;
     color:  #eeeeee;
@@ -422,9 +423,10 @@ _a:active {text-decoration:none;}  /* selected link */
 
 #MenuBar
 {
+    _opacity: 0.2;
     margin-left:    auto;
     margin-right:   auto;
-    color:  #222222;
+    color:  #ffffff;
     font-family: 'Open Sans', sans-serif;
     _font-family: 'lane_-_narrowregular';
     font-size:  1.2em;
@@ -434,7 +436,7 @@ _a:active {text-decoration:none;}  /* selected link */
     text-align: center;
     padding-left: auto;
     padding-right: auto;
-    background-color:   #ff6666;
+    background-color:   #dddddd;
     border-bottom: solid 1px black;
     height: 40px;
     padding-top:10px;

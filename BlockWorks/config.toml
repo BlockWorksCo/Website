@@ -2,7 +2,23 @@ baseURL = "http://BlockWorks.co/"
 languageCode = "en-us"
 title = "BlockWorks Co"
 theme = "sam"
+description = "Embedded and real-time software development"
+enableGitInfo = true
+enableRobotsTXT = true
 
+[frontmatter]
+lastmod = ["lastmod", ":fileModTime", ":default"]
 
 [Author]
     name = "Steve Tickle"
+
+
+[[params.mainMenu]]
+    link = "/posts"
+    text = "Articles"
+
+[[params.mainMenu]]
+    link = "/about"
+    text = "Who am I?"
+
+

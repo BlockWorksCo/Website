@@ -31,6 +31,16 @@ Regardless of the root-cause, if corruption is detected, the only course of acti
     </item>
     
     <item>
+      <title>Architecture</title>
+      <link>http://BlockWorks.co/posts/safedatastructures/</link>
+      <pubDate>Sun, 20 Jan 2019 19:14:13 +0000</pubDate>
+      
+      <guid>http://BlockWorks.co/posts/safedatastructures/</guid>
+      <description> Safe Data Structures Safe from what?
+Circular buffers Log structured BLOBs </description>
+    </item>
+    
+    <item>
       <title>Build Time Protection</title>
       <link>http://BlockWorks.co/posts/buildtimeprotection/</link>
       <pubDate>Sun, 20 Jan 2019 19:14:13 +0000</pubDate>
@@ -149,26 +159,6 @@ Monorepo Multirepo  Build overhead Cognitive overhead Refactoring overhead   </d
       
       <guid>http://BlockWorks.co/posts/wearandtear/</guid>
       <description> Wear and Tear.  Bad block management wear levelling. fragmentation.  </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://BlockWorks.co/posts/index/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://BlockWorks.co/posts/index/</guid>
-      <description>Articles Index
-Robustness in embedded software Embedded software is defined by: - lack of human interaction. - long, unattended lifetime. - many units, built-to-a-cost, therefore resource constrained in RAM, storage and performance. - often low power requirements. - Often interacting with remote systems via messaging interfaces. Implemented correctly, these techniques can provide significant improvements in robustness over unprotected code.
- Accidental corruption. stack overflow stack underlow stack corruption heap corruption heap metadata corruption</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://BlockWorks.co/posts/readme/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://BlockWorks.co/posts/readme/</guid>
-      <description>Articles This is a selection of articles about embedded software development.</description>
     </item>
     
   </channel>

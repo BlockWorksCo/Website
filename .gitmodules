@@ -1,0 +1,6 @@
+[submodule "BlockWorks/content/posts"]
+	path = BlockWorks/content/posts
+	url = git@github.com:BlockWorksCo/Articles.git
+[submodule "BlockWorks/themes/tale"]
+	path = BlockWorks/themes/tale
+	url = https://github.com/EmielH/tale-hugo.git

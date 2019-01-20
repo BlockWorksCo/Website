@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://BlockWorks.co/about/</loc>
+    <loc>http://BlockWorks.co/about/about/</loc>
     <lastmod>2019-01-20T19:14:13+00:00</lastmod>
   </url>
   
@@ -88,6 +88,12 @@
   
   <url>
     <loc>http://BlockWorks.co/posts/readme/</loc>
+  </url>
+  
+  <url>
+    <loc>http://BlockWorks.co/about/</loc>
+    <lastmod>2019-01-20T19:14:13+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>

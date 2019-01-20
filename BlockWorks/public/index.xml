@@ -12,15 +12,6 @@
     
     
     <item>
-      <title>About</title>
-      <link>http://BlockWorks.co/about/about/</link>
-      <pubDate>Sun, 20 Jan 2019 19:14:13 +0000</pubDate>
-      
-      <guid>http://BlockWorks.co/about/about/</guid>
-      <description>About me&amp;hellip; I&amp;rsquo;m me, not you, just me&amp;hellip;</description>
-    </item>
-    
-    <item>
       <title>Accidental Corruption</title>
       <link>http://BlockWorks.co/posts/accidentalcorruption/</link>
       <pubDate>Sun, 20 Jan 2019 19:14:13 +0000</pubDate>
@@ -40,13 +31,12 @@ Regardless of the root-cause, if corruption is detected, the only course of acti
     </item>
     
     <item>
-      <title>Architecture</title>
-      <link>http://BlockWorks.co/posts/safedatastructures/</link>
+      <title>BlockWorks Co</title>
+      <link>http://BlockWorks.co/about/</link>
       <pubDate>Sun, 20 Jan 2019 19:14:13 +0000</pubDate>
       
-      <guid>http://BlockWorks.co/posts/safedatastructures/</guid>
-      <description> Safe Data Structures Safe from what?
-Circular buffers Log structured BLOBs </description>
+      <guid>http://BlockWorks.co/about/</guid>
+      <description>Best pactices in embedded software development. I&amp;rsquo;m an experienced software engineer and architect with many years working with embedded</description>
     </item>
     
     <item>
@@ -143,6 +133,15 @@ Mitigation techniques  Random stack offsetting. Random vector table location. He
     </item>
     
     <item>
+      <title>Safe Data Storage</title>
+      <link>http://BlockWorks.co/posts/safedatastorage/</link>
+      <pubDate>Sun, 20 Jan 2019 19:14:13 +0000</pubDate>
+      
+      <guid>http://BlockWorks.co/posts/safedatastorage/</guid>
+      <description>Safe Data Structures  Safe from power-failure Safe from corruption. Safe from watchdog resets. A degree of safety from application-level via versioning and rollback  Circular buffers Log structured BLOBs Checkpointing. Performance Coordinating multiple safe data structures into a coherent whole.</description>
+    </item>
+    
+    <item>
       <title>Stack Robustness</title>
       <link>http://BlockWorks.co/posts/stackrobustness/</link>
       <pubDate>Sun, 20 Jan 2019 19:14:13 +0000</pubDate>
@@ -167,7 +166,7 @@ Monorepo Multirepo  Build overhead Cognitive overhead Refactoring overhead   </d
       <pubDate>Sun, 20 Jan 2019 19:14:13 +0000</pubDate>
       
       <guid>http://BlockWorks.co/posts/wearandtear/</guid>
-      <description> Wear and Tear.  Bad block management wear levelling. fragmentation.  </description>
+      <description> Wear and Tear.  Bad block management wear levelling. fragmentation. batteries  </description>
     </item>
     
   </channel>

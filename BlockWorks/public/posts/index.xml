@@ -31,16 +31,6 @@ Regardless of the root-cause, if corruption is detected, the only course of acti
     </item>
     
     <item>
-      <title>Architecture</title>
-      <link>http://BlockWorks.co/posts/safedatastructures/</link>
-      <pubDate>Sun, 20 Jan 2019 19:14:13 +0000</pubDate>
-      
-      <guid>http://BlockWorks.co/posts/safedatastructures/</guid>
-      <description> Safe Data Structures Safe from what?
-Circular buffers Log structured BLOBs </description>
-    </item>
-    
-    <item>
       <title>Build Time Protection</title>
       <link>http://BlockWorks.co/posts/buildtimeprotection/</link>
       <pubDate>Sun, 20 Jan 2019 19:14:13 +0000</pubDate>
@@ -134,6 +124,15 @@ Mitigation techniques  Random stack offsetting. Random vector table location. He
     </item>
     
     <item>
+      <title>Safe Data Storage</title>
+      <link>http://BlockWorks.co/posts/safedatastorage/</link>
+      <pubDate>Sun, 20 Jan 2019 19:14:13 +0000</pubDate>
+      
+      <guid>http://BlockWorks.co/posts/safedatastorage/</guid>
+      <description>Safe Data Structures  Safe from power-failure Safe from corruption. Safe from watchdog resets. A degree of safety from application-level via versioning and rollback  Circular buffers Log structured BLOBs Checkpointing. Performance Coordinating multiple safe data structures into a coherent whole.</description>
+    </item>
+    
+    <item>
       <title>Stack Robustness</title>
       <link>http://BlockWorks.co/posts/stackrobustness/</link>
       <pubDate>Sun, 20 Jan 2019 19:14:13 +0000</pubDate>
@@ -158,7 +157,7 @@ Monorepo Multirepo  Build overhead Cognitive overhead Refactoring overhead   </d
       <pubDate>Sun, 20 Jan 2019 19:14:13 +0000</pubDate>
       
       <guid>http://BlockWorks.co/posts/wearandtear/</guid>
-      <description> Wear and Tear.  Bad block management wear levelling. fragmentation.  </description>
+      <description> Wear and Tear.  Bad block management wear levelling. fragmentation. batteries  </description>
     </item>
     
   </channel>

@@ -44,10 +44,23 @@
 
 	<div class="catalogue">
 		
+			<a href="http://BlockWorks.co/posts/heaprobustness/" class="catalogue-item">
+    <div>
+        <time datetime="2019-01-20 19:14:13 &#43;0000 UTC" class="catalogue-time">January 20, 2019</time>
+        <h1 class="catalogue-title">Heap robustness</h1>
+        <div class="catalogue-line"></div>
+
+        <p>
+             Heap Robustness.  Heap data bounds checks. Heap metadata checks. fragmentation.  
+        </p>
+    </div>
+</a>
+
+		
 			<a href="http://BlockWorks.co/posts/maliciouscorruption/" class="catalogue-item">
     <div>
-        <time datetime="0001-01-01 00:00:00 &#43;0000 UTC" class="catalogue-time">January 1, 0001</time>
-        <h1 class="catalogue-title"></h1>
+        <time datetime="2019-01-20 19:14:13 &#43;0000 UTC" class="catalogue-time">January 20, 2019</time>
+        <h1 class="catalogue-title">Malicious Corruption</h1>
         <div class="catalogue-line"></div>
 
         <p>
@@ -59,12 +72,67 @@
 		
 			<a href="http://BlockWorks.co/posts/performanceissuesandenhancements/" class="catalogue-item">
     <div>
+        <time datetime="2019-01-20 19:14:13 &#43;0000 UTC" class="catalogue-time">January 20, 2019</time>
+        <h1 class="catalogue-title">Performance Issues and Enhancements</h1>
+        <div class="catalogue-line"></div>
+
+        <p>
+             Performance issues and enhancements.  overhead of instrumentation. MPU enhancements Periodic checking. Cant check everything on every function entry/exit but can randomly choose which checks to perform. This decreases the load at the expense of detection-latency. Dont store anything persistently until a full check has been performed.  
+        </p>
+    </div>
+</a>
+
+		
+			<a href="http://BlockWorks.co/posts/stackrobustness/" class="catalogue-item">
+    <div>
+        <time datetime="2019-01-20 19:14:13 &#43;0000 UTC" class="catalogue-time">January 20, 2019</time>
+        <h1 class="catalogue-title">Stack Robustness</h1>
+        <div class="catalogue-line"></div>
+
+        <p>
+             Stack Robustness.  Stack overflow Stack underflow Stack corruption. Stack pointer corruption. pass-by-reference.  Mitigation Techniques  Stack CRC checking (cross-task corruption). stack bounds checking with an OS. random stack offsetting. Stack sanitisation. Canaries Stack-fill Correct-sizing. avoiding pass-by-reference.  
+        </p>
+    </div>
+</a>
+
+		
+			<a href="http://BlockWorks.co/posts/versioncontrol/" class="catalogue-item">
+    <div>
+        <time datetime="2019-01-20 19:14:13 &#43;0000 UTC" class="catalogue-time">January 20, 2019</time>
+        <h1 class="catalogue-title">Version Control</h1>
+        <div class="catalogue-line"></div>
+
+        <p>
+             Version control What is released together should be versioned together
+Monorepo Multirepo  Build overhead Cognitive overhead Refactoring overhead   
+        </p>
+    </div>
+</a>
+
+		
+			<a href="http://BlockWorks.co/posts/wearandtear/" class="catalogue-item">
+    <div>
+        <time datetime="2019-01-20 19:14:13 &#43;0000 UTC" class="catalogue-time">January 20, 2019</time>
+        <h1 class="catalogue-title">Wear and Tear</h1>
+        <div class="catalogue-line"></div>
+
+        <p>
+             Wear and Tear.  Bad block management wear levelling. fragmentation.  
+        </p>
+    </div>
+</a>
+
+		
+			<a href="http://BlockWorks.co/posts/index/" class="catalogue-item">
+    <div>
         <time datetime="0001-01-01 00:00:00 &#43;0000 UTC" class="catalogue-time">January 1, 0001</time>
         <h1 class="catalogue-title"></h1>
         <div class="catalogue-line"></div>
 
         <p>
-             Performance issues and enhancements.  overhead of instrumentation. MPU enhancements Periodic checking. Cant check everything on every function entry/exit but can randomly choose which checks to perform. This decreases the load at the expense of detection-latency. Dont store anything persistently until a full check has been performed.  
+            Articles Index
+Robustness in embedded software Embedded software is defined by: - lack of human interaction. - long, unattended lifetime. - many units, built-to-a-cost, therefore resource constrained in RAM, storage and performance. - often low power requirements. - Often interacting with remote systems via messaging interfaces. Implemented correctly, these techniques can provide significant improvements in robustness over unprotected code.
+ Accidental corruption. stack overflow stack underlow stack corruption heap corruption heap metadata corruption
         </p>
     </div>
 </a>
@@ -78,59 +146,6 @@
 
         <p>
             Articles This is a selection of articles about embedded software development.
-        </p>
-    </div>
-</a>
-
-		
-			<a href="http://BlockWorks.co/posts/recovery/" class="catalogue-item">
-    <div>
-        <time datetime="0001-01-01 00:00:00 &#43;0000 UTC" class="catalogue-time">January 1, 0001</time>
-        <h1 class="catalogue-title"></h1>
-        <div class="catalogue-line"></div>
-
-        <p>
-             Recovery  Plan for reset. do it regularly, architect your system around it. test it.  
-        </p>
-    </div>
-</a>
-
-		
-			<a href="http://BlockWorks.co/posts/stackrobustness/" class="catalogue-item">
-    <div>
-        <time datetime="0001-01-01 00:00:00 &#43;0000 UTC" class="catalogue-time">January 1, 0001</time>
-        <h1 class="catalogue-title"></h1>
-        <div class="catalogue-line"></div>
-
-        <p>
-             Stack Robustness.  Stack overflow Stack underflow Stack corruption. Stack pointer corruption. pass-by-reference.  Mitigation Techniques  Stack CRC checking (cross-task corruption). stack bounds checking with an OS. random stack offsetting. Stack sanitisation. Canaries Stack-fill Correct-sizing. avoiding pass-by-reference.  
-        </p>
-    </div>
-</a>
-
-		
-			<a href="http://BlockWorks.co/posts/versioncontrol/" class="catalogue-item">
-    <div>
-        <time datetime="0001-01-01 00:00:00 &#43;0000 UTC" class="catalogue-time">January 1, 0001</time>
-        <h1 class="catalogue-title"></h1>
-        <div class="catalogue-line"></div>
-
-        <p>
-             Version control What is released together should be versioned together
-Monorepo Multirepo  Build overhead Cognitive overhead Refactoring overhead   
-        </p>
-    </div>
-</a>
-
-		
-			<a href="http://BlockWorks.co/posts/wearandtear/" class="catalogue-item">
-    <div>
-        <time datetime="0001-01-01 00:00:00 &#43;0000 UTC" class="catalogue-time">January 1, 0001</time>
-        <h1 class="catalogue-title"></h1>
-        <div class="catalogue-line"></div>
-
-        <p>
-             Wear and Tear.  Bad block management wear levelling. fragmentation.  
         </p>
     </div>
 </a>
@@ -151,7 +166,7 @@ Monorepo Multirepo  Build overhead Cognitive overhead Refactoring overhead
 
         		<footer>
 			<span>
-			&copy; <time datetime="2019-01-20 18:22:50.967973493 &#43;0000 GMT m=&#43;0.065430494">2019</time> . Made with <a href='https://gohugo.io'>Hugo</a> using the <a href='https://github.com/EmielH/tale-hugo/'>Tale</a> theme.
+			&copy; <time datetime="2019-01-20 19:22:27.775246878 &#43;0000 GMT m=&#43;0.069381097">2019</time> . Made with <a href='https://gohugo.io'>Hugo</a> using the <a href='https://github.com/EmielH/tale-hugo/'>Tale</a> theme.
 			</span>
 		</footer>
 

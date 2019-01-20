@@ -6,14 +6,24 @@
     <description>Recent content on BlockWorks Co</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Sun, 20 Jan 2019 19:14:13 +0000</lastBuildDate>
     
 	<atom:link href="http://BlockWorks.co/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title></title>
+      <title>About</title>
+      <link>http://BlockWorks.co/about/</link>
+      <pubDate>Sun, 20 Jan 2019 19:14:13 +0000</pubDate>
+      
+      <guid>http://BlockWorks.co/about/</guid>
+      <description>About me&amp;hellip; I&amp;rsquo;m me, not you, just me&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Accidental Corruption</title>
       <link>http://BlockWorks.co/posts/accidentalcorruption/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 20 Jan 2019 19:14:13 +0000</pubDate>
       
       <guid>http://BlockWorks.co/posts/accidentalcorruption/</guid>
       <description>Accidental corruption. Considering your typical C and microcontroller based embedded application, corruption can be caused in many ways.
@@ -21,27 +31,27 @@ Regardless of the root-cause, if corruption is detected, the only course of acti
     </item>
     
     <item>
-      <title></title>
+      <title>Architecture</title>
       <link>http://BlockWorks.co/posts/architecture/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 20 Jan 2019 19:14:13 +0000</pubDate>
       
       <guid>http://BlockWorks.co/posts/architecture/</guid>
       <description>Architecture  Assumptions for embedded-code. one-use, running forever (barring upgrades and resets), limited resources (RAM, performance, power, space). static. Take advantage of the embedded-assumptions and make everything you can, static. the compiler will be your friend here. reduce decisions. Anything decided at runtime that will never change is wasted energy and has potential for exploitation. code-driven, not data-driven. Data changes, code is static. therefore data is more vulnerable. determinism (response, error recovery, resource usage).</description>
     </item>
     
     <item>
-      <title></title>
+      <title>Build Time Protection</title>
       <link>http://BlockWorks.co/posts/buildtimeprotection/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 20 Jan 2019 19:14:13 +0000</pubDate>
       
       <guid>http://BlockWorks.co/posts/buildtimeprotection/</guid>
       <description> Build Time Protection.  Static analysis. Simulation &amp;amp; host-based testing. Unit testing. Use C++ and vectors instead of arrays.  </description>
     </item>
     
     <item>
-      <title></title>
+      <title>Defense in Depth</title>
       <link>http://BlockWorks.co/posts/defenseindepth/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 20 Jan 2019 19:14:13 +0000</pubDate>
       
       <guid>http://BlockWorks.co/posts/defenseindepth/</guid>
       <description>Defense in depth.  layers admit that no one mechanism will catch everything. reduce chance of widespread exploit.  &amp;rdquo;&amp;hellip;In terms of computer network defense, defense in depth measures should not only prevent security breaches but also buy an organization time to detect and respond to an attack and so reduce and mitigate the consequences of a breach.&amp;rdquo; - https://en.wikipedia.org/wiki/Defense_in_depth_(computing)
@@ -49,18 +59,18 @@ Regardless of the root-cause, if corruption is detected, the only course of acti
     </item>
     
     <item>
-      <title></title>
+      <title>Domain Protection</title>
       <link>http://BlockWorks.co/posts/domainprotection/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 20 Jan 2019 19:14:13 +0000</pubDate>
       
       <guid>http://BlockWorks.co/posts/domainprotection/</guid>
       <description> Domain Protection.  Reduce valid address space for more targetted pointer checks. restrict path through code to known-good-paths.  </description>
     </item>
     
     <item>
-      <title></title>
+      <title>Error Handling</title>
       <link>http://BlockWorks.co/posts/errorhandling/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 20 Jan 2019 19:14:13 +0000</pubDate>
       
       <guid>http://BlockWorks.co/posts/errorhandling/</guid>
       <description>Error Handling and recovery. This is an important subject for any software system. No one ever intentionally designs their software to be unreliable or insecure but it does happen, despite our best intentions. Therefore we must think carefully about how we design in the ability to fail.
@@ -68,9 +78,9 @@ First and foremost, we must acknowledge that our one subsystem is not isolated. 
     </item>
     
     <item>
-      <title></title>
+      <title>Error Propagation Prevention</title>
       <link>http://BlockWorks.co/posts/errorpropagationprevention/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 20 Jan 2019 19:14:13 +0000</pubDate>
       
       <guid>http://BlockWorks.co/posts/errorpropagationprevention/</guid>
       <description> Error Propagation prevention. Even if one device is compromised, limit the damage so the exploit is widely useable.
@@ -78,21 +88,76 @@ Mitigation techniques  Random stack offsetting. Random vector table location. He
     </item>
     
     <item>
-      <title></title>
+      <title>Fault Recovery</title>
+      <link>http://BlockWorks.co/posts/recovery/</link>
+      <pubDate>Sun, 20 Jan 2019 19:14:13 +0000</pubDate>
+      
+      <guid>http://BlockWorks.co/posts/recovery/</guid>
+      <description> Recovery  Plan for reset. do it regularly, architect your system around it. test it.  </description>
+    </item>
+    
+    <item>
+      <title>Flooding Attacks</title>
       <link>http://BlockWorks.co/posts/floodingattacks/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 20 Jan 2019 19:14:13 +0000</pubDate>
       
       <guid>http://BlockWorks.co/posts/floodingattacks/</guid>
       <description> Flooding attacks.  Denial of service. Interrupts Messaging interfaces. Accept that you must go lossy at some interface. Choose it and plan for it.  </description>
     </item>
     
     <item>
-      <title></title>
+      <title>Heap robustness</title>
       <link>http://BlockWorks.co/posts/heaprobustness/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 20 Jan 2019 19:14:13 +0000</pubDate>
       
       <guid>http://BlockWorks.co/posts/heaprobustness/</guid>
       <description> Heap Robustness.  Heap data bounds checks. Heap metadata checks. fragmentation.  </description>
+    </item>
+    
+    <item>
+      <title>Malicious Corruption</title>
+      <link>http://BlockWorks.co/posts/maliciouscorruption/</link>
+      <pubDate>Sun, 20 Jan 2019 19:14:13 +0000</pubDate>
+      
+      <guid>http://BlockWorks.co/posts/maliciouscorruption/</guid>
+      <description>Malicious corruption.  different from accidental corruption because of intent. Assume intelligence behind attacks. stack smashing. Code appears within a payload. negative indexing causes corruption of return value to cause a jump to code in payload. code corruption; dont store code in RAM if at all possible. code should be immutable if possible. XIP. vector table corruption. This is a potentially easy attack vector (overwrite a vector with own code, trigger the interrupt).</description>
+    </item>
+    
+    <item>
+      <title>Performance Issues and Enhancements</title>
+      <link>http://BlockWorks.co/posts/performanceissuesandenhancements/</link>
+      <pubDate>Sun, 20 Jan 2019 19:14:13 +0000</pubDate>
+      
+      <guid>http://BlockWorks.co/posts/performanceissuesandenhancements/</guid>
+      <description> Performance issues and enhancements.  overhead of instrumentation. MPU enhancements Periodic checking. Cant check everything on every function entry/exit but can randomly choose which checks to perform. This decreases the load at the expense of detection-latency. Dont store anything persistently until a full check has been performed.  </description>
+    </item>
+    
+    <item>
+      <title>Stack Robustness</title>
+      <link>http://BlockWorks.co/posts/stackrobustness/</link>
+      <pubDate>Sun, 20 Jan 2019 19:14:13 +0000</pubDate>
+      
+      <guid>http://BlockWorks.co/posts/stackrobustness/</guid>
+      <description> Stack Robustness.  Stack overflow Stack underflow Stack corruption. Stack pointer corruption. pass-by-reference.  Mitigation Techniques  Stack CRC checking (cross-task corruption). stack bounds checking with an OS. random stack offsetting. Stack sanitisation. Canaries Stack-fill Correct-sizing. avoiding pass-by-reference.  </description>
+    </item>
+    
+    <item>
+      <title>Version Control</title>
+      <link>http://BlockWorks.co/posts/versioncontrol/</link>
+      <pubDate>Sun, 20 Jan 2019 19:14:13 +0000</pubDate>
+      
+      <guid>http://BlockWorks.co/posts/versioncontrol/</guid>
+      <description> Version control What is released together should be versioned together
+Monorepo Multirepo  Build overhead Cognitive overhead Refactoring overhead   </description>
+    </item>
+    
+    <item>
+      <title>Wear and Tear</title>
+      <link>http://BlockWorks.co/posts/wearandtear/</link>
+      <pubDate>Sun, 20 Jan 2019 19:14:13 +0000</pubDate>
+      
+      <guid>http://BlockWorks.co/posts/wearandtear/</guid>
+      <description> Wear and Tear.  Bad block management wear levelling. fragmentation.  </description>
     </item>
     
     <item>
@@ -108,66 +173,11 @@ Robustness in embedded software Embedded software is defined by: - lack of human
     
     <item>
       <title></title>
-      <link>http://BlockWorks.co/posts/maliciouscorruption/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://BlockWorks.co/posts/maliciouscorruption/</guid>
-      <description>Malicious corruption.  different from accidental corruption because of intent. Assume intelligence behind attacks. stack smashing. Code appears within a payload. negative indexing causes corruption of return value to cause a jump to code in payload. code corruption; dont store code in RAM if at all possible. code should be immutable if possible. XIP. vector table corruption. This is a potentially easy attack vector (overwrite a vector with own code, trigger the interrupt).</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://BlockWorks.co/posts/performanceissuesandenhancements/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://BlockWorks.co/posts/performanceissuesandenhancements/</guid>
-      <description> Performance issues and enhancements.  overhead of instrumentation. MPU enhancements Periodic checking. Cant check everything on every function entry/exit but can randomly choose which checks to perform. This decreases the load at the expense of detection-latency. Dont store anything persistently until a full check has been performed.  </description>
-    </item>
-    
-    <item>
-      <title></title>
       <link>http://BlockWorks.co/posts/readme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://BlockWorks.co/posts/readme/</guid>
       <description>Articles This is a selection of articles about embedded software development.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://BlockWorks.co/posts/recovery/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://BlockWorks.co/posts/recovery/</guid>
-      <description> Recovery  Plan for reset. do it regularly, architect your system around it. test it.  </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://BlockWorks.co/posts/stackrobustness/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://BlockWorks.co/posts/stackrobustness/</guid>
-      <description> Stack Robustness.  Stack overflow Stack underflow Stack corruption. Stack pointer corruption. pass-by-reference.  Mitigation Techniques  Stack CRC checking (cross-task corruption). stack bounds checking with an OS. random stack offsetting. Stack sanitisation. Canaries Stack-fill Correct-sizing. avoiding pass-by-reference.  </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://BlockWorks.co/posts/versioncontrol/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://BlockWorks.co/posts/versioncontrol/</guid>
-      <description> Version control What is released together should be versioned together
-Monorepo Multirepo  Build overhead Cognitive overhead Refactoring overhead   </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://BlockWorks.co/posts/wearandtear/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://BlockWorks.co/posts/wearandtear/</guid>
-      <description> Wear and Tear.  Bad block management wear levelling. fragmentation.  </description>
     </item>
     
   </channel>

@@ -1,7 +1,7 @@
 baseURL = "http://BlockWorks.co/"
 languageCode = "en-us"
 title = "BlockWorks Co"
-theme = "tale"
+theme = "sam"
 
 
 [Author]

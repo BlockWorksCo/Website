@@ -1,201 +1,47 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html>
     <head>
 	<meta name="generator" content="Hugo 0.53" />
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-			<meta name="description" content="">
-	
-		<title>
-				BlockWorks Co
-		</title>
-	
-		
-  		<link rel="stylesheet" href="/css/style.css">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
-	
-		
-		<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
-		<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
-	
-		
-		<link href="http://BlockWorks.co/index.xml" rel="alternate" type="application/rss+xml" title="BlockWorks Co" />
-	</head>
-	
+        <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+
+<meta name="description" content="Call me Sam, a theme for Hugo.">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:domain" content="http://BlockWorks.co/">
+
+<meta name="twitter:image" content="http://BlockWorks.co/tn.png">
+<meta name="twitter:title" property="og:title" itemprop="title name" content="BlockWorks Co">
+<meta name="twitter:description" property="og:description" itemprop="description" content="Call me Sam, a theme for Hugo.">
+<meta name="og:type" content="website">
+<meta name="og:url" content="http://BlockWorks.co/">
+<meta name="og:image" itemprop="image primaryImageOfPage" content="http://BlockWorks.co/tn.png">
+
+<link rel="shortcut icon" href="http://BlockWorks.co/sam.ico" id="favicon">
+<link rel="stylesheet" href="http://BlockWorks.co/css/style.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Didact+Gothic">
+
+
+        <title>BlockWorks Co</title>
+    </head>
     <body>
-        		<nav class="nav">
-			<div class="nav-container">
-				<a href="/">
-					<h2 class="nav-title">BlockWorks Co</h2>
-				</a>
-				<ul>
-    <li><a href="/about">About</a></li>
-    <li><a href="/">Posts</a></li>
-</ul>
-			</div>
-		</nav>
+        <div class="section" id="splash">
 
-        
-
-<main>
-	
-
-
-	<div class="catalogue">
-		
-			<a href="http://BlockWorks.co/about/" class="catalogue-item">
-    <div>
-        <time datetime="2019-01-20 19:14:13 &#43;0000 UTC" class="catalogue-time">January 20, 2019</time>
-        <h1 class="catalogue-title">About</h1>
-        <div class="catalogue-line"></div>
-
-        <p>
-            About me&hellip; I&rsquo;m me, not you, just me&hellip;
-        </p>
-    </div>
-</a>
-
-		
-			<a href="http://BlockWorks.co/posts/accidentalcorruption/" class="catalogue-item">
-    <div>
-        <time datetime="2019-01-20 19:14:13 &#43;0000 UTC" class="catalogue-time">January 20, 2019</time>
-        <h1 class="catalogue-title">Accidental Corruption</h1>
-        <div class="catalogue-line"></div>
-
-        <p>
-            Accidental corruption. Considering your typical C and microcontroller based embedded application, corruption can be caused in many ways.
-Regardless of the root-cause, if corruption is detected, the only course of action is an immediate PANIC situation. Why do we PANIC? because we cannot now trust the machine state. At the point of detection we cannot know what else has been affected and for how long, therfore the only safe thing to do is PANIC our way back to safety.
-        </p>
-    </div>
-</a>
-
-		
-			<a href="http://BlockWorks.co/posts/architecture/" class="catalogue-item">
-    <div>
-        <time datetime="2019-01-20 19:14:13 &#43;0000 UTC" class="catalogue-time">January 20, 2019</time>
-        <h1 class="catalogue-title">Architecture</h1>
-        <div class="catalogue-line"></div>
-
-        <p>
-            Architecture  Assumptions for embedded-code. one-use, running forever (barring upgrades and resets), limited resources (RAM, performance, power, space). static. Take advantage of the embedded-assumptions and make everything you can, static. the compiler will be your friend here. reduce decisions. Anything decided at runtime that will never change is wasted energy and has potential for exploitation. code-driven, not data-driven. Data changes, code is static. therefore data is more vulnerable. determinism (response, error recovery, resource usage).
-        </p>
-    </div>
-</a>
-
-		
-			<a href="http://BlockWorks.co/posts/buildtimeprotection/" class="catalogue-item">
-    <div>
-        <time datetime="2019-01-20 19:14:13 &#43;0000 UTC" class="catalogue-time">January 20, 2019</time>
-        <h1 class="catalogue-title">Build Time Protection</h1>
-        <div class="catalogue-line"></div>
-
-        <p>
-             Build Time Protection.  Static analysis. Simulation &amp; host-based testing. Unit testing. Use C++ and vectors instead of arrays.  
-        </p>
-    </div>
-</a>
-
-		
-			<a href="http://BlockWorks.co/posts/defenseindepth/" class="catalogue-item">
-    <div>
-        <time datetime="2019-01-20 19:14:13 &#43;0000 UTC" class="catalogue-time">January 20, 2019</time>
-        <h1 class="catalogue-title">Defense in Depth</h1>
-        <div class="catalogue-line"></div>
-
-        <p>
-            Defense in depth.  layers admit that no one mechanism will catch everything. reduce chance of widespread exploit.  &rdquo;&hellip;In terms of computer network defense, defense in depth measures should not only prevent security breaches but also buy an organization time to detect and respond to an attack and so reduce and mitigate the consequences of a breach.&rdquo; - https://en.wikipedia.org/wiki/Defense_in_depth_(computing)
-&ldquo;Layering security defenses in an application can reduce the chance of a successful attack.
-        </p>
-    </div>
-</a>
-
-		
-			<a href="http://BlockWorks.co/posts/domainprotection/" class="catalogue-item">
-    <div>
-        <time datetime="2019-01-20 19:14:13 &#43;0000 UTC" class="catalogue-time">January 20, 2019</time>
-        <h1 class="catalogue-title">Domain Protection</h1>
-        <div class="catalogue-line"></div>
-
-        <p>
-             Domain Protection.  Reduce valid address space for more targetted pointer checks. restrict path through code to known-good-paths.  
-        </p>
-    </div>
-</a>
-
-		
-			<a href="http://BlockWorks.co/posts/errorhandling/" class="catalogue-item">
-    <div>
-        <time datetime="2019-01-20 19:14:13 &#43;0000 UTC" class="catalogue-time">January 20, 2019</time>
-        <h1 class="catalogue-title">Error Handling</h1>
-        <div class="catalogue-line"></div>
-
-        <p>
-            Error Handling and recovery. This is an important subject for any software system. No one ever intentionally designs their software to be unreliable or insecure but it does happen, despite our best intentions. Therefore we must think carefully about how we design in the ability to fail.
-First and foremost, we must acknowledge that our one subsystem is not isolated. It exists within an ecosystem. This larger connected system must be taken into account when considering failures.
-        </p>
-    </div>
-</a>
-
-		
-			<a href="http://BlockWorks.co/posts/errorpropagationprevention/" class="catalogue-item">
-    <div>
-        <time datetime="2019-01-20 19:14:13 &#43;0000 UTC" class="catalogue-time">January 20, 2019</time>
-        <h1 class="catalogue-title">Error Propagation Prevention</h1>
-        <div class="catalogue-line"></div>
-
-        <p>
-             Error Propagation prevention. Even if one device is compromised, limit the damage so the exploit is widely useable.
-Mitigation techniques  Random stack offsetting. Random vector table location. Heap randomisation. per-device RNG, unique ID for propagation prevention.  
-        </p>
-    </div>
-</a>
-
-		
-			<a href="http://BlockWorks.co/posts/recovery/" class="catalogue-item">
-    <div>
-        <time datetime="2019-01-20 19:14:13 &#43;0000 UTC" class="catalogue-time">January 20, 2019</time>
-        <h1 class="catalogue-title">Fault Recovery</h1>
-        <div class="catalogue-line"></div>
-
-        <p>
-             Recovery  Plan for reset. do it regularly, architect your system around it. test it.  
-        </p>
-    </div>
-</a>
-
-		
-			<a href="http://BlockWorks.co/posts/floodingattacks/" class="catalogue-item">
-    <div>
-        <time datetime="2019-01-20 19:14:13 &#43;0000 UTC" class="catalogue-time">January 20, 2019</time>
-        <h1 class="catalogue-title">Flooding Attacks</h1>
-        <div class="catalogue-line"></div>
-
-        <p>
-             Flooding attacks.  Denial of service. Interrupts Messaging interfaces. Accept that you must go lossy at some interface. Choose it and plan for it.  
-        </p>
-    </div>
-</a>
-
-		
-	</div>
-	
-	<div class="pagination">
-		
-		
-			<a href="/page/2/" class="right arrow">&#8594;</a>
-		
-	
-		<span>1</span>
-	</div>
-</main>
-
-
-        		<footer>
-			<span>
-			&copy; <time datetime="2019-01-20 19:22:27.773150464 &#43;0000 GMT m=&#43;0.067284643">2019</time> . Made with <a href='https://gohugo.io'>Hugo</a> using the <a href='https://github.com/EmielH/tale-hugo/'>Tale</a> theme.
-			</span>
-		</footer>
-
+            
+                
+                    <div class="big-link"> 
+                        <a href="http://BlockWorks.co/posts/">
+                            Posts
+                        </a>
+                    </div>
+                
+            
+            
+        </div>
     </body>
 </html>

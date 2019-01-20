@@ -4,3 +4,6 @@
 [submodule "BlockWorks/themes/tale"]
 	path = BlockWorks/themes/tale
 	url = https://github.com/EmielH/tale-hugo.git
+[submodule "BlockWorks/themes/sam"]
+	path = BlockWorks/themes/sam
+	url = https://github.com/vickylai/hugo-theme-sam.git

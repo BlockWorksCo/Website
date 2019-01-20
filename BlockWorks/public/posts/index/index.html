@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+		<title>
+				 &middot; BlockWorks Co
+		</title>
+	
+		
+  		<link rel="stylesheet" href="/css/style.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
+	
+		
+		<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+	
+		
+		<link href="" rel="alternate" type="application/rss+xml" title="BlockWorks Co" />
+	</head>
+	
+    <body>
+        		<nav class="nav">
+			<div class="nav-container">
+				<a href="/">
+					<h2 class="nav-title">BlockWorks Co</h2>
+				</a>
+				<ul>
+    <li><a href="/about">About</a></li>
+    <li><a href="/">Posts</a></li>
+</ul>
+			</div>
+		</nav>
+
+        
+
+<main>
+	<div class="post">
+		<div class="post-info">
+    <span>Written by</span>
+        
+        <br>
+        <span>on&nbsp;</span><time datetime="0001-01-01 00:00:00 &#43;0000 UTC">January 1, 0001</time>
+</div>
+		<h1 class="post-title"></h1>
+<div class="post-line"></div>
+
+		
+
+		
+
+<p>Articles Index</p>
+
+<h1 id="robustness-in-embedded-software">Robustness in embedded software</h1>
+
+<p>Embedded software is defined by:
+- lack of human interaction.
+- long, unattended lifetime.
+- many units, built-to-a-cost, therefore resource constrained in RAM, storage and performance.
+- often low power requirements.
+- Often interacting with remote systems via messaging interfaces.
+Implemented correctly, these techniques can provide significant improvements in robustness over unprotected code.</p>
+
+<ul>
+<li><p>Accidental corruption.
+stack overflow
+stack underlow
+stack corruption
+heap corruption
+heap metadata corruption</p></li>
+
+<li><p>Malicious corruption.
+stack smashing
+code corruption
+vector table</p></li>
+
+<li><p>Flooding attacks.
+interrupts.
+messaging interfaces.</p></li>
+
+<li><p>Wear and Tear.
+bad-block management
+wear levelling.
+fragmentation.</p></li>
+
+<li><p>Propagation prevention
+Even if one device is compromised, limit the damage so the exploit is widely useable.</p></li>
+
+<li><p>Defense in depth<br />
+layers
+admit that no one mechanism will catch everything.
+reduce chance of widespread exploit.</p></li>
+
+<li><p>Recovery
+Plan for reset.
+do it regularly, architect your system around it.
+test it.</p></li>
+
+<li><p>Error Handling
+fail fast
+resetting is your friend.
+when not to use this (short time constraints).
+Supervisor/watchdog.</p></li>
+
+<li><p>Architecture
+static.
+reduce decisions.
+code-driven, not data-driven.
+determinism (response, error recovery, resource usage).
+reduce concurrrency.</p></li>
+
+<li><p>Protection mechanisms
+address sanitiser
+stack checker
+strong pointer checking.
+Domain Protection
+random stack offsetting.
+stack return opcode check
+stack return address check
+vector table checking.
+heap bounds checking
+heap metadata checking.
+stack bounds checking with OS.
+code integrity &amp; continuous partial checks.
+per-device RNG, unique ID for propagation prevention.
+Keep it static, XIP.
+Simulation, portability &amp; unit and host-based testing.
+Build-time protection, static analysis.
+Message field validation, input sanitisation.
+Stack, heap and reset sanitisation.</p></li>
+</ul>
+
+
+		
+	</div>
+
+	<div class="pagination">
+		<a href="/posts/maliciouscorruption/" class="left arrow">&#8592;</a>
+		<a href="/posts/heaprobustness/" class="right arrow">&#8594;</a>
+
+		<a href="#" class="top">Top</a>
+	</div>
+</main>
+
+
+        		<footer>
+			<span>
+			&copy; <time datetime="2019-01-20 18:22:50.963103972 &#43;0000 GMT m=&#43;0.060560955">2019</time> . Made with <a href='https://gohugo.io'>Hugo</a> using the <a href='https://github.com/EmielH/tale-hugo/'>Tale</a> theme.
+			</span>
+		</footer>
+
+    </body>
+</html>

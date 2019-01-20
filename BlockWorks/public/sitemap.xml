@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://BlockWorks.co/posts/accidentalcorruption/</loc>
+  </url>
+  
+  <url>
+    <loc>http://BlockWorks.co/posts/architecture/</loc>
+  </url>
+  
+  <url>
+    <loc>http://BlockWorks.co/posts/buildtimeprotection/</loc>
+  </url>
+  
+  <url>
+    <loc>http://BlockWorks.co/posts/defenseindepth/</loc>
+  </url>
+  
+  <url>
+    <loc>http://BlockWorks.co/posts/domainprotection/</loc>
+  </url>
+  
+  <url>
+    <loc>http://BlockWorks.co/posts/errorhandling/</loc>
+  </url>
+  
+  <url>
+    <loc>http://BlockWorks.co/posts/errorpropagationprevention/</loc>
+  </url>
+  
+  <url>
+    <loc>http://BlockWorks.co/posts/floodingattacks/</loc>
+  </url>
+  
+  <url>
+    <loc>http://BlockWorks.co/posts/heaprobustness/</loc>
+  </url>
+  
+  <url>
+    <loc>http://BlockWorks.co/posts/index/</loc>
+  </url>
+  
+  <url>
+    <loc>http://BlockWorks.co/posts/maliciouscorruption/</loc>
+  </url>
+  
+  <url>
+    <loc>http://BlockWorks.co/posts/performanceissuesandenhancements/</loc>
+  </url>
+  
+  <url>
+    <loc>http://BlockWorks.co/posts/readme/</loc>
+  </url>
+  
+  <url>
+    <loc>http://BlockWorks.co/posts/recovery/</loc>
+  </url>
+  
+  <url>
+    <loc>http://BlockWorks.co/posts/stackrobustness/</loc>
+  </url>
+  
+  <url>
+    <loc>http://BlockWorks.co/posts/versioncontrol/</loc>
+  </url>
+  
+  <url>
+    <loc>http://BlockWorks.co/posts/wearandtear/</loc>
+  </url>
+  
+  <url>
+    <loc>http://BlockWorks.co/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://BlockWorks.co/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://BlockWorks.co/posts/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://BlockWorks.co/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

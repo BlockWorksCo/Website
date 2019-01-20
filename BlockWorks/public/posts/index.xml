@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on BlockWorks Co</title>
+    <link>http://BlockWorks.co/posts/</link>
+    <description>Recent content in Posts on BlockWorks Co</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://BlockWorks.co/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>http://BlockWorks.co/posts/accidentalcorruption/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://BlockWorks.co/posts/accidentalcorruption/</guid>
+      <description>Accidental corruption. Considering your typical C and microcontroller based embedded application, corruption can be caused in many ways.
+Regardless of the root-cause, if corruption is detected, the only course of action is an immediate PANIC situation. Why do we PANIC? because we cannot now trust the machine state. At the point of detection we cannot know what else has been affected and for how long, therfore the only safe thing to do is PANIC our way back to safety.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://BlockWorks.co/posts/architecture/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://BlockWorks.co/posts/architecture/</guid>
+      <description>Architecture  Assumptions for embedded-code. one-use, running forever (barring upgrades and resets), limited resources (RAM, performance, power, space). static. Take advantage of the embedded-assumptions and make everything you can, static. the compiler will be your friend here. reduce decisions. Anything decided at runtime that will never change is wasted energy and has potential for exploitation. code-driven, not data-driven. Data changes, code is static. therefore data is more vulnerable. determinism (response, error recovery, resource usage).</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://BlockWorks.co/posts/buildtimeprotection/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://BlockWorks.co/posts/buildtimeprotection/</guid>
+      <description> Build Time Protection.  Static analysis. Simulation &amp;amp; host-based testing. Unit testing. Use C++ and vectors instead of arrays.  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://BlockWorks.co/posts/defenseindepth/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://BlockWorks.co/posts/defenseindepth/</guid>
+      <description>Defense in depth.  layers admit that no one mechanism will catch everything. reduce chance of widespread exploit.  &amp;rdquo;&amp;hellip;In terms of computer network defense, defense in depth measures should not only prevent security breaches but also buy an organization time to detect and respond to an attack and so reduce and mitigate the consequences of a breach.&amp;rdquo; - https://en.wikipedia.org/wiki/Defense_in_depth_(computing)
+&amp;ldquo;Layering security defenses in an application can reduce the chance of a successful attack.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://BlockWorks.co/posts/domainprotection/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://BlockWorks.co/posts/domainprotection/</guid>
+      <description> Domain Protection.  Reduce valid address space for more targetted pointer checks. restrict path through code to known-good-paths.  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://BlockWorks.co/posts/errorhandling/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://BlockWorks.co/posts/errorhandling/</guid>
+      <description>Error Handling and recovery. This is an important subject for any software system. No one ever intentionally designs their software to be unreliable or insecure but it does happen, despite our best intentions. Therefore we must think carefully about how we design in the ability to fail.
+First and foremost, we must acknowledge that our one subsystem is not isolated. It exists within an ecosystem. This larger connected system must be taken into account when considering failures.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://BlockWorks.co/posts/errorpropagationprevention/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://BlockWorks.co/posts/errorpropagationprevention/</guid>
+      <description> Error Propagation prevention. Even if one device is compromised, limit the damage so the exploit is widely useable.
+Mitigation techniques  Random stack offsetting. Random vector table location. Heap randomisation. per-device RNG, unique ID for propagation prevention.  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://BlockWorks.co/posts/floodingattacks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://BlockWorks.co/posts/floodingattacks/</guid>
+      <description> Flooding attacks.  Denial of service. Interrupts Messaging interfaces. Accept that you must go lossy at some interface. Choose it and plan for it.  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://BlockWorks.co/posts/heaprobustness/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://BlockWorks.co/posts/heaprobustness/</guid>
+      <description> Heap Robustness.  Heap data bounds checks. Heap metadata checks. fragmentation.  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://BlockWorks.co/posts/index/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://BlockWorks.co/posts/index/</guid>
+      <description>Articles Index
+Robustness in embedded software Embedded software is defined by: - lack of human interaction. - long, unattended lifetime. - many units, built-to-a-cost, therefore resource constrained in RAM, storage and performance. - often low power requirements. - Often interacting with remote systems via messaging interfaces. Implemented correctly, these techniques can provide significant improvements in robustness over unprotected code.
+ Accidental corruption. stack overflow stack underlow stack corruption heap corruption heap metadata corruption</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://BlockWorks.co/posts/maliciouscorruption/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://BlockWorks.co/posts/maliciouscorruption/</guid>
+      <description>Malicious corruption.  different from accidental corruption because of intent. Assume intelligence behind attacks. stack smashing. Code appears within a payload. negative indexing causes corruption of return value to cause a jump to code in payload. code corruption; dont store code in RAM if at all possible. code should be immutable if possible. XIP. vector table corruption. This is a potentially easy attack vector (overwrite a vector with own code, trigger the interrupt).</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://BlockWorks.co/posts/performanceissuesandenhancements/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://BlockWorks.co/posts/performanceissuesandenhancements/</guid>
+      <description> Performance issues and enhancements.  overhead of instrumentation. MPU enhancements Periodic checking. Cant check everything on every function entry/exit but can randomly choose which checks to perform. This decreases the load at the expense of detection-latency. Dont store anything persistently until a full check has been performed.  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://BlockWorks.co/posts/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://BlockWorks.co/posts/readme/</guid>
+      <description>Articles This is a selection of articles about embedded software development.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://BlockWorks.co/posts/recovery/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://BlockWorks.co/posts/recovery/</guid>
+      <description> Recovery  Plan for reset. do it regularly, architect your system around it. test it.  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://BlockWorks.co/posts/stackrobustness/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://BlockWorks.co/posts/stackrobustness/</guid>
+      <description> Stack Robustness.  Stack overflow Stack underflow Stack corruption. Stack pointer corruption. pass-by-reference.  Mitigation Techniques  Stack CRC checking (cross-task corruption). stack bounds checking with an OS. random stack offsetting. Stack sanitisation. Canaries Stack-fill Correct-sizing. avoiding pass-by-reference.  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://BlockWorks.co/posts/versioncontrol/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://BlockWorks.co/posts/versioncontrol/</guid>
+      <description> Version control What is released together should be versioned together
+Monorepo Multirepo  Build overhead Cognitive overhead Refactoring overhead   </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://BlockWorks.co/posts/wearandtear/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://BlockWorks.co/posts/wearandtear/</guid>
+      <description> Wear and Tear.  Bad block management wear levelling. fragmentation.  </description>
+    </item>
+    
+  </channel>
+</rss>

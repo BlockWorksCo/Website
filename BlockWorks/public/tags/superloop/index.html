@@ -35,50 +35,37 @@
     
     <title>
         
-        Architecture for embedded systems
+        Superloop
         
     </title>
 </head>
 
 <body>
     <div class="wrap">
-        <div class="section" id="title">Architecture for embedded systems</div>
+        <div class="section" id="title">Superloop</div>
 
         
 <div class="section" id="content">
-    Sun Jan 20, 2019 &#183; 135 words
     
-    <hr/>
-    
-
-<h1 id="architecture">Architecture</h1>
-
-<ul>
-<li>Assumptions for embedded-code. one-use, running forever (barring upgrades and resets), limited resources (RAM, performance, power, space).</li>
-<li>static. Take advantage of the embedded-assumptions and make everything you can, static. the compiler will be your friend here.</li>
-<li>reduce decisions. Anything decided at runtime that will never change is wasted energy and has potential for exploitation.</li>
-<li>code-driven, not data-driven. Data changes, code is static. therefore data is more vulnerable.</li>
-<li>determinism (response, error recovery, resource usage). Being able to predict patterns in the software means mitigations are much more successful. Code is also clarified.</li>
-<li>reduce concurrency. Use concurrency where needed, i.e. at asychronous interface points. This doesn&rsquo;t necessarily mean tasks; interrupts are better.</li>
-<li>Plan for resets.</li>
-<li>Decouple, simplify, separation-of-concerns, encapsulation; all these help clarify the software and allow a better mental-model to be kept in the programmers head.</li>
-</ul>
-
+    <ul>
+        
+        <li>
+            
+            <a href="http://BlockWorks.co/posts/superloopversusthreads/">
+                Super-loop vs threads
+            </a>
+        </li>
+        
+    </ul>
 </div>
 
 
         
-<div class="section bottom-menu">
-    
+        <div class="section bottom-menu">
 <hr />
 <p>
 
 
-    
-        <a href="/posts">back</a>
-        
-            &#183;
-        
     
 
     
@@ -101,9 +88,8 @@
         
     </a>
 
-</p>
-</div>
-
+</p></div>
+        
 
         <div class="section footer"></div>
     </div>

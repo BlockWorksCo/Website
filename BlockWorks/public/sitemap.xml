@@ -3,8 +3,28 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://BlockWorks.co/posts/designfortest/</loc>
+    <lastmod>2019-01-21T22:51:39+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://BlockWorks.co/posts/resourcecontrainedsystems/</loc>
+    <lastmod>2019-01-21T21:17:57+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://BlockWorks.co/posts/concurrency/</loc>
+    <lastmod>2019-01-21T21:01:16+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://BlockWorks.co/posts/superloopversusthreads/</loc>
+    <lastmod>2019-01-21T23:31:54+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://BlockWorks.co/posts/lowpower/</loc>
-    <lastmod>2019-01-21T20:10:32+00:00</lastmod>
+    <lastmod>2019-01-21T20:14:51+00:00</lastmod>
   </url>
   
   <url>
@@ -13,13 +33,18 @@
   </url>
   
   <url>
+    <loc>http://BlockWorks.co/posts/wearandtear/</loc>
+    <lastmod>2019-01-21T23:29:38+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://BlockWorks.co/posts/architecture/</loc>
-    <lastmod>2019-01-20T22:01:24+00:00</lastmod>
+    <lastmod>2019-01-21T21:48:47+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://BlockWorks.co/about/</loc>
-    <lastmod>2019-01-20T22:44:23+00:00</lastmod>
+    <lastmod>2019-01-21T22:22:37+00:00</lastmod>
   </url>
   
   <url>
@@ -29,7 +54,7 @@
   
   <url>
     <loc>http://BlockWorks.co/posts/defenseindepth/</loc>
-    <lastmod>2019-01-21T17:43:55+00:00</lastmod>
+    <lastmod>2019-01-21T23:35:59+00:00</lastmod>
   </url>
   
   <url>
@@ -38,13 +63,13 @@
   </url>
   
   <url>
-    <loc>http://BlockWorks.co/posts/errorhandling/</loc>
-    <lastmod>2019-01-21T17:44:50+00:00</lastmod>
+    <loc>http://BlockWorks.co/posts/errorpropagationprevention/</loc>
+    <lastmod>2019-01-20T19:20:20+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://BlockWorks.co/posts/errorpropagationprevention/</loc>
-    <lastmod>2019-01-20T19:20:20+00:00</lastmod>
+    <loc>http://BlockWorks.co/posts/errorhandling/</loc>
+    <lastmod>2019-01-21T21:49:24+00:00</lastmod>
   </url>
   
   <url>
@@ -88,13 +113,8 @@
   </url>
   
   <url>
-    <loc>http://BlockWorks.co/posts/wearandtear/</loc>
-    <lastmod>2019-01-20T22:45:12+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://BlockWorks.co/</loc>
-    <lastmod>2019-01-21T20:10:32+00:00</lastmod>
+    <lastmod>2019-01-21T22:51:39+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -111,7 +131,13 @@
   
   <url>
     <loc>http://BlockWorks.co/tags/ci/</loc>
-    <lastmod>2019-01-21T17:43:29+00:00</lastmod>
+    <lastmod>2019-01-21T22:51:39+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://BlockWorks.co/tags/concurrency/</loc>
+    <lastmod>2019-01-21T21:01:16+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -123,25 +149,25 @@
   
   <url>
     <loc>http://BlockWorks.co/tags/exploits/</loc>
-    <lastmod>2019-01-21T17:43:55+00:00</lastmod>
+    <lastmod>2019-01-21T23:35:59+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://BlockWorks.co/tags/low-power/</loc>
-    <lastmod>2019-01-21T20:10:32+00:00</lastmod>
+    <lastmod>2019-01-21T20:14:51+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://BlockWorks.co/posts/</loc>
-    <lastmod>2019-01-21T20:10:32+00:00</lastmod>
+    <lastmod>2019-01-21T22:51:39+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://BlockWorks.co/tags/robustness/</loc>
-    <lastmod>2019-01-21T17:43:55+00:00</lastmod>
+    <lastmod>2019-01-21T23:35:59+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -158,14 +184,32 @@
   </url>
   
   <url>
+    <loc>http://BlockWorks.co/tags/superloop/</loc>
+    <lastmod>2019-01-21T23:31:54+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://BlockWorks.co/tags/</loc>
     <lastmod>2019-01-21T17:43:29+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
+    <loc>http://BlockWorks.co/tags/tasks/</loc>
+    <lastmod>2019-01-21T21:01:16+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://BlockWorks.co/tags/testing/</loc>
-    <lastmod>2019-01-21T17:43:29+00:00</lastmod>
+    <lastmod>2019-01-21T22:51:39+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://BlockWorks.co/tags/threads/</loc>
+    <lastmod>2019-01-21T21:01:16+00:00</lastmod>
     <priority>0</priority>
   </url>
   

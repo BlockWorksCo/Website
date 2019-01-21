@@ -6,10 +6,21 @@
     <description>Recent content in Testing on BlockWorks Co</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 20 Jan 2019 19:14:13 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 21 Jan 2019 22:24:08 +0000</lastBuildDate>
     
 	<atom:link href="http://BlockWorks.co/tags/testing/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Design for test</title>
+      <link>http://BlockWorks.co/posts/designfortest/</link>
+      <pubDate>Mon, 21 Jan 2019 22:24:08 +0000</pubDate>
+      
+      <guid>http://BlockWorks.co/posts/designfortest/</guid>
+      <description>Embedded systems are by definition one part of a larger device. The purpose of the software is not to stand alone but function within another device. When testing, this cannot be ignored.
+Differences from hardware The phrase &amp;ldquo;design for test&amp;rdquo; is typically applied to hardware, and to some extent this topic is a logical extension from the hardware to the software.
+When looking at hardware from a software (testing) point-of-view, there are some crticial differences:</description>
+    </item>
     
     <item>
       <title>Build Time Protection</title>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+
+<meta name="description" content="Call me Sam, a theme for Hugo.">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:domain" content="http://BlockWorks.co/">
+
+<meta name="twitter:image" content="http://BlockWorks.co/tn.png">
+<meta name="twitter:title" property="og:title" itemprop="title name" content="BlockWorks Co">
+<meta name="twitter:description" property="og:description" itemprop="description" content="Call me Sam, a theme for Hugo.">
+<meta name="og:type" content="website">
+<meta name="og:url" content="http://BlockWorks.co/">
+<meta name="og:image" itemprop="image primaryImageOfPage" content="http://BlockWorks.co/tn.png">
+
+<link rel="shortcut icon" href="http://BlockWorks.co/sam.ico" id="favicon">
+<link rel="stylesheet" href="http://BlockWorks.co/css/style.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Didact+Gothic">
+
+
+    
+
+    
+    
+    
+    <title>
+        
+        Design for test
+        
+    </title>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="section" id="title">Design for test</div>
+
+        
+<div class="section" id="content">
+    Mon Jan 21, 2019 &#183; 280 words
+    
+    <div class="tag-container">
+        
+        <span class="tag">
+            <a href="http://BlockWorks.co/tags/testing">
+                testing
+            </a>
+        </span>
+        
+        <span class="tag">
+            <a href="http://BlockWorks.co/tags/ci">
+                ci
+            </a>
+        </span>
+        
+    </div>
+    
+    <hr/>
+    
+
+<p>Embedded systems are by definition one part of a larger device. The purpose of the software
+is not to stand alone but function within another device.
+When testing, this cannot be ignored.</p>
+
+<h1 id="differences-from-hardware">Differences from hardware</h1>
+
+<p>The phrase &ldquo;design for test&rdquo; is typically applied to hardware, and to some extent this topic is a logical
+extension from the hardware to the software.</p>
+
+<p>When looking at hardware from a software (testing) point-of-view, there are some crticial differences:</p>
+
+<ul>
+<li>Hardware is not clean.</li>
+<li>Hardware is not reliable.</li>
+<li>Hardware is messy.</li>
+<li>Digital systems fail in analog ways.</li>
+<li>Zeros and ones can have other values.</li>
+<li>Hardware is expensive.</li>
+<li>RF is special kind of magic.</li>
+</ul>
+
+<h1 id="so-how-do-we-test-embedded-systems">So how do we test embedded systems?</h1>
+
+<p>Despite the above points, we still want and need to do the following:</p>
+
+<ul>
+<li>Run system-tests (end-to-end)</li>
+<li>Run module/unit tests</li>
+</ul>
+
+<p>So, we can:</p>
+
+<ul>
+<li>Make the software portable (i.e. to build for the host as well as the target).</li>
+<li>Make the system resettable so we can clear out system state between tests.</li>
+<li>Don&rsquo;t depend on the speed of a particular processor (logging and debug overhead will hit you badly).</li>
+<li>Be flexible with communications options, try not to be proprietary.</li>
+</ul>
+
+<h1 id="outside-in-testing">Outside-in testing</h1>
+
+<p>Testing is expensive.
+Hardware <em>must</em> pass acceptance tests.
+Therefore start off having automated acceptance tests. These can evolve into more general end-to-end
+system tests.
+Only when you have exhausted your suppply of end-to-end tests should you move inwards to do more
+focussed module and unit tests.</p>
+
+<p>The thinking here is that the end-to-end tests will test everything else by implication, not with the
+same degree of repeatability or control, but the functionality will be tested.</p>
+
+<p>At the end of the day, the product is what matters.</p>
+
+</div>
+
+
+        
+<div class="section bottom-menu">
+    
+<hr />
+<p>
+
+
+    
+        <a href="/posts">back</a>
+        
+            &#183;
+        
+    
+
+    
+        
+            <a href="/posts">
+                Articles
+            </a>
+        
+    
+    
+        
+            &#183; 
+            <a href="/about">
+                Who am I?
+            </a>
+        
+    
+    &#183; 
+    <a href="http://BlockWorks.co/">
+        
+    </a>
+
+</p>
+</div>
+
+
+        <div class="section footer"></div>
+    </div>
+</body>
+
+</html>

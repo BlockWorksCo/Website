@@ -35,18 +35,18 @@
     
     <title>
         
-        LowPower
+        Low power software architecture
         
     </title>
 </head>
 
 <body>
     <div class="wrap">
-        <div class="section" id="title">LowPower</div>
+        <div class="section" id="title">Low power software architecture</div>
 
         
 <div class="section" id="content">
-    Mon Jan 21, 2019 &#183; 176 words
+    Mon Jan 21, 2019 &#183; 466 words
     
     <div class="tag-container">
         
@@ -61,38 +61,79 @@
     <hr/>
     
 
-<h1 id="characteristics-of-low-power-systems">Characteristics of low-power systems</h1>
+<p>Many devices these days are battery powered. Being battery powered requires that we create software to make
+the most possible use of the battery.
+Software for low-power devices behaves very differently to normal software in a few regards:</p>
 
 <ul>
-<li>Periodic operation.</li>
+<li>Spend most most of its time in low-power-mode (or even off).</li>
+<li>Startup very quickly.</li>
+<li>Shutdown very quickly.</li>
+<li>Devices must be off by default and only turned on while used.</li>
+<li>Power rails for devices must be under the control of the software.</li>
+<li>Communicate as infrequently as possible.</li>
+<li>Never busy-wait.</li>
+<li>Enter low-power-mode in the idle task.</li>
+<li>Interrupt driven.</li>
+<li>Store as little as possible (storage devices are power hungry).</li>
+<li>Store data in an appropriate manner (i.e. no filesystem).</li>
+<li>Likely super-loop driven rather than being multi-threaded.</li>
 </ul>
 
-<h1 id="key-points-from-a-software-point-of-view">Key points from a software point-of-view</h1>
+<h1 id="architecting-for-low-power-operation">Architecting for low-power operation.</h1>
+
+<p>Bearing in mind the above points, what does the typical low-power-software look like?</p>
 
 <ul>
-<li>Mostly off</li>
-<li>Appropriate application model that allows a low-power mode of operation.</li>
-<li>Asunchronous APIs that allow slow response.</li>
-<li>Spend the most time possible in the deepest possible sleep mode (preferably powered-off).</li>
-<li>Start-up quickly</li>
-<li>Shutdown quickly</li>
-<li>Turn on as few devices as possible for the job at hand.</li>
-<li>Turn off the devices (or place them into low-power mode) as soon as the need for them is complete.</li>
-<li>Don’t transmit or receive if possible.</li>
-<li>Transmit in an efficient way avoiding collisions and retries.</li>
-<li>Don’t store data on FLASH is possible, FLASH erases are expensive in both power and time.</li>
-<li>Be deterministic in time and performance, to allow for battery-life to be estimated accurately.</li>
-<li>When communicating, communicate over as few hops as possible.</li>
-<li>Use appropriate data storage mechanisms (i.e. filesystems are generic, but far too complex and non-deterministic for a logging application).</li>
-<li>Software control over power-rails to devices (and appropriate segmentation of power-rails) is important to allow devices to be truly ‘off’.</li>
+<li>99% of the time is spent in the deepest low-power-mode possible, generally with no RAM retention. This means
+you&rsquo;re likely to be booting every time you want to do anything.</li>
+<li>Triggered to wake up by an interrupt, probably from an external device such as an RTC or a button generating an edge
+on a GPIO.</li>
+<li>The startup code must first discover <em>why</em> it was woken up. From this it can determine the minimum amount of work that
+needs to be performed. Note that this is <em>before</em> normal initialisation.</li>
+<li>Initialise devices and drivers as needed for the current mode.</li>
+<li>Perform business logic and respond to the event appropriate to the mode.</li>
+<li>Store any required data in the most appropriate place (RAM?, EEPROM?, FLASH?)</li>
+<li>Setup trigger events for the next wake-period.</li>
+<li>Enter low-power-mode or turn off.</li>
 </ul>
 
-<h1 id="examples">Examples</h1>
+<h1 id="application-level-design-for-low-power-systems">Application-level design for low-power systems</h1>
 
 <ul>
-<li>Doorbell</li>
-<li>Watch</li>
-<li>Gas meter</li>
+<li>Asynchronous communication; allow the device to respond in <em>its</em> own time, not the servers.</li>
+<li>Infrequent communication; Communication is generally power-hungry (i.e. radio)</li>
+<li>Communication should be driven from device, rather than from server.</li>
+<li>Event driven; software operations can be triggerred from timers, buttons, sensors, etc as well as internal events.</li>
+<li>Minimal storage; there are tradeoffs to discuss here regarding whether to store data or transfer it off-device. There
+are tradeoffs aplenty here.</li>
+<li>Deterministic behaviour; Being predictable is important in order to be able to predict battery-life. This requires
+a known current-draw from the system. Often, the charactersistics of batteries power-loss are not able to be monitored
+so their life has to be predicted. This requires knowing <em>exactly</em> how the device behaves.</li>
+</ul>
+
+<h1 id="trade-offs">Trade offs</h1>
+
+<ul>
+<li>Storage versus communication.</li>
+<li>Deep-sleep versus startup/shutdown duration.</li>
+</ul>
+
+<h1 id="radio-communications-and-low-power-software">Radio communications and low-power software.</h1>
+
+<ul>
+<li>Appropriate data rate for application.</li>
+<li>Choice of protocol (ZigBee, 6LoWPAN, LoRAWAN, etc).</li>
+<li>Topology; mesh versus star.</li>
+<li>Routing complexity versus efficiency.</li>
+</ul>
+
+<h1 id="common-patterns-that-are-inappropriate-for-low-power-software">Common patterns that are inappropriate for low-power software</h1>
+
+<ul>
+<li>Filesystems; over-generic and complex.</li>
+<li>Concurrency; overhead of context-switching is wasted energy.</li>
+<li>Abstractions; every wasted instruction is wasted energy. For example, monitor the call-stack depth to identify over-abstracted code.</li>
 </ul>
 
 </div>

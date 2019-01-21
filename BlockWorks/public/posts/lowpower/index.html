@@ -35,36 +35,24 @@
     
     <title>
         
-        Domain Protection
+        LowPower
         
     </title>
 </head>
 
 <body>
     <div class="wrap">
-        <div class="section" id="title">Domain Protection</div>
+        <div class="section" id="title">LowPower</div>
 
         
 <div class="section" id="content">
-    Sun Jan 20, 2019 &#183; 17 words
+    Mon Jan 21, 2019 &#183; 176 words
     
     <div class="tag-container">
         
         <span class="tag">
-            <a href="http://BlockWorks.co/tags/exploits">
-                exploits
-            </a>
-        </span>
-        
-        <span class="tag">
-            <a href="http://BlockWorks.co/tags/robustness">
-                robustness
-            </a>
-        </span>
-        
-        <span class="tag">
-            <a href="http://BlockWorks.co/tags/security">
-                security
+            <a href="http://BlockWorks.co/tags/low-power">
+                low power
             </a>
         </span>
         
@@ -73,11 +61,38 @@
     <hr/>
     
 
-<h1 id="domain-protection">Domain Protection.</h1>
+<h1 id="characteristics-of-low-power-systems">Characteristics of low-power systems</h1>
 
 <ul>
-<li>Reduce valid address space for more targetted pointer checks.</li>
-<li>restrict path through code to known-good-paths.</li>
+<li>Periodic operation.</li>
+</ul>
+
+<h1 id="key-points-from-a-software-point-of-view">Key points from a software point-of-view</h1>
+
+<ul>
+<li>Mostly off</li>
+<li>Appropriate application model that allows a low-power mode of operation.</li>
+<li>Asunchronous APIs that allow slow response.</li>
+<li>Spend the most time possible in the deepest possible sleep mode (preferably powered-off).</li>
+<li>Start-up quickly</li>
+<li>Shutdown quickly</li>
+<li>Turn on as few devices as possible for the job at hand.</li>
+<li>Turn off the devices (or place them into low-power mode) as soon as the need for them is complete.</li>
+<li>Don’t transmit or receive if possible.</li>
+<li>Transmit in an efficient way avoiding collisions and retries.</li>
+<li>Don’t store data on FLASH is possible, FLASH erases are expensive in both power and time.</li>
+<li>Be deterministic in time and performance, to allow for battery-life to be estimated accurately.</li>
+<li>When communicating, communicate over as few hops as possible.</li>
+<li>Use appropriate data storage mechanisms (i.e. filesystems are generic, but far too complex and non-deterministic for a logging application).</li>
+<li>Software control over power-rails to devices (and appropriate segmentation of power-rails) is important to allow devices to be truly ‘off’.</li>
+</ul>
+
+<h1 id="examples">Examples</h1>
+
+<ul>
+<li>Doorbell</li>
+<li>Watch</li>
+<li>Gas meter</li>
 </ul>
 
 </div>

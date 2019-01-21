@@ -6,9 +6,91 @@
     <description>Recent content in Tags on BlockWorks Co</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Sun, 20 Jan 2019 19:14:13 +0000</lastBuildDate>
     
 	<atom:link href="http://BlockWorks.co/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Build</title>
+      <link>http://BlockWorks.co/tags/build/</link>
+      <pubDate>Sun, 20 Jan 2019 19:14:13 +0000</pubDate>
+      
+      <guid>http://BlockWorks.co/tags/build/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ci</title>
+      <link>http://BlockWorks.co/tags/ci/</link>
+      <pubDate>Sun, 20 Jan 2019 19:14:13 +0000</pubDate>
+      
+      <guid>http://BlockWorks.co/tags/ci/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Error Handling</title>
+      <link>http://BlockWorks.co/tags/error-handling/</link>
+      <pubDate>Sun, 20 Jan 2019 19:14:13 +0000</pubDate>
+      
+      <guid>http://BlockWorks.co/tags/error-handling/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Exploits</title>
+      <link>http://BlockWorks.co/tags/exploits/</link>
+      <pubDate>Sun, 20 Jan 2019 19:14:13 +0000</pubDate>
+      
+      <guid>http://BlockWorks.co/tags/exploits/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Low Power</title>
+      <link>http://BlockWorks.co/tags/low-power/</link>
+      <pubDate>Mon, 21 Jan 2019 17:30:54 +0000</pubDate>
+      
+      <guid>http://BlockWorks.co/tags/low-power/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Robustness</title>
+      <link>http://BlockWorks.co/tags/robustness/</link>
+      <pubDate>Sun, 20 Jan 2019 19:14:13 +0000</pubDate>
+      
+      <guid>http://BlockWorks.co/tags/robustness/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Security</title>
+      <link>http://BlockWorks.co/tags/security/</link>
+      <pubDate>Sun, 20 Jan 2019 19:14:13 +0000</pubDate>
+      
+      <guid>http://BlockWorks.co/tags/security/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Static Analysis</title>
+      <link>http://BlockWorks.co/tags/static-analysis/</link>
+      <pubDate>Sun, 20 Jan 2019 19:14:13 +0000</pubDate>
+      
+      <guid>http://BlockWorks.co/tags/static-analysis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Testing</title>
+      <link>http://BlockWorks.co/tags/testing/</link>
+      <pubDate>Sun, 20 Jan 2019 19:14:13 +0000</pubDate>
+      
+      <guid>http://BlockWorks.co/tags/testing/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

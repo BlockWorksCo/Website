@@ -6,10 +6,30 @@
     <description>Recent content in Posts on BlockWorks Co</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 21 Jan 2019 22:24:08 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 22 Jan 2019 22:28:11 +0000</lastBuildDate>
     
 	<atom:link href="http://BlockWorks.co/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Characteristics of embedded systems</title>
+      <link>http://BlockWorks.co/posts/characteristicsofembeddedsystems/</link>
+      <pubDate>Tue, 22 Jan 2019 22:28:11 +0000</pubDate>
+      
+      <guid>http://BlockWorks.co/posts/characteristicsofembeddedsystems/</guid>
+      <description>What is an embedded system? Lets have some examples:
+ Electricity meter Watch TV Fridge Broadband router Washing machine Hearing aid Radar system Mobile base staotion HFT (High Frequency Trading) system.  Possible characteristics Different people have different definitions of what constitutes an embedded system. They tend to imply one of the following aspects.
+ Resource constrained? Low power? Cheap? mass produced? single purpose? No user interface (headless)? Real-time?  There is a difference here in the technical definition and the common use.</description>
+    </item>
+    
+    <item>
+      <title>Error recovery in embedded systems</title>
+      <link>http://BlockWorks.co/posts/errorrecovery/</link>
+      <pubDate>Tue, 22 Jan 2019 22:26:21 +0000</pubDate>
+      
+      <guid>http://BlockWorks.co/posts/errorrecovery/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Design for test</title>

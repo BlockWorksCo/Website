@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+
+<meta name="description" content="Call me Sam, a theme for Hugo.">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:domain" content="http://BlockWorks.co/">
+
+<meta name="twitter:image" content="http://BlockWorks.co/tn.png">
+<meta name="twitter:title" property="og:title" itemprop="title name" content="BlockWorks Co">
+<meta name="twitter:description" property="og:description" itemprop="description" content="Call me Sam, a theme for Hugo.">
+<meta name="og:type" content="website">
+<meta name="og:url" content="http://BlockWorks.co/">
+<meta name="og:image" itemprop="image primaryImageOfPage" content="http://BlockWorks.co/tn.png">
+
+<link rel="shortcut icon" href="http://BlockWorks.co/favicon.ico" id="favicon">
+<link rel="stylesheet" href="http://BlockWorks.co/css/style.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Didact+Gothic">
+
+
+    
+
+    
+    
+    
+    <title>
+        
+        Characteristics of embedded systems
+        
+    </title>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="section" id="title">Characteristics of embedded systems</div>
+
+        
+<div class="section" id="content">
+    Tue Jan 22, 2019 &#183; 553 words
+    
+    <hr/>
+    
+
+<p>What is an embedded system? Lets have some examples:</p>
+
+<ul>
+<li>Electricity meter</li>
+<li>Watch</li>
+<li>TV</li>
+<li>Fridge</li>
+<li>Broadband router</li>
+<li>Washing machine</li>
+<li>Hearing aid</li>
+<li>Radar system</li>
+<li>Mobile base staotion</li>
+<li>HFT (High Frequency Trading) system.</li>
+</ul>
+
+<h1 id="possible-characteristics">Possible characteristics</h1>
+
+<p>Different people have different definitions of what constitutes an embedded system.
+They tend to imply one of the following aspects.</p>
+
+<ul>
+<li>Resource constrained?</li>
+<li>Low power?</li>
+<li>Cheap?</li>
+<li>mass produced?</li>
+<li>single purpose?</li>
+<li>No user interface (headless)?</li>
+<li>Real-time?</li>
+</ul>
+
+<p>There is a difference here in the technical definition and the common use.
+I would argue that for a strict technical definition, a sensible definition is that embedded systems are:</p>
+
+<p><strong><em>&ldquo;An integral part of another system, single purpose and not exposed for general use.&rdquo;</em></strong></p>
+
+<p>This allows for example, a high throughput radar processing system to be classified as an embedded system
+(which it is) or even the HFT example.
+Where then is the distinction between those and a typical server which are generally headless, single-purpose
+and quite often part of a larger system (of servers or networks)? These type of systems certainly aren&rsquo;t
+resource-constrained (generally), cheap, real-time or low-power.</p>
+
+<p>I would argue that the technically correct definition is far too broad to be useful</p>
+
+<p>On the other hand, the common use definition of embedded systems is something like the following:</p>
+
+<p><strong><em>&ldquo;Embedded systems are resource-constrained microcontroller based systems&rdquo;</em></strong></p>
+
+<p>I think more useful phrases are:</p>
+
+<ul>
+<li>Resource-constrained systems.</li>
+<li>Cost-limited systems</li>
+<li>Headless systems.</li>
+<li>Single-purpose.</li>
+</ul>
+
+<p>These could be combined, so you could for example classify a hearing aid as a &ldquo;headless, resource-constrained
+system&rdquo; whereas a radar system would be a &ldquo;headless, single-purpose system&rdquo;.</p>
+
+<p>These definitions get to the core of what is different about these types of system, they
+imply different behaviours to &ldquo;typical&rdquo; software.</p>
+
+<h2 id="resource-constrained-systems">Resource-constrained systems</h2>
+
+<p>Resources in this sense can be any (or all) of:</p>
+
+<ul>
+<li>Energy.</li>
+<li>RAM.</li>
+<li>Storage.</li>
+<li>Processing power.</li>
+<li>Communications throughput.</li>
+</ul>
+
+<p>The implication is that a particular characteristic has been limited (intentionally or not).</p>
+
+<p>Development challenges here are with regard to minimising the use of these resources which will
+likely involve trade-offs with other desirable aspects.</p>
+
+<h2 id="cost-limited-systems">Cost-limited systems</h2>
+
+<p>Mass produced system are always built down to a cost.
+There is a direct correlation between the cost of a product and the profit made by the company.
+This implies that software for these types of devices needs to make the most of all the available
+resources (and no more) in order for the hardware cost to be minimmal.</p>
+
+<p>The key here is (cost) optimisation for the system (not just software). Software performance
+optimisation will also likely be a factor.</p>
+
+<h2 id="headless-systems">Headless systems</h2>
+
+<p>These are intended to run continuously without human (or non-human?) intervention.
+There is no user-interface, all recovery <em>must</em> be performed autommatically or the system fails.</p>
+
+<p>The emphasis in developing these type of systems is on robustness, recovery and the ability to run
+continuously.</p>
+
+<h2 id="single-purpose-systems">Single-purpose systems</h2>
+
+<p>This implies that there need be no ability to run arbitrary (user-specified) software on the system.
+This restriction allows greater optimisations to be performed such as:</p>
+
+<ul>
+<li>Reduction (or removal) of a general purpose Operating System.</li>
+<li>Specialised storage schemes instead of general purpose filesystems.</li>
+<li>Freedom to remove abstractions and allow the software to become more
+tailored to the application.</li>
+</ul>
+
+<hr />
+
+<p>Of course, all the above can quite commonly be combined into a single system. these limitations
+(and freedoms) are what make embedded systems interesting.
+There are large opportunities for creative solutions to have a real impact.</p>
+
+</div>
+
+
+        
+<div class="section bottom-menu">
+    
+<hr />
+<p>
+
+
+    
+        <a href="/posts">back</a>
+        
+            &#183;
+        
+    
+
+    
+        
+            <a href="/posts">
+                Articles
+            </a>
+        
+    
+    
+        
+            &#183; 
+            <a href="/about">
+                Who am I?
+            </a>
+        
+    
+    &#183; 
+    <a href="http://BlockWorks.co/">
+        
+    </a>
+
+</p>
+</div>
+
+
+        <div class="section footer"><a href="http://BlockWorks.co">BlockWorks.co</a>, an embedded software consultancy</div>
+    </div>
+</body>
+
+</html>

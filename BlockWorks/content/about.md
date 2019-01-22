@@ -18,7 +18,7 @@ No embedded-device lives on its own, they tend to naturally be one small part of
 I consider myself a systems-focussed engineer and architect, spreading my time across most disciplines
 and the communication between them.
 My technical knowledge is both broad and deep, allowing me to match up high-level abstractions with
-low-level implemetation details to produce a more optimal system.
+low-level implementation details to produce a more optimal system.
 
 As any complex system develops, the need for testing becomes paramount, especially as the scale of the
 deployment rises. To that end, designing-for-test is an important aspect of my methodologies.

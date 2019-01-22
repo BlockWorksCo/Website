@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://BlockWorks.co/posts/characteristicsofembeddedsystems/</loc>
+    <lastmod>2019-01-22T23:31:19+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://BlockWorks.co/posts/errorrecovery/</loc>
+    <lastmod>2019-01-22T22:27:38+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://BlockWorks.co/posts/designfortest/</loc>
     <lastmod>2019-01-21T22:51:39+00:00</lastmod>
   </url>
@@ -44,7 +54,7 @@
   
   <url>
     <loc>http://BlockWorks.co/about/</loc>
-    <lastmod>2019-01-21T23:51:35+00:00</lastmod>
+    <lastmod>2019-01-22T22:50:55+00:00</lastmod>
   </url>
   
   <url>
@@ -114,7 +124,7 @@
   
   <url>
     <loc>http://BlockWorks.co/</loc>
-    <lastmod>2019-01-21T22:51:39+00:00</lastmod>
+    <lastmod>2019-01-22T23:31:19+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -161,7 +171,7 @@
   
   <url>
     <loc>http://BlockWorks.co/posts/</loc>
-    <lastmod>2019-01-21T22:51:39+00:00</lastmod>
+    <lastmod>2019-01-22T23:31:19+00:00</lastmod>
     <priority>0</priority>
   </url>
   

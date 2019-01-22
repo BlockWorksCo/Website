@@ -22,3 +22,7 @@ lastmod = ["lastmod", ":fileModTime", ":default"]
     text = "Who am I?"
 
 
+[params]
+    footerText          = "[BlockWorks.co](http://BlockWorks.co), an embedded software consultancy"
+    favicon             = "favicon.ico"
+

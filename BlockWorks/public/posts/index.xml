@@ -28,7 +28,8 @@
       <pubDate>Tue, 22 Jan 2019 22:26:21 +0000</pubDate>
       
       <guid>http://BlockWorks.co/posts/errorrecovery/</guid>
-      <description></description>
+      <description>Considering error conditions in a single-purpose, embedded system:
+ No user interaction is allowed, therefore recovery needs to be automatic. Worst case: software is not running, so hardware watchdog fallback is necessary. Hardware watchdog will reset processor, therefore the reset cycle needs to be factored in as a normal recovery mechanism. During development, we can turn off watchdog and busy-wait allowing an opportunity for a debugger to attach. This preserves processor state (stacks &amp;amp; RAM contents) for examination.</description>
     </item>
     
     <item>

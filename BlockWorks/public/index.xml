@@ -6,10 +6,20 @@
     <description>Recent content on BlockWorks Co</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 22 Jan 2019 22:28:11 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 24 Jan 2019 22:27:15 +0000</lastBuildDate>
     
 	<atom:link href="http://BlockWorks.co/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Error Detection</title>
+      <link>http://BlockWorks.co/posts/errordetection/</link>
+      <pubDate>Thu, 24 Jan 2019 22:27:15 +0000</pubDate>
+      
+      <guid>http://BlockWorks.co/posts/errordetection/</guid>
+      <description>How can we classify the various types of error that occur in embedded systems?
+ Errors in externally-sourced data (e.g. corrupt input) Errors in internally-generated data, i.e internal state (e.g. stack/RAM corruption, RAM starvation). Errors in behaviour (e.g. incomplete state machine, spurious interrupts) Errors in hardware (e.g. clock running too fast, GPIO stuck).  Why classify them? Each different type can be handled in a manner thats more appropriate.</description>
+    </item>
     
     <item>
       <title>Characteristics of embedded systems</title>
@@ -28,8 +38,9 @@
       <pubDate>Tue, 22 Jan 2019 22:26:21 +0000</pubDate>
       
       <guid>http://BlockWorks.co/posts/errorrecovery/</guid>
-      <description>Considering error conditions in a single-purpose, embedded system:
- No user interaction is allowed, therefore recovery needs to be automatic. Worst case: software is not running, so hardware watchdog fallback is necessary. Hardware watchdog will reset processor, therefore the reset cycle needs to be factored in as a normal recovery mechanism. During development, we can turn off watchdog and busy-wait allowing an opportunity for a debugger to attach. This preserves processor state (stacks &amp;amp; RAM contents) for examination.</description>
+      <description>Considering a typical single-purpose, embedded system, likely running a microcontroller:
+What happens when we detect a fault condition?
+ No user interaction is allowed, therefore recovery needs to be automatic. Worst case: software is not running, so hardware watchdog fallback is necessary. Hardware watchdog will reset processor, therefore the reset cycle needs to be factored in as a normal recovery mechanism. During development, we can turn off watchdog and busy-wait allowing an opportunity for a debugger to attach.</description>
     </item>
     
     <item>

@@ -46,7 +46,7 @@
 
         
 <div class="section" id="content">
-    Mon Jan 21, 2019 &#183; 462 words
+    Mon Jan 21, 2019 &#183; 490 words
     
     <div class="tag-container">
         
@@ -110,6 +110,8 @@ are tradeoffs aplenty here.</li>
 <li>Deterministic behaviour; Being predictable is important in order to be able to predict battery-life. This requires
 a known current-draw from the system. Often, the charactersistics of batteries power-loss are not able to be monitored
 so their life has to be predicted. This requires knowing <em>exactly</em> how the device behaves.</li>
+<li>Timeouts need to be short and appropriate. Think what condition you&rsquo;re trying to catch. You don&rsquo;t want to stay awake waiting for
+an event that will never happen.</li>
 </ul>
 
 <h1 id="trade-offs">Trade offs</h1>

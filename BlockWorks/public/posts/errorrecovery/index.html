@@ -46,12 +46,14 @@
 
         
 <div class="section" id="content">
-    Tue Jan 22, 2019 &#183; 737 words
+    Tue Jan 22, 2019 &#183; 839 words
     
     <hr/>
     
 
-<p>Considering error conditions in a single-purpose, embedded system:</p>
+<p>Considering a typical single-purpose, embedded system, likely running a microcontroller:</p>
+
+<p>What happens when we detect a fault condition?</p>
 
 <ul>
 <li>No user interaction is allowed, therefore recovery needs to be automatic.</li>
@@ -60,13 +62,14 @@
 recovery mechanism.</li>
 <li>During development, we can turn off watchdog and busy-wait allowing an opportunity for a debugger to attach. This
 preserves processor state (stacks &amp; RAM contents) for examination.</li>
-<li>Boot time must be minimised as this is now a normal recovery mechanism.</li>
+<li>Boot time is typically very quick (100&rsquo;s of ms) and must be minimised as this is now a normal recovery mechanism.</li>
 <li>Low-power wake-cycle is also a natural reset-cycle and also requires boot time to be minimised.</li>
 </ul>
 
 <h1 id="live-recovery">Live recovery</h1>
 
-<p>Recovery using normal program control flow (i.e. without resets).</p>
+<p>Live recovery is attempting to handle recovery using normal program control flow (i.e. without resets).
+This typically leads to deep highly nested code flow as eachkm</p>
 
 <h1 id="reset-recovery">Reset recovery.</h1>
 
@@ -115,6 +118,16 @@ feasible to attempt to craft a recovery path from all of them; so don&rsquo;t. J
 <p>The intention is that the above code will be called from any assert failures or exception handlers
 where live-recovery is not an option.</p>
 
+<h1 id="how-do-we-persist-data-across-a-reset">How do we persist data across a reset?</h1>
+
+<ul>
+<li>In linker, allocate a &lsquo;noinit&rsquo; RAM location.</li>
+<li>In PANIC(), copy the error message into the noinit area.</li>
+<li>On startup, examine the noinit area for any messages and examine the startup flags for watchdog indication.</li>
+</ul>
+
+<h1 id="benefits">Benefits</h1>
+
 <p>Normalisation of the reset path seems antithetical to good software development practice, but in fact it is not.
 There are numerous benefits:</p>
 
@@ -157,6 +170,7 @@ being unused (most of the time).</p>
 <h1 id="debugging-a-fault">Debugging a fault</h1>
 
 <ul>
+<li>Detect fault condition.</li>
 <li>Call PANIC.</li>
 <li>Attach debugger.</li>
 <li>Pause processor.</li>
@@ -221,6 +235,10 @@ back into the faulting-code.</li>
     theCallback( theData );
 }
 </code></pre>
+
+<h1 id="how-do-we-make-this-testable">How do we make this testable?</h1>
+
+<p>We need to be able to test these paths, so how can we do this?</p>
 
 <p><em><em>Reset is your friend!</em></em></p>
 

@@ -46,7 +46,7 @@
 
         
 <div class="section" id="content">
-    Tue Jan 22, 2019 &#183; 739 words
+    Tue Jan 22, 2019 &#183; 737 words
     
     <hr/>
     
@@ -170,11 +170,11 @@ back into the faulting-code.</li>
 
 <h2 id="live-recovery-1">Live recovery</h2>
 
-<pre><code>bool myFoo(int input)
+<pre><code>bool myFoo(int state)
 {
-    if(input &gt; 0)
+    if(state &gt; 0)
     {
-        if(input &lt; 100)
+        if(state &lt; 100)
         {
             if(theData != NULL)
             {
@@ -211,10 +211,10 @@ back into the faulting-code.</li>
 
 <h2 id="reset-recovery-1">Reset-recovery</h2>
 
-<pre><code>void myFoo(int input)
+<pre><code>void myFoo(int state)
 {
-    PANIC_IF( input&lt;0, &quot;input too small!&quot; );
-    PANIC_IF( input&gt;=100, &quot;input too great!&quot; );
+    PANIC_IF( state&lt;0, &quot;state out-of-range!&quot; );
+    PANIC_IF( state&gt;=100, &quot;input out-of-range&quot; );
     PANIC_IF( theData == NULL, &quot;data not set!&quot; );
     PANIC_IF( theCallback == NULL, &quot;fn not set&quot;);
 

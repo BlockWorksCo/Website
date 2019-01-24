@@ -93,8 +93,8 @@ feasible to attempt to craft a recovery path from all of them; so don&rsquo;t. J
     // Don't let anything else run.
     disableInterrupts();
 
-    // Log message for startup routine to output
-    memcpy(&amp;noInitMessage, message, messageLength);
+    // Log message to be output at startup
+    memcpy(&amp;noInitMsg, message, messageLength);
 
     // Don't allow the compiler to optimise out 
     // the return code.

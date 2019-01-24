@@ -46,7 +46,7 @@
 
         
 <div class="section" id="content">
-    Tue Jan 22, 2019 &#183; 751 words
+    Tue Jan 22, 2019 &#183; 739 words
     
     <hr/>
     
@@ -185,25 +185,25 @@ back into the faulting-code.</li>
                 }
                 else
                 {
-                    LOG_ERROR(&quot;callback not set!&quot;);
+                    maybeCallADefault();
                     return false;
                 }
             }
             else
             {
-                LOG_ERROR(&quot;date hasn't been set!&quot;);
+                tryAndRecover();
                 return false;
             }
         }
         else
         {
-            LOG_ERROR(&quot;input too great!&quot;);
+            someRecoveryAction();
             return false;
         }
     }
     else
     {
-        LOG_ERROR(&quot;input too small!&quot;);
+        anotherRecoveryAction();
         return false;
     }
 }
@@ -215,8 +215,8 @@ back into the faulting-code.</li>
 {
     PANIC_IF( input&lt;0, &quot;input too small!&quot; );
     PANIC_IF( input&gt;=100, &quot;input too great!&quot; );
-    PANIC_IF( theData == NULL, &quot;data hasn't been set!&quot; );
-    PANIC_IF( theCallback == NULL, &quot;callback hasn't been set!&quot; );
+    PANIC_IF( theData == NULL, &quot;data not set!&quot; );
+    PANIC_IF( theCallback == NULL, &quot;fn not set&quot;);
 
     theCallback( theData );
 }

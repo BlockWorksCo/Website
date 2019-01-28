@@ -17,10 +17,10 @@
       <pubDate>Sun, 27 Jan 2019 19:59:54 +0000</pubDate>
       
       <guid>http://BlockWorks.co/posts/complexity/</guid>
-      <description>Inherent complexity Given a task to solve, the inherent complexity of the problem is a statement oabout how complex the problem is, not about how complex your solution to the problem is.
-Accidental complexity The accidental complexity of a task is a statement about how much complexity your solution has added on top of the inherent complexity.
-Good, well-engineered software should aim to minimise the accidental complexity.
-How do we do this?</description>
+      <description>Inherent complexity (a.k.a. Essential complexity)
+Given a task to solve, the inherent complexity of the problem is a statement about how complex the problem is, not about how complex your solution to the problem is.
+This is the complexity of the problem domain. You cannot do anything to change this.
+Accidental complexity The accidental complexity of a task on the other hand is a statement about how much complexity your solution has added on top of the inherent complexity.</description>
     </item>
     
     <item>

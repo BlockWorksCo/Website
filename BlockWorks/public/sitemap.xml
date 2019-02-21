@@ -3,8 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://BlockWorks.co/posts/cognitiveload/</loc>
+    <lastmod>2019-02-21T00:05:56+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://BlockWorks.co/posts/complexity/</loc>
-    <lastmod>2019-01-28T23:03:45+00:00</lastmod>
+    <lastmod>2019-01-29T20:06:19+00:00</lastmod>
   </url>
   
   <url>
@@ -144,13 +149,13 @@
   
   <url>
     <loc>http://BlockWorks.co/</loc>
-    <lastmod>2019-01-28T23:03:45+00:00</lastmod>
+    <lastmod>2019-02-21T00:05:56+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://BlockWorks.co/tags/blog/</loc>
-    <lastmod>2019-01-28T23:03:45+00:00</lastmod>
+    <lastmod>2019-01-29T20:06:19+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -197,7 +202,7 @@
   
   <url>
     <loc>http://BlockWorks.co/posts/</loc>
-    <lastmod>2019-01-28T23:03:45+00:00</lastmod>
+    <lastmod>2019-02-21T00:05:56+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -221,7 +226,7 @@
   
   <url>
     <loc>http://BlockWorks.co/tags/story/</loc>
-    <lastmod>2019-01-28T23:03:45+00:00</lastmod>
+    <lastmod>2019-01-29T20:06:19+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -233,7 +238,7 @@
   
   <url>
     <loc>http://BlockWorks.co/tags/</loc>
-    <lastmod>2019-01-28T23:03:45+00:00</lastmod>
+    <lastmod>2019-01-29T20:06:19+00:00</lastmod>
     <priority>0</priority>
   </url>
   

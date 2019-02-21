@@ -6,10 +6,21 @@
     <description>Recent content on BlockWorks Co</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 27 Jan 2019 19:59:54 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 17 Feb 2019 22:21:33 +0000</lastBuildDate>
     
 	<atom:link href="http://BlockWorks.co/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Cognitive load</title>
+      <link>http://BlockWorks.co/posts/cognitiveload/</link>
+      <pubDate>Sun, 17 Feb 2019 22:21:33 +0000</pubDate>
+      
+      <guid>http://BlockWorks.co/posts/cognitiveload/</guid>
+      <description>The concept of cognitive load comes from psychology and refers to the amount of effort required to maintain items in working memory.
+Our working memory has its limits, generally we can hold between 5 and 9 things in memory at one time.
+The process of software development relies heavily on the developer understanding large portions of the codebase and doing this requires them to juggle many quite abstract concepts in their head simultaneously.</description>
+    </item>
     
     <item>
       <title>Complexity</title>

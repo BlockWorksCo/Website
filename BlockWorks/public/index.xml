@@ -6,10 +6,23 @@
     <description>Recent content on BlockWorks Co</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 17 Feb 2019 22:21:33 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 01 Mar 2019 22:05:50 +0000</lastBuildDate>
     
 	<atom:link href="http://BlockWorks.co/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Debugging Hard Faults</title>
+      <link>http://BlockWorks.co/posts/debugginghardfaults/</link>
+      <pubDate>Fri, 01 Mar 2019 22:05:50 +0000</pubDate>
+      
+      <guid>http://BlockWorks.co/posts/debugginghardfaults/</guid>
+      <description>A lot of developers are afraid of hard-faults or exceptions happening in their software, but they don&amp;rsquo;t need to be. Quite often, (though not always) they can be relatively easy problems to solve precisely because the hardware has frozen the machine state at the exact point the problem occurred.
+What do we mean by machine-state?
+two stacks
+Cortex-M example bug other architectures are similar.
+ vois HardFault_Handler() { #ifdef DEBUG // In debug mode, put a breakpoint on here, // disable the watchdog allowing you opportunity // to debug te problem.</description>
+    </item>
     
     <item>
       <title>Cognitive load</title>

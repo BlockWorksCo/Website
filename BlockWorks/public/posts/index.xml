@@ -21,7 +21,7 @@
 What do we mean by machine-state?
 two stacks
 Cortex-M example bug other architectures are similar.
- vois HardFault_Handler() { #ifdef DEBUG // In debug mode, put a breakpoint on here, // disable the watchdog allowing you opportunity // to debug te problem.</description>
+void HardFault_Handler() { #ifdef DEBUG  // In debug mode, put a breakpoint on here,  // disable the watchdog allowing you opportunity  // to debug te problem.</description>
     </item>
     
     <item>

@@ -5,6 +5,9 @@ theme = "sam"
 description = "Embedded and real-time software development"
 enableGitInfo = true
 enableRobotsTXT = true
+pygmentsUseClasses = true
+pygmentsUseClassic = false
+pygmentsCodefences = true
 
 [frontmatter]
 lastmod = ["lastmod", ":fileModTime", ":default"]
@@ -25,4 +28,8 @@ lastmod = ["lastmod", ":fileModTime", ":default"]
 [params]
     footerText          = "[BlockWorks.co](http://BlockWorks.co), an embedded software consultancy"
     favicon             = "favicon.ico"
+
+[params.assets]
+customCSS = ["css/syntax.css"]
+
 

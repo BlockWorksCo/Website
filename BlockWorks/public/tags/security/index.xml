@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>security on BlockWorks Co</title>
+    <link>http://BlockWorks.co/tags/security/</link>
+    <description>Recent content in security on BlockWorks Co</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 20 Jan 2019 19:14:13 +0000</lastBuildDate>
+    
+	<atom:link href="http://BlockWorks.co/tags/security/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Domain Protection</title>
+      <link>http://BlockWorks.co/posts/domainprotection/</link>
+      <pubDate>Sun, 20 Jan 2019 19:14:13 +0000</pubDate>
+      
+      <guid>http://BlockWorks.co/posts/domainprotection/</guid>
+      <description>Domain Protection.  Reduce valid address space for more targetted pointer checks. restrict path through code to known-good-paths.  </description>
+    </item>
+    
+  </channel>
+</rss>

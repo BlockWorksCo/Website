@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>static analysis on BlockWorks Co</title>
+    <link>http://BlockWorks.co/tags/static-analysis/</link>
+    <description>Recent content in static analysis on BlockWorks Co</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 20 Jan 2019 19:14:13 +0000</lastBuildDate>
+    
+	<atom:link href="http://BlockWorks.co/tags/static-analysis/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Build Time Protection</title>
+      <link>http://BlockWorks.co/posts/buildtimeprotection/</link>
+      <pubDate>Sun, 20 Jan 2019 19:14:13 +0000</pubDate>
+      
+      <guid>http://BlockWorks.co/posts/buildtimeprotection/</guid>
+      <description>Build Time Protection.  Static analysis. Simulation &amp;amp; host-based testing. Unit testing. Use C++ and vectors instead of arrays.  </description>
+    </item>
+    
+  </channel>
+</rss>

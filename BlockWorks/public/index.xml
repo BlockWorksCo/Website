@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>BlockWorks Co</title>
+    <link>http://BlockWorks.co/</link>
+    <description>Recent content on BlockWorks Co</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 01 Mar 2019 22:05:50 +0000</lastBuildDate>
+    
+	<atom:link href="http://BlockWorks.co/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Debugging Hard Faults</title>
+      <link>http://BlockWorks.co/posts/debugginghardfaults/</link>
+      <pubDate>Fri, 01 Mar 2019 22:05:50 +0000</pubDate>
+      
+      <guid>http://BlockWorks.co/posts/debugginghardfaults/</guid>
+      <description>A lot of developers are afraid of hard-faults or exceptions happening in their software, but they don&#39;t need to be. Quite often, (though not always) they can be relatively easy problems to solve precisely because the hardware has frozen the machine state at the exact point the problem occurred.
+What do we mean by machine-state?
+two stacks
+Cortex-M example bug other architectures are similar.
+void HardFault_Handler() { #ifdef DEBUG // In debug mode, put a breakpoint on here,  // disable the watchdog allowing you opportunity  // to debug te problem.</description>
+    </item>
+    
+    <item>
+      <title>Cognitive load</title>
+      <link>http://BlockWorks.co/posts/cognitiveload/</link>
+      <pubDate>Sun, 17 Feb 2019 22:21:33 +0000</pubDate>
+      
+      <guid>http://BlockWorks.co/posts/cognitiveload/</guid>
+      <description>The concept of cognitive load comes from psychology and refers to the amount of effort required to maintain items in working memory.
+Our working memory has its limits, generally we can hold between 5 and 9 things in memory at one time.
+The process of software development relies heavily on the developer understanding large portions of the codebase and doing this requires them to juggle many quite abstract concepts in their head simultaneously.</description>
+    </item>
+    
+    <item>
+      <title>Complexity</title>
+      <link>http://BlockWorks.co/posts/complexity/</link>
+      <pubDate>Sun, 27 Jan 2019 19:59:54 +0000</pubDate>
+      
+      <guid>http://BlockWorks.co/posts/complexity/</guid>
+      <description>Inherent complexity (a.k.a. Essential complexity)
+Given a task to solve, the inherent complexity of the problem is a statement about how complex the problem is, not about how complex your solution to the problem is.
+This is the complexity of the problem domain. You cannot do anything to change this.
+Accidental complexity The accidental complexity of a task on the other hand is a statement about how much complexity your solution has added on top of the inherent complexity.</description>
+    </item>
+    
+    <item>
+      <title>Abstraction</title>
+      <link>http://BlockWorks.co/posts/abstraction/</link>
+      <pubDate>Sun, 27 Jan 2019 08:19:18 +0000</pubDate>
+      
+      <guid>http://BlockWorks.co/posts/abstraction/</guid>
+      <description>Abstractions should provide value for the business, because they typically harm the readbility of the codebase.
+ Will it make future code easier to write? Does it provide flexibility in a place where flexibility is needed (i.e. no one ever replaces the database).  What is commonly understood?  Sequences Grouping  &amp;ldquo;All problems in computer science can be solved by another level of indirection, except for the problem of too many layers of indirection.</description>
+    </item>
+    
+    <item>
+      <title>Use of C in the embedded world</title>
+      <link>http://BlockWorks.co/posts/useofcintheembeddedworld/</link>
+      <pubDate>Fri, 25 Jan 2019 05:55:32 +0000</pubDate>
+      
+      <guid>http://BlockWorks.co/posts/useofcintheembeddedworld/</guid>
+      <description>On the use of C in the embedded world </description>
+    </item>
+    
+    <item>
+      <title>Error Detection</title>
+      <link>http://BlockWorks.co/posts/errordetection/</link>
+      <pubDate>Thu, 24 Jan 2019 22:27:15 +0000</pubDate>
+      
+      <guid>http://BlockWorks.co/posts/errordetection/</guid>
+      <description>How can we classify the various types of error that occur in embedded systems?
+ Errors in externally-sourced data (e.g. corrupt input) Errors in internally-generated data, i.e internal state (e.g. stack/RAM corruption, RAM starvation). Errors in behaviour (e.g. incomplete state machine, spurious interrupts) Errors in hardware (e.g. clock running too fast, GPIO stuck).  Why classify them? Each different type can be handled in a manner thats more appropriate.
+Errors in externally-sourced data.</description>
+    </item>
+    
+    <item>
+      <title>Characteristics of embedded systems</title>
+      <link>http://BlockWorks.co/posts/characteristicsofembeddedsystems/</link>
+      <pubDate>Tue, 22 Jan 2019 22:28:11 +0000</pubDate>
+      
+      <guid>http://BlockWorks.co/posts/characteristicsofembeddedsystems/</guid>
+      <description>What is an embedded system? Lets have some examples:
+ Electricity meter Watch TV Fridge Broadband router Washing machine Hearing aid Radar system Mobile base staotion HFT (High Frequency Trading) system.  Possible characteristics Different people have different definitions of what constitutes an embedded system. They tend to imply one of the following aspects.
+ Resource constrained? Low power? Cheap? mass produced? single purpose? No user interface (headless)? Real-time?  There is a difference here in the technical definition and the common use.</description>
+    </item>
+    
+    <item>
+      <title>Error recovery in embedded systems</title>
+      <link>http://BlockWorks.co/posts/errorrecovery/</link>
+      <pubDate>Tue, 22 Jan 2019 22:26:21 +0000</pubDate>
+      
+      <guid>http://BlockWorks.co/posts/errorrecovery/</guid>
+      <description>Considering a typical single-purpose, embedded system, likely running a microcontroller:
+What happens when we detect a fault condition?
+ No user interaction is allowed, therefore recovery needs to be automatic. Worst case: software is not running, so hardware watchdog fallback is necessary. Hardware watchdog will reset processor, therefore the reset cycle needs to be factored in as a normal recovery mechanism. During development, we can turn off watchdog and busy-wait allowing an opportunity for a debugger to attach.</description>
+    </item>
+    
+    <item>
+      <title>Design for test</title>
+      <link>http://BlockWorks.co/posts/designfortest/</link>
+      <pubDate>Mon, 21 Jan 2019 22:24:08 +0000</pubDate>
+      
+      <guid>http://BlockWorks.co/posts/designfortest/</guid>
+      <description>Embedded systems are by definition one part of a larger device. The purpose of the software is not to stand alone but function within another device. When testing, this cannot be ignored.
+Differences from hardware The phrase &amp;ldquo;design for test&amp;rdquo; is typically applied to hardware, and to some extent this topic is a logical extension from the hardware to the software.
+When looking at hardware from a software (testing) point-of-view, there are some crticial differences:</description>
+    </item>
+    
+    <item>
+      <title>Resource constrained systems</title>
+      <link>http://BlockWorks.co/posts/resourcecontrainedsystems/</link>
+      <pubDate>Mon, 21 Jan 2019 21:15:08 +0000</pubDate>
+      
+      <guid>http://BlockWorks.co/posts/resourcecontrainedsystems/</guid>
+      <description>Embedded systems are not always resource constrained.
+ It will always be cheaper to provide less of something. Be it RAM, FLASH, processing power, peripherals, etc. Cheaper devices will always be preferable for single-use devices in mass-production.  </description>
+    </item>
+    
+    <item>
+      <title>Concurrency and threads</title>
+      <link>http://BlockWorks.co/posts/concurrency/</link>
+      <pubDate>Mon, 21 Jan 2019 20:18:15 +0000</pubDate>
+      
+      <guid>http://BlockWorks.co/posts/concurrency/</guid>
+      <description>Threads are not &amp;lsquo;free&amp;rsquo;. Threads come with significant cognitive overhead and management complexity.
+Overheads of threading  RAM usage. Context switching. Concurrency management (semaphore, mutexes, queues, etc). Startup and shutdown overhead (synchronisation).  Good reasons to use threads  When dealing with a truly asynchronous source of events (i.e. from an external device). When the workload is such that a single CPU cannot complete the operation by the deadline. To perform the oeprations of a lower-half of an interrupt handler.</description>
+    </item>
+    
+    <item>
+      <title>Super-loop vs threads</title>
+      <link>http://BlockWorks.co/posts/superloopversusthreads/</link>
+      <pubDate>Mon, 21 Jan 2019 19:07:00 +0000</pubDate>
+      
+      <guid>http://BlockWorks.co/posts/superloopversusthreads/</guid>
+      <description>A pattern that has mostly fallen out of fashion these days is the &amp;ldquo;super loop&amp;rdquo;.
+Consider a system that has numerous operations to perform. These operations are notionally decoupled and so can be run concurrently.
+The two patterns we are considering here are:
+Super loop int main() { while(true) { enterLowPowerMode(); checkConditionOne(); checkConditionTwo(); } } Threads int threadOne() { while(true) { checkConditionOne(); } } int threadTwo() { while(true) { checkConditionTwo(); } } int main() { startThread(threadOne); startThread(threadTwo); while(true) { enterLowPowerMode(); } } Both the above snippets logically do the same thing with different runtime behaviours.</description>
+    </item>
+    
+    <item>
+      <title>Low power software architecture</title>
+      <link>http://BlockWorks.co/posts/lowpower/</link>
+      <pubDate>Mon, 21 Jan 2019 17:30:54 +0000</pubDate>
+      
+      <guid>http://BlockWorks.co/posts/lowpower/</guid>
+      <description>Many devices these days are battery powered. Being battery powered requires that we create software to make the most possible use of the battery. Software for low-power devices behaves very differently to normal software in a few regards:
+ Spend most most of its time in low-power-mode (or even off). Startup very quickly. Shutdown very quickly. Devices must be off by default and only turned on while used. Power rails for devices must be under the control of the software.</description>
+    </item>
+    
+    <item>
+      <title>Accidental Corruption</title>
+      <link>http://BlockWorks.co/posts/accidentalcorruption/</link>
+      <pubDate>Sun, 20 Jan 2019 19:14:13 +0000</pubDate>
+      
+      <guid>http://BlockWorks.co/posts/accidentalcorruption/</guid>
+      <description>Accidental corruption. Considering your typical C and microcontroller based embedded application, corruption can be caused in many ways.
+Regardless of the root-cause, if corruption is detected, the only course of action is an immediate PANIC situation. Why do we PANIC? because we cannot now trust the machine state. At the point of detection we cannot know what else has been affected and for how long, therfore the only safe thing to do is PANIC our way back to safety.</description>
+    </item>
+    
+    <item>
+      <title>Ageing (wear &amp; tear)</title>
+      <link>http://BlockWorks.co/posts/wearandtear/</link>
+      <pubDate>Sun, 20 Jan 2019 19:14:13 +0000</pubDate>
+      
+      <guid>http://BlockWorks.co/posts/wearandtear/</guid>
+      <description>Embedded systems have a very close relationship with the hardware they&#39;re running on. Often, they&#39;re directly controlling or monitoring devices
+Wear and Tear.  Bad block management. Managing deficiencies in devices. Wear levelling needed to preempt issues with particular technologies. Fragmentation. Generic data structures not behaving well in bad situations. batteries dying without warning, failing to charge, overheating, failing completely. Clock drift causing clocks to be less accurate and variable. Mechanical issues; connectors bouncing and bad connections causing spikes, noise an intermittent connections  Data storage related aging issues The typical type of device on which to store data in an embedded system is NOR FLASH.</description>
+    </item>
+    
+    <item>
+      <title>Architecture for embedded systems</title>
+      <link>http://BlockWorks.co/posts/architecture/</link>
+      <pubDate>Sun, 20 Jan 2019 19:14:13 +0000</pubDate>
+      
+      <guid>http://BlockWorks.co/posts/architecture/</guid>
+      <description>Architecture  Assumptions for embedded-code. one-use, running forever (barring upgrades and resets), limited resources (RAM, performance, power, space). static. Take advantage of the embedded-assumptions and make everything you can, static. the compiler will be your friend here. reduce decisions. Anything decided at runtime that will never change is wasted energy and has potential for exploitation. code-driven, not data-driven. Data changes, code is static. therefore data is more vulnerable. determinism (response, error recovery, resource usage).</description>
+    </item>
+    
+    <item>
+      <title>Build Time Protection</title>
+      <link>http://BlockWorks.co/posts/buildtimeprotection/</link>
+      <pubDate>Sun, 20 Jan 2019 19:14:13 +0000</pubDate>
+      
+      <guid>http://BlockWorks.co/posts/buildtimeprotection/</guid>
+      <description>Build Time Protection.  Static analysis. Simulation &amp;amp; host-based testing. Unit testing. Use C++ and vectors instead of arrays.  </description>
+    </item>
+    
+    <item>
+      <title>Defense in Depth</title>
+      <link>http://BlockWorks.co/posts/defenseindepth/</link>
+      <pubDate>Sun, 20 Jan 2019 19:14:13 +0000</pubDate>
+      
+      <guid>http://BlockWorks.co/posts/defenseindepth/</guid>
+      <description>Defense in depth.  layers admit that no one mechanism will catch everything. reduce chance of widespread exploit.  &amp;quot;&amp;hellip;In terms of computer network defense, defense in depth measures should not only prevent security breaches but also buy an organization time to detect and respond to an attack and so reduce and mitigate the consequences of a breach.&amp;quot;
+(https://en.wikipedia.org/wiki/Defense_in_depth_(computing))
+&amp;ldquo;Layering security defenses in an application can reduce the chance of a successful attack.</description>
+    </item>
+    
+    <item>
+      <title>Domain Protection</title>
+      <link>http://BlockWorks.co/posts/domainprotection/</link>
+      <pubDate>Sun, 20 Jan 2019 19:14:13 +0000</pubDate>
+      
+      <guid>http://BlockWorks.co/posts/domainprotection/</guid>
+      <description>Domain Protection.  Reduce valid address space for more targetted pointer checks. restrict path through code to known-good-paths.  </description>
+    </item>
+    
+    <item>
+      <title>Error handling for embedded systems</title>
+      <link>http://BlockWorks.co/posts/errorhandling/</link>
+      <pubDate>Sun, 20 Jan 2019 19:14:13 +0000</pubDate>
+      
+      <guid>http://BlockWorks.co/posts/errorhandling/</guid>
+      <description>Error Handling and recovery. This is an important subject for any software system. No one ever intentionally designs their software to be unreliable or insecure but it does happen, despite our best intentions. Therefore we must think carefully about how we design in the ability to fail.
+First and foremost, we must acknowledge that our one subsystem is not isolated. It exists within an ecosystem. This larger connected system must be taken into account when considering failures.</description>
+    </item>
+    
+    <item>
+      <title>Error Propagation Prevention</title>
+      <link>http://BlockWorks.co/posts/errorpropagationprevention/</link>
+      <pubDate>Sun, 20 Jan 2019 19:14:13 +0000</pubDate>
+      
+      <guid>http://BlockWorks.co/posts/errorpropagationprevention/</guid>
+      <description>Error Propagation prevention. Even if one device is compromised, limit the damage so the exploit is widely useable.
+Mitigation techniques  Random stack offsetting. Random vector table location. Heap randomisation. per-device RNG, unique ID for propagation prevention.  </description>
+    </item>
+    
+    <item>
+      <title>Fault Recovery</title>
+      <link>http://BlockWorks.co/posts/recovery/</link>
+      <pubDate>Sun, 20 Jan 2019 19:14:13 +0000</pubDate>
+      
+      <guid>http://BlockWorks.co/posts/recovery/</guid>
+      <description>Recovery  Plan for reset. do it regularly, architect your system around it. test it.  </description>
+    </item>
+    
+    <item>
+      <title>Flooding Attacks</title>
+      <link>http://BlockWorks.co/posts/floodingattacks/</link>
+      <pubDate>Sun, 20 Jan 2019 19:14:13 +0000</pubDate>
+      
+      <guid>http://BlockWorks.co/posts/floodingattacks/</guid>
+      <description>Flooding attacks.  Denial of service. Interrupts Messaging interfaces. Accept that you must go lossy at some interface. Choose it and plan for it.  </description>
+    </item>
+    
+    <item>
+      <title>Heap robustness</title>
+      <link>http://BlockWorks.co/posts/heaprobustness/</link>
+      <pubDate>Sun, 20 Jan 2019 19:14:13 +0000</pubDate>
+      
+      <guid>http://BlockWorks.co/posts/heaprobustness/</guid>
+      <description>Heap Robustness.  Heap data bounds checks. Heap metadata checks. fragmentation.  </description>
+    </item>
+    
+    <item>
+      <title>Malicious Corruption</title>
+      <link>http://BlockWorks.co/posts/maliciouscorruption/</link>
+      <pubDate>Sun, 20 Jan 2019 19:14:13 +0000</pubDate>
+      
+      <guid>http://BlockWorks.co/posts/maliciouscorruption/</guid>
+      <description>Malicious corruption.  different from accidental corruption because of intent. Assume intelligence behind attacks. stack smashing. Code appears within a payload. negative indexing causes corruption of return value to cause a jump to code in payload. code corruption; dont store code in RAM if at all possible. code should be immutable if possible. XIP. vector table corruption. This is a potentially easy attack vector (overwrite a vector with own code, trigger the interrupt).</description>
+    </item>
+    
+    <item>
+      <title>Performance Issues and Enhancements</title>
+      <link>http://BlockWorks.co/posts/performanceissuesandenhancements/</link>
+      <pubDate>Sun, 20 Jan 2019 19:14:13 +0000</pubDate>
+      
+      <guid>http://BlockWorks.co/posts/performanceissuesandenhancements/</guid>
+      <description>Performance issues and enhancements.  overhead of instrumentation. MPU enhancements Periodic checking. Cant check everything on every function entry/exit but can randomly choose which checks to perform. This decreases the load at the expense of detection-latency. Dont store anything persistently until a full check has been performed.  </description>
+    </item>
+    
+    <item>
+      <title>Safe Data Storage</title>
+      <link>http://BlockWorks.co/posts/safedatastorage/</link>
+      <pubDate>Sun, 20 Jan 2019 19:14:13 +0000</pubDate>
+      
+      <guid>http://BlockWorks.co/posts/safedatastorage/</guid>
+      <description>Safe Data Structures  Safe from power-failure Safe from corruption. Safe from watchdog resets. A degree of safety from application-level via versioning and rollback  Circular buffers Log structured BLOBs Checkpointing. Performance Coordinating multiple safe data structures into a coherent whole.</description>
+    </item>
+    
+    <item>
+      <title>Stack Robustness</title>
+      <link>http://BlockWorks.co/posts/stackrobustness/</link>
+      <pubDate>Sun, 20 Jan 2019 19:14:13 +0000</pubDate>
+      
+      <guid>http://BlockWorks.co/posts/stackrobustness/</guid>
+      <description>Stack Robustness.  Stack overflow Stack underflow Stack corruption. Stack pointer corruption. pass-by-reference.  Mitigation Techniques  Stack CRC checking (cross-task corruption). stack bounds checking with an OS. random stack offsetting. Stack sanitisation. Canaries Stack-fill Correct-sizing. avoiding pass-by-reference.  </description>
+    </item>
+    
+    <item>
+      <title>Steve Tickle</title>
+      <link>http://BlockWorks.co/about/</link>
+      <pubDate>Sun, 20 Jan 2019 19:14:13 +0000</pubDate>
+      
+      <guid>http://BlockWorks.co/about/</guid>
+      <description>I&#39;m an experienced software engineer and architect with many years working with embedded, real-time and resource-constrained systems. Domains I&#39;ve worked in cover many industries from defense, smart-metering, IoT, GPS, signal processing and mobile applications.
+The intention here is to share some wisdom and best-practices that I&#39;ve picked up over my years consulting for the many clients I&#39;ve worked for.
+Though focussed on embedded/real-time work, I&#39;ve also served my time on the server and desktop side(s) to accompany the embedded devices.</description>
+    </item>
+    
+    <item>
+      <title>Version Control</title>
+      <link>http://BlockWorks.co/posts/versioncontrol/</link>
+      <pubDate>Sun, 20 Jan 2019 19:14:13 +0000</pubDate>
+      
+      <guid>http://BlockWorks.co/posts/versioncontrol/</guid>
+      <description>Version control What is released together should be versioned together
+Monorepo Multirepo  Build overhead Cognitive overhead Refactoring overhead   </description>
+    </item>
+    
+  </channel>
+</rss>

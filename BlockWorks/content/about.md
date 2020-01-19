@@ -1,5 +1,5 @@
 ---
-title: "BlockWorks Co"
+title: "Steve Tickle"
 date: 2019-01-20T19:14:13Z
 draft: false
 ---
@@ -23,7 +23,7 @@ low-level implementation details to produce a more optimal system.
 As any complex system develops, the need for testing becomes paramount, especially as the scale of the
 deployment rises. To that end, designing-for-test is an important aspect of my methodologies.
 
-If you wish to contact me for any matter, professionally or otherwise, feel free to email me (Steve@ZooKoo.com)
+If you wish to contact me for any matter, professionally or otherwise, feel free to email me (Steve@Tickle.dev)
 
 *Steve Tickle*
 

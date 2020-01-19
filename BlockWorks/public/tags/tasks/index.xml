@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tasks on BlockWorks Co</title>
+    <title>tasks on BlockWorks Co</title>
     <link>http://BlockWorks.co/tags/tasks/</link>
-    <description>Recent content in Tasks on BlockWorks Co</description>
+    <description>Recent content in tasks on BlockWorks Co</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 21 Jan 2019 20:18:15 +0000</lastBuildDate>
@@ -30,7 +30,7 @@ Overheads of threading  RAM usage. Context switching. Concurrency management (se
       <description>A pattern that has mostly fallen out of fashion these days is the &amp;ldquo;super loop&amp;rdquo;.
 Consider a system that has numerous operations to perform. These operations are notionally decoupled and so can be run concurrently.
 The two patterns we are considering here are:
-Super loop int main() { while(true) { enterLowPowerMode(); checkConditionOne(); checkConditionTwo(); } }  Threads int threadOne() { while(true) { checkConditionOne(); } } int threadTwo() { while(true) { checkConditionTwo(); } } int main() { startThread(threadOne); startThread(threadTwo); while(true) { enterLowPowerMode(); } }  Both the above snippets logically do the same thing with different runtime behaviours.</description>
+Super loop int main() { while(true) { enterLowPowerMode(); checkConditionOne(); checkConditionTwo(); } } Threads int threadOne() { while(true) { checkConditionOne(); } } int threadTwo() { while(true) { checkConditionTwo(); } } int main() { startThread(threadOne); startThread(threadTwo); while(true) { enterLowPowerMode(); } } Both the above snippets logically do the same thing with different runtime behaviours.</description>
     </item>
     
   </channel>

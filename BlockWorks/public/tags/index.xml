@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on BlockWorks Co</title>
@@ -12,7 +12,7 @@
     
     
     <item>
-      <title>Blog</title>
+      <title>blog</title>
       <link>http://BlockWorks.co/tags/blog/</link>
       <pubDate>Sun, 27 Jan 2019 19:59:54 +0000</pubDate>
       
@@ -21,88 +21,7 @@
     </item>
     
     <item>
-      <title>Build</title>
-      <link>http://BlockWorks.co/tags/build/</link>
-      <pubDate>Sun, 20 Jan 2019 19:14:13 +0000</pubDate>
-      
-      <guid>http://BlockWorks.co/tags/build/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Ci</title>
-      <link>http://BlockWorks.co/tags/ci/</link>
-      <pubDate>Mon, 21 Jan 2019 22:24:08 +0000</pubDate>
-      
-      <guid>http://BlockWorks.co/tags/ci/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Concurrency</title>
-      <link>http://BlockWorks.co/tags/concurrency/</link>
-      <pubDate>Mon, 21 Jan 2019 20:18:15 +0000</pubDate>
-      
-      <guid>http://BlockWorks.co/tags/concurrency/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Error Handling</title>
-      <link>http://BlockWorks.co/tags/error-handling/</link>
-      <pubDate>Sun, 20 Jan 2019 19:14:13 +0000</pubDate>
-      
-      <guid>http://BlockWorks.co/tags/error-handling/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Exploits</title>
-      <link>http://BlockWorks.co/tags/exploits/</link>
-      <pubDate>Sun, 20 Jan 2019 19:14:13 +0000</pubDate>
-      
-      <guid>http://BlockWorks.co/tags/exploits/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Low Power</title>
-      <link>http://BlockWorks.co/tags/low-power/</link>
-      <pubDate>Mon, 21 Jan 2019 17:30:54 +0000</pubDate>
-      
-      <guid>http://BlockWorks.co/tags/low-power/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Robustness</title>
-      <link>http://BlockWorks.co/tags/robustness/</link>
-      <pubDate>Sun, 20 Jan 2019 19:14:13 +0000</pubDate>
-      
-      <guid>http://BlockWorks.co/tags/robustness/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Security</title>
-      <link>http://BlockWorks.co/tags/security/</link>
-      <pubDate>Sun, 20 Jan 2019 19:14:13 +0000</pubDate>
-      
-      <guid>http://BlockWorks.co/tags/security/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Static Analysis</title>
-      <link>http://BlockWorks.co/tags/static-analysis/</link>
-      <pubDate>Sun, 20 Jan 2019 19:14:13 +0000</pubDate>
-      
-      <guid>http://BlockWorks.co/tags/static-analysis/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Story</title>
+      <title>story</title>
       <link>http://BlockWorks.co/tags/story/</link>
       <pubDate>Sun, 27 Jan 2019 19:59:54 +0000</pubDate>
       
@@ -111,25 +30,16 @@
     </item>
     
     <item>
-      <title>Superloop</title>
-      <link>http://BlockWorks.co/tags/superloop/</link>
-      <pubDate>Mon, 21 Jan 2019 19:07:00 +0000</pubDate>
+      <title>ci</title>
+      <link>http://BlockWorks.co/tags/ci/</link>
+      <pubDate>Mon, 21 Jan 2019 22:24:08 +0000</pubDate>
       
-      <guid>http://BlockWorks.co/tags/superloop/</guid>
+      <guid>http://BlockWorks.co/tags/ci/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Tasks</title>
-      <link>http://BlockWorks.co/tags/tasks/</link>
-      <pubDate>Mon, 21 Jan 2019 20:18:15 +0000</pubDate>
-      
-      <guid>http://BlockWorks.co/tags/tasks/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Testing</title>
+      <title>testing</title>
       <link>http://BlockWorks.co/tags/testing/</link>
       <pubDate>Mon, 21 Jan 2019 22:24:08 +0000</pubDate>
       
@@ -138,11 +48,101 @@
     </item>
     
     <item>
-      <title>Threads</title>
+      <title>concurrency</title>
+      <link>http://BlockWorks.co/tags/concurrency/</link>
+      <pubDate>Mon, 21 Jan 2019 20:18:15 +0000</pubDate>
+      
+      <guid>http://BlockWorks.co/tags/concurrency/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tasks</title>
+      <link>http://BlockWorks.co/tags/tasks/</link>
+      <pubDate>Mon, 21 Jan 2019 20:18:15 +0000</pubDate>
+      
+      <guid>http://BlockWorks.co/tags/tasks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>threads</title>
       <link>http://BlockWorks.co/tags/threads/</link>
       <pubDate>Mon, 21 Jan 2019 20:18:15 +0000</pubDate>
       
       <guid>http://BlockWorks.co/tags/threads/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>superloop</title>
+      <link>http://BlockWorks.co/tags/superloop/</link>
+      <pubDate>Mon, 21 Jan 2019 19:07:00 +0000</pubDate>
+      
+      <guid>http://BlockWorks.co/tags/superloop/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>low power</title>
+      <link>http://BlockWorks.co/tags/low-power/</link>
+      <pubDate>Mon, 21 Jan 2019 17:30:54 +0000</pubDate>
+      
+      <guid>http://BlockWorks.co/tags/low-power/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>build</title>
+      <link>http://BlockWorks.co/tags/build/</link>
+      <pubDate>Sun, 20 Jan 2019 19:14:13 +0000</pubDate>
+      
+      <guid>http://BlockWorks.co/tags/build/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>error handling</title>
+      <link>http://BlockWorks.co/tags/error-handling/</link>
+      <pubDate>Sun, 20 Jan 2019 19:14:13 +0000</pubDate>
+      
+      <guid>http://BlockWorks.co/tags/error-handling/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>exploits</title>
+      <link>http://BlockWorks.co/tags/exploits/</link>
+      <pubDate>Sun, 20 Jan 2019 19:14:13 +0000</pubDate>
+      
+      <guid>http://BlockWorks.co/tags/exploits/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>robustness</title>
+      <link>http://BlockWorks.co/tags/robustness/</link>
+      <pubDate>Sun, 20 Jan 2019 19:14:13 +0000</pubDate>
+      
+      <guid>http://BlockWorks.co/tags/robustness/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>security</title>
+      <link>http://BlockWorks.co/tags/security/</link>
+      <pubDate>Sun, 20 Jan 2019 19:14:13 +0000</pubDate>
+      
+      <guid>http://BlockWorks.co/tags/security/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>static analysis</title>
+      <link>http://BlockWorks.co/tags/static-analysis/</link>
+      <pubDate>Sun, 20 Jan 2019 19:14:13 +0000</pubDate>
+      
+      <guid>http://BlockWorks.co/tags/static-analysis/</guid>
       <description></description>
     </item>
     

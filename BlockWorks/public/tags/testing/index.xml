@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Testing on BlockWorks Co</title>
+    <title>testing on BlockWorks Co</title>
     <link>http://BlockWorks.co/tags/testing/</link>
-    <description>Recent content in Testing on BlockWorks Co</description>
+    <description>Recent content in testing on BlockWorks Co</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 21 Jan 2019 22:24:08 +0000</lastBuildDate>
@@ -28,7 +28,7 @@ When looking at hardware from a software (testing) point-of-view, there are some
       <pubDate>Sun, 20 Jan 2019 19:14:13 +0000</pubDate>
       
       <guid>http://BlockWorks.co/posts/buildtimeprotection/</guid>
-      <description> Build Time Protection.  Static analysis. Simulation &amp;amp; host-based testing. Unit testing. Use C++ and vectors instead of arrays.  </description>
+      <description>Build Time Protection.  Static analysis. Simulation &amp;amp; host-based testing. Unit testing. Use C++ and vectors instead of arrays.  </description>
     </item>
     
   </channel>

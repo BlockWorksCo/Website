@@ -49,12 +49,8 @@
     Tue Jan 22, 2019 &#183; 839 words
     
     <hr/>
-    
-
-<p>Considering a typical single-purpose, embedded system, likely running a microcontroller:</p>
-
+    <p>Considering a typical single-purpose, embedded system, likely running a microcontroller:</p>
 <p>What happens when we detect a fault condition?</p>
-
 <ul>
 <li>No user interaction is allowed, therefore recovery needs to be automatic.</li>
 <li>Worst case: software is not running, so hardware watchdog fallback is necessary.</li>
@@ -62,34 +58,26 @@
 recovery mechanism.</li>
 <li>During development, we can turn off watchdog and busy-wait allowing an opportunity for a debugger to attach. This
 preserves processor state (stacks &amp; RAM contents) for examination.</li>
-<li>Boot time is typically very quick (100&rsquo;s of ms) and must be minimised as this is now a normal recovery mechanism.</li>
+<li>Boot time is typically very quick (100's of ms) and must be minimised as this is now a normal recovery mechanism.</li>
 <li>Low-power wake-cycle is also a natural reset-cycle and also requires boot time to be minimised.</li>
 </ul>
-
 <h1 id="live-recovery">Live recovery</h1>
-
 <p>Live recovery is attempting to handle recovery using normal program control flow (i.e. without resets).
 This typically leads to deep highly nested code flow as eachkm</p>
-
 <h1 id="reset-recovery">Reset recovery.</h1>
-
 <p>Recovery using the reset mechanism to clear bad state. This is performed by the PANIC call.
 Even though we are resetting, we <em>must not</em> lose track of the fact that we had an unhandled
 condition.
 This could be logged relatively easily by</p>
-
 <p>Why is this a better option?</p>
-
 <ul>
 <li>Coming to a correct application-state from a reset is a necessity as we have to startup at some point.</li>
 <li>If we can recover from one state (the reset-state), then why should we attempt live-recovery? staying live
 does not gain us anything.</li>
 <li>There is effectively an infinity of possible bad internal states we have to recover from. It is not
-feasible to attempt to craft a recovery path from all of them; so don&rsquo;t. Just call PANIC.</li>
+feasible to attempt to craft a recovery path from all of them; so don't. Just call PANIC.</li>
 </ul>
-
 <p>What does our PANIC handler look like?</p>
-
 <pre><code>void PANIC( const char* message, 
             uint32_t messageLength)
 {
@@ -113,62 +101,54 @@ feasible to attempt to craft a recovery path from all of them; so don&rsquo;t. J
         flashLED();
     }
 }
-</code></pre>
-
-<p>The intention is that the above code will be called from any assert failures or exception handlers
+</code></pre><p>The intention is that the above code will be called from any assert failures or exception handlers
 where live-recovery is not an option.</p>
-
 <h1 id="how-do-we-persist-data-across-a-reset">How do we persist data across a reset?</h1>
-
 <ul>
 <li>In linker, allocate a &lsquo;noinit&rsquo; RAM location.</li>
 <li>In PANIC(), copy the error message into the noinit area.</li>
 <li>On startup, examine the noinit area for any messages and examine the startup flags for watchdog indication.</li>
 </ul>
-
 <h1 id="benefits">Benefits</h1>
-
 <p>Normalisation of the reset path seems antithetical to good software development practice, but in fact it is not.
 There are numerous benefits:</p>
-
 <ul>
-<li>Single recovery path. Greatly reduces the amount of code related to recovering from awkward situations.</li>
-<li>That single recovery path is the existing one that is <em>always</em> required anyway(start-up)</li>
-
-<li><p>Low-power systems <em>should be</em> normalising this path anyway as a result of their normal wake-cycle.</p></li>
-
-<li><p>Sometimes, resets are out of our control (i.e. cosmic rays corrupting RAM, power-failures, etc).</p></li>
-
-<li><p>resets may be due to bad internal-state. We cannot recover from this, neitherwe cannot allow program-execution to continue
-log resets</p></li>
+<li>
+<p>Single recovery path. Greatly reduces the amount of code related to recovering from awkward situations.</p>
+</li>
+<li>
+<p>That single recovery path is the existing one that is <em>always</em> required anyway(start-up)</p>
+</li>
+<li>
+<p>Low-power systems <em>should be</em> normalising this path anyway as a result of their normal wake-cycle.</p>
+</li>
+<li>
+<p>Sometimes, resets are out of our control (i.e. cosmic rays corrupting RAM, power-failures, etc).</p>
+</li>
+<li>
+<p>resets may be due to bad internal-state. We cannot recover from this, neitherwe cannot allow program-execution to continue
+log resets</p>
+</li>
 </ul>
-
-<p>What we&rsquo;re saying is that we treat reset as a normal part of program control flow. We can perform resets
+<p>What we're saying is that we treat reset as a normal part of program control flow. We can perform resets
 as a result of:</p>
-
 <ul>
 <li>Power cycles.</li>
 <li>Low-power wake-cycles.</li>
 <li>Exceptions.</li>
 <li>Bad internal-state.</li>
 </ul>
-
 <h1 id="how-do-we-normalise-the-reset-path">How do we normalise the reset-path?</h1>
-
 <p>Treating reset as a normal code-path means making everything robust. This particularly means:</p>
-
 <ul>
 <li>Peripheral state, i.e. floating GPIOs. Most processors will &ldquo;float&rdquo; their GPIOs during their reset period. This may have unintended
 consequences on the devices attached to them. This needs to be taken into account by the hardware design.</li>
 <li>Storage-state i.e. FLASH storage schemes. This is persistent state that crosses the reset-boundary.</li>
 <li>RAM sanitisation. Rubbish will be left in RAM, make sure we clear it out.</li>
 </ul>
-
 <p>This is <em>not</em> extra work that you have to do. This work was <em>always</em> required but was ignored due to the reset-path
 being unused (most of the time).</p>
-
 <h1 id="debugging-a-fault">Debugging a fault</h1>
-
 <ul>
 <li>Detect fault condition.</li>
 <li>Call PANIC.</li>
@@ -179,11 +159,8 @@ being unused (most of the time).</p>
 <li>Potentially return fromm the PANIC by setting the &ldquo;resumeFlag&rdquo; and stepping
 back into the faulting-code.</li>
 </ul>
-
 <h1 id="effect-on-the-codebase">Effect on the codebase</h1>
-
 <h2 id="live-recovery-1">Live recovery</h2>
-
 <pre><code>bool myFoo(int state)
 {
     if(state &gt; 0)
@@ -221,10 +198,7 @@ back into the faulting-code.</li>
         return false;
     }
 }
-</code></pre>
-
-<h2 id="reset-recovery-1">Reset-recovery</h2>
-
+</code></pre><h2 id="reset-recovery-1">Reset-recovery</h2>
 <pre><code>void myFoo(int state)
 {
     PANIC_IF( state&lt;0, &quot;state out-of-range!&quot; );
@@ -234,12 +208,8 @@ back into the faulting-code.</li>
 
     theCallback( theData );
 }
-</code></pre>
-
-<h1 id="how-do-we-make-this-testable">How do we make this testable?</h1>
-
+</code></pre><h1 id="how-do-we-make-this-testable">How do we make this testable?</h1>
 <p>We need to be able to test these paths, so how can we do this?</p>
-
 <p><em><em>Reset is your friend!</em></em></p>
 
 </div>

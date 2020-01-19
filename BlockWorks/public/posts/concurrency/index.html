@@ -71,43 +71,33 @@
     </div>
     
     <hr/>
-    
-
-<p>Threads are not &lsquo;free&rsquo;.
+    <p>Threads are not &lsquo;free&rsquo;.
 Threads come with significant cognitive overhead and management complexity.</p>
-
 <h1 id="overheads-of-threading">Overheads of threading</h1>
-
 <ul>
 <li>RAM usage.</li>
 <li>Context switching.</li>
 <li>Concurrency management (semaphore, mutexes, queues, etc).</li>
 <li>Startup and shutdown overhead (synchronisation).</li>
 </ul>
-
 <h1 id="good-reasons-to-use-threads">Good reasons to use threads</h1>
-
 <ul>
 <li>When dealing with a truly asynchronous source of events (i.e. from an external device).</li>
 <li>When the workload is such that a single CPU cannot complete the operation by the deadline.</li>
 <li>To perform the oeprations of a lower-half of an interrupt handler.</li>
 </ul>
-
 <h1 id="bad-reasons-to-use-threads">Bad reasons to use threads</h1>
-
 <ul>
 <li>To make a module decoupled and standalone.</li>
 <li>For &ldquo;securiity&rdquo;, i.e. to provide a supposed element of separation.</li>
 <li>Every module should have a thread (active objects).</li>
 <li>I like threads (seriously).</li>
 </ul>
-
 <p>In general, many embedded systems are overly-threaded. This leads to inefficient, bloated and
 overly-dynamic complex code.
 Concurrency is quite often a form of &ldquo;accidental complexity&rdquo;, i.e. complexity that is not inherent
-to the problem we&rsquo;re solving, but rather complexity we have added ourselves due to our
+to the problem we're solving, but rather complexity we have added ourselves due to our
 design.</p>
-
 <p>There are valid reasons for using threads, for example when interfacing a software-system to
 the outside world. Interactions of this form are truly asynchronous and should have threads
 associate with them.

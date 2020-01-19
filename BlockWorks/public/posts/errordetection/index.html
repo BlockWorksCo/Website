@@ -49,26 +49,19 @@
     Thu Jan 24, 2019 &#183; 307 words
     
     <hr/>
-    
-
-<p>How can we classify the various types of error that occur in embedded systems?</p>
-
+    <p>How can we classify the various types of error that occur in embedded systems?</p>
 <ul>
 <li>Errors in externally-sourced data (e.g. corrupt input)</li>
 <li>Errors in internally-generated data, i.e internal state (e.g. stack/RAM corruption, RAM starvation).</li>
 <li>Errors in behaviour (e.g. incomplete state machine, spurious interrupts)</li>
 <li>Errors in hardware (e.g. clock running too fast, GPIO stuck).</li>
 </ul>
-
 <p>Why classify them?
 Each different type can be handled in a manner thats more appropriate.</p>
-
 <h1 id="errors-in-externally-sourced-data">Errors in externally-sourced data.</h1>
-
 <p>Can be caught by validation checks
 Need to be complete. <em>must</em> strictly control our input.
 One of two recovery options, &ldquo;silent drop&rdquo; or &ldquo;log and continue&rdquo;.</p>
-
 <ul>
 <li>Out of range dates in input fields.</li>
 <li>CRC errors.</li>
@@ -76,50 +69,38 @@ One of two recovery options, &ldquo;silent drop&rdquo; or &ldquo;log and continu
 <li>Text exceeds maximum length.</li>
 <li>Wrong password or data decrypt failed.</li>
 </ul>
-
 <h1 id="errors-in-internally-generated-data">Errors in internally-generated data</h1>
-
 <p>This is the internal state of the application, and tends to be contained on the stack or in global variables.
 The implication here is that the software itself has corrupted its internal state and hence cannot
 recover.
 Unsafe to continue, must reset to restore a valid internal state.</p>
-
 <ul>
 <li>State machine variable of an unhandled type (i.e. default case in a switch).</li>
 <li>Bad pointers (strict pointer checks).</li>
 <li>Stack-check failure.</li>
 <li>Failure to &lsquo;give&rsquo; a semaphore.</li>
 </ul>
-
 <h1 id="errors-in-behaviour">Errors in behaviour</h1>
-
 <p>These tend to be the incorrect behaviour of the application, &lsquo;designed-in&rsquo;.
 Unrecoverable, must log and reset.</p>
-
 <ul>
 <li>Memory allocation failure.</li>
 <li>Hard-fault (or double-fault, memmanage fault, etc).</li>
 <li>Interrupt rate too-high (CPU starvation).</li>
 <li>Deadlock between tasks.</li>
 </ul>
-
 <h1 id="errors-in-hardware">Errors in hardware</h1>
-
 <p>Requires application-level recovery.
 Application can invoke particular behaviours to attempt recovery.
 Likely go into a &lsquo;safe mode&rsquo;.</p>
-
 <ul>
 <li>FLASH sector erases can be recovered with more erase cycles.</li>
 <li>RTC failure can be set repeatedly by communication with time server.</li>
 <li>Modem goes mmute, maybe attempt to use reset line to recover it before retry.</li>
 </ul>
-
 <h1 id="chains-of-errors">Chains of errors</h1>
-
 <p>One type of error can trigger another.
 Should ideally be detected at first error.</p>
-
 <p>For example, a</p>
 
 </div>

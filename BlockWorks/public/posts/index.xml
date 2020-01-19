@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on BlockWorks Co</title>
@@ -17,11 +17,11 @@
       <pubDate>Fri, 01 Mar 2019 22:05:50 +0000</pubDate>
       
       <guid>http://BlockWorks.co/posts/debugginghardfaults/</guid>
-      <description>A lot of developers are afraid of hard-faults or exceptions happening in their software, but they don&amp;rsquo;t need to be. Quite often, (though not always) they can be relatively easy problems to solve precisely because the hardware has frozen the machine state at the exact point the problem occurred.
+      <description>A lot of developers are afraid of hard-faults or exceptions happening in their software, but they don&#39;t need to be. Quite often, (though not always) they can be relatively easy problems to solve precisely because the hardware has frozen the machine state at the exact point the problem occurred.
 What do we mean by machine-state?
 two stacks
 Cortex-M example bug other architectures are similar.
-void HardFault_Handler() { #ifdef DEBUG  // In debug mode, put a breakpoint on here,  // disable the watchdog allowing you opportunity  // to debug te problem.</description>
+void HardFault_Handler() { #ifdef DEBUG // In debug mode, put a breakpoint on here,  // disable the watchdog allowing you opportunity  // to debug te problem.</description>
     </item>
     
     <item>
@@ -63,7 +63,7 @@ Accidental complexity The accidental complexity of a task on the other hand is a
       <pubDate>Fri, 25 Jan 2019 05:55:32 +0000</pubDate>
       
       <guid>http://BlockWorks.co/posts/useofcintheembeddedworld/</guid>
-      <description> On the use of C in the embedded world </description>
+      <description>On the use of C in the embedded world </description>
     </item>
     
     <item>
@@ -73,7 +73,8 @@ Accidental complexity The accidental complexity of a task on the other hand is a
       
       <guid>http://BlockWorks.co/posts/errordetection/</guid>
       <description>How can we classify the various types of error that occur in embedded systems?
- Errors in externally-sourced data (e.g. corrupt input) Errors in internally-generated data, i.e internal state (e.g. stack/RAM corruption, RAM starvation). Errors in behaviour (e.g. incomplete state machine, spurious interrupts) Errors in hardware (e.g. clock running too fast, GPIO stuck).  Why classify them? Each different type can be handled in a manner thats more appropriate.</description>
+ Errors in externally-sourced data (e.g. corrupt input) Errors in internally-generated data, i.e internal state (e.g. stack/RAM corruption, RAM starvation). Errors in behaviour (e.g. incomplete state machine, spurious interrupts) Errors in hardware (e.g. clock running too fast, GPIO stuck).  Why classify them? Each different type can be handled in a manner thats more appropriate.
+Errors in externally-sourced data.</description>
     </item>
     
     <item>
@@ -138,7 +139,7 @@ Overheads of threading  RAM usage. Context switching. Concurrency management (se
       <description>A pattern that has mostly fallen out of fashion these days is the &amp;ldquo;super loop&amp;rdquo;.
 Consider a system that has numerous operations to perform. These operations are notionally decoupled and so can be run concurrently.
 The two patterns we are considering here are:
-Super loop int main() { while(true) { enterLowPowerMode(); checkConditionOne(); checkConditionTwo(); } }  Threads int threadOne() { while(true) { checkConditionOne(); } } int threadTwo() { while(true) { checkConditionTwo(); } } int main() { startThread(threadOne); startThread(threadTwo); while(true) { enterLowPowerMode(); } }  Both the above snippets logically do the same thing with different runtime behaviours.</description>
+Super loop int main() { while(true) { enterLowPowerMode(); checkConditionOne(); checkConditionTwo(); } } Threads int threadOne() { while(true) { checkConditionOne(); } } int threadTwo() { while(true) { checkConditionTwo(); } } int main() { startThread(threadOne); startThread(threadTwo); while(true) { enterLowPowerMode(); } } Both the above snippets logically do the same thing with different runtime behaviours.</description>
     </item>
     
     <item>
@@ -167,8 +168,8 @@ Regardless of the root-cause, if corruption is detected, the only course of acti
       <pubDate>Sun, 20 Jan 2019 19:14:13 +0000</pubDate>
       
       <guid>http://BlockWorks.co/posts/wearandtear/</guid>
-      <description>Embedded systems have a very close relationship with the hardware they&amp;rsquo;re running on. Often, they&amp;rsquo;re directly controlling or monitoring devices
-Wear and Tear.  Bad block management. Managing deficiencies in devices. Wear levelling needed to preempt issues with particular technologies. Fragmentation. Generic data structures not behaving well in bad situations. batteries dying without warning, failing to charge, overheating, failing completely. Clock drift causing clocks to be less accurate and variable.</description>
+      <description>Embedded systems have a very close relationship with the hardware they&#39;re running on. Often, they&#39;re directly controlling or monitoring devices
+Wear and Tear.  Bad block management. Managing deficiencies in devices. Wear levelling needed to preempt issues with particular technologies. Fragmentation. Generic data structures not behaving well in bad situations. batteries dying without warning, failing to charge, overheating, failing completely. Clock drift causing clocks to be less accurate and variable. Mechanical issues; connectors bouncing and bad connections causing spikes, noise an intermittent connections  Data storage related aging issues The typical type of device on which to store data in an embedded system is NOR FLASH.</description>
     </item>
     
     <item>
@@ -186,7 +187,7 @@ Wear and Tear.  Bad block management. Managing deficiencies in devices. Wear lev
       <pubDate>Sun, 20 Jan 2019 19:14:13 +0000</pubDate>
       
       <guid>http://BlockWorks.co/posts/buildtimeprotection/</guid>
-      <description> Build Time Protection.  Static analysis. Simulation &amp;amp; host-based testing. Unit testing. Use C++ and vectors instead of arrays.  </description>
+      <description>Build Time Protection.  Static analysis. Simulation &amp;amp; host-based testing. Unit testing. Use C++ and vectors instead of arrays.  </description>
     </item>
     
     <item>
@@ -195,7 +196,7 @@ Wear and Tear.  Bad block management. Managing deficiencies in devices. Wear lev
       <pubDate>Sun, 20 Jan 2019 19:14:13 +0000</pubDate>
       
       <guid>http://BlockWorks.co/posts/defenseindepth/</guid>
-      <description>Defense in depth.  layers admit that no one mechanism will catch everything. reduce chance of widespread exploit.  &amp;rdquo;&amp;hellip;In terms of computer network defense, defense in depth measures should not only prevent security breaches but also buy an organization time to detect and respond to an attack and so reduce and mitigate the consequences of a breach.&amp;rdquo;
+      <description>Defense in depth.  layers admit that no one mechanism will catch everything. reduce chance of widespread exploit.  &amp;quot;&amp;hellip;In terms of computer network defense, defense in depth measures should not only prevent security breaches but also buy an organization time to detect and respond to an attack and so reduce and mitigate the consequences of a breach.&amp;quot;
 (https://en.wikipedia.org/wiki/Defense_in_depth_(computing))
 &amp;ldquo;Layering security defenses in an application can reduce the chance of a successful attack.</description>
     </item>
@@ -206,17 +207,7 @@ Wear and Tear.  Bad block management. Managing deficiencies in devices. Wear lev
       <pubDate>Sun, 20 Jan 2019 19:14:13 +0000</pubDate>
       
       <guid>http://BlockWorks.co/posts/domainprotection/</guid>
-      <description> Domain Protection.  Reduce valid address space for more targetted pointer checks. restrict path through code to known-good-paths.  </description>
-    </item>
-    
-    <item>
-      <title>Error Propagation Prevention</title>
-      <link>http://BlockWorks.co/posts/errorpropagationprevention/</link>
-      <pubDate>Sun, 20 Jan 2019 19:14:13 +0000</pubDate>
-      
-      <guid>http://BlockWorks.co/posts/errorpropagationprevention/</guid>
-      <description> Error Propagation prevention. Even if one device is compromised, limit the damage so the exploit is widely useable.
-Mitigation techniques  Random stack offsetting. Random vector table location. Heap randomisation. per-device RNG, unique ID for propagation prevention.  </description>
+      <description>Domain Protection.  Reduce valid address space for more targetted pointer checks. restrict path through code to known-good-paths.  </description>
     </item>
     
     <item>
@@ -230,12 +221,22 @@ First and foremost, we must acknowledge that our one subsystem is not isolated. 
     </item>
     
     <item>
+      <title>Error Propagation Prevention</title>
+      <link>http://BlockWorks.co/posts/errorpropagationprevention/</link>
+      <pubDate>Sun, 20 Jan 2019 19:14:13 +0000</pubDate>
+      
+      <guid>http://BlockWorks.co/posts/errorpropagationprevention/</guid>
+      <description>Error Propagation prevention. Even if one device is compromised, limit the damage so the exploit is widely useable.
+Mitigation techniques  Random stack offsetting. Random vector table location. Heap randomisation. per-device RNG, unique ID for propagation prevention.  </description>
+    </item>
+    
+    <item>
       <title>Fault Recovery</title>
       <link>http://BlockWorks.co/posts/recovery/</link>
       <pubDate>Sun, 20 Jan 2019 19:14:13 +0000</pubDate>
       
       <guid>http://BlockWorks.co/posts/recovery/</guid>
-      <description> Recovery  Plan for reset. do it regularly, architect your system around it. test it.  </description>
+      <description>Recovery  Plan for reset. do it regularly, architect your system around it. test it.  </description>
     </item>
     
     <item>
@@ -244,7 +245,7 @@ First and foremost, we must acknowledge that our one subsystem is not isolated. 
       <pubDate>Sun, 20 Jan 2019 19:14:13 +0000</pubDate>
       
       <guid>http://BlockWorks.co/posts/floodingattacks/</guid>
-      <description> Flooding attacks.  Denial of service. Interrupts Messaging interfaces. Accept that you must go lossy at some interface. Choose it and plan for it.  </description>
+      <description>Flooding attacks.  Denial of service. Interrupts Messaging interfaces. Accept that you must go lossy at some interface. Choose it and plan for it.  </description>
     </item>
     
     <item>
@@ -253,7 +254,7 @@ First and foremost, we must acknowledge that our one subsystem is not isolated. 
       <pubDate>Sun, 20 Jan 2019 19:14:13 +0000</pubDate>
       
       <guid>http://BlockWorks.co/posts/heaprobustness/</guid>
-      <description> Heap Robustness.  Heap data bounds checks. Heap metadata checks. fragmentation.  </description>
+      <description>Heap Robustness.  Heap data bounds checks. Heap metadata checks. fragmentation.  </description>
     </item>
     
     <item>
@@ -271,7 +272,7 @@ First and foremost, we must acknowledge that our one subsystem is not isolated. 
       <pubDate>Sun, 20 Jan 2019 19:14:13 +0000</pubDate>
       
       <guid>http://BlockWorks.co/posts/performanceissuesandenhancements/</guid>
-      <description> Performance issues and enhancements.  overhead of instrumentation. MPU enhancements Periodic checking. Cant check everything on every function entry/exit but can randomly choose which checks to perform. This decreases the load at the expense of detection-latency. Dont store anything persistently until a full check has been performed.  </description>
+      <description>Performance issues and enhancements.  overhead of instrumentation. MPU enhancements Periodic checking. Cant check everything on every function entry/exit but can randomly choose which checks to perform. This decreases the load at the expense of detection-latency. Dont store anything persistently until a full check has been performed.  </description>
     </item>
     
     <item>
@@ -289,7 +290,7 @@ First and foremost, we must acknowledge that our one subsystem is not isolated. 
       <pubDate>Sun, 20 Jan 2019 19:14:13 +0000</pubDate>
       
       <guid>http://BlockWorks.co/posts/stackrobustness/</guid>
-      <description> Stack Robustness.  Stack overflow Stack underflow Stack corruption. Stack pointer corruption. pass-by-reference.  Mitigation Techniques  Stack CRC checking (cross-task corruption). stack bounds checking with an OS. random stack offsetting. Stack sanitisation. Canaries Stack-fill Correct-sizing. avoiding pass-by-reference.  </description>
+      <description>Stack Robustness.  Stack overflow Stack underflow Stack corruption. Stack pointer corruption. pass-by-reference.  Mitigation Techniques  Stack CRC checking (cross-task corruption). stack bounds checking with an OS. random stack offsetting. Stack sanitisation. Canaries Stack-fill Correct-sizing. avoiding pass-by-reference.  </description>
     </item>
     
     <item>
@@ -298,7 +299,7 @@ First and foremost, we must acknowledge that our one subsystem is not isolated. 
       <pubDate>Sun, 20 Jan 2019 19:14:13 +0000</pubDate>
       
       <guid>http://BlockWorks.co/posts/versioncontrol/</guid>
-      <description> Version control What is released together should be versioned together
+      <description>Version control What is released together should be versioned together
 Monorepo Multirepo  Build overhead Cognitive overhead Refactoring overhead   </description>
     </item>
     

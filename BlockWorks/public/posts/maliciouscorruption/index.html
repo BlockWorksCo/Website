@@ -49,19 +49,14 @@
     Sun Jan 20, 2019 &#183; 111 words
     
     <hr/>
-    
-
-<h1 id="malicious-corruption">Malicious corruption.</h1>
-
+    <h1 id="malicious-corruption">Malicious corruption.</h1>
 <ul>
 <li>different from accidental corruption because of intent. Assume intelligence behind attacks.</li>
 <li>stack smashing. Code appears within a payload. negative indexing causes corruption of return value to cause a jump to code in payload.</li>
 <li>code corruption; dont store code in RAM if at all possible. code should be immutable if possible. XIP.</li>
 <li>vector table corruption. This is a potentially easy attack vector (overwrite a vector with own code, trigger the interrupt).</li>
 </ul>
-
 <h1 id="mitigations">Mitigations.</h1>
-
 <ul>
 <li>CRC the vector table, periodically check it. if paranoid, check it on entry to the ISR (in dev mode, this is bad for response/performance).</li>
 <li>Periodic (not onetime) code integrity check. Dont check it on startup then run forever.</li>

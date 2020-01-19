@@ -46,7 +46,7 @@
 
         
 <div class="section" id="content">
-    Sun Jan 20, 2019 &#183; 1138 words
+    Sun Jan 20, 2019 &#183; 1136 words
     
     <div class="tag-container">
         
@@ -59,123 +59,78 @@
     </div>
     
     <hr/>
-    
-
-<h1 id="accidental-corruption">Accidental corruption.</h1>
-
+    <h1 id="accidental-corruption">Accidental corruption.</h1>
 <p>Considering your typical C and microcontroller based embedded application, corruption can be caused in many ways.</p>
-
 <p>Regardless of the root-cause, if corruption is detected, the only course of action is an immediate PANIC situation. Why do we PANIC? because we cannot now trust the machine state. At the point of detection we cannot know what else has been affected and for how long, therfore the only safe thing to do is PANIC our way back to safety.</p>
-
 <p>Above all, we <em>must</em> avoid persisting any data to FLASH or EEPROM at this point as we cannot determine if it is still valid. If we have the facility to do so, we must mark any recently persisted data as untrustworthy to cause a rollback to a last-known-good state.</p>
-
 <p>Without further ado, lets have a look at the common sources of RAM corruption.</p>
-
 <h2 id="stack-overflow">Stack overflow</h2>
-
 <p>This condition occurs when too much data is pushed onto the stack. Without an MPU/MMU to detect this siutation, the processor will not immediately raise an exception but instead will continue on blindly overwriting whatever data is immediately adjacent to the stack.</p>
-
 <h3 id="detection">Detection</h3>
-
-<p>Detecting a stack overflow situation is relatively easy as there are telltale signs, namely:
-- The stack pointer is past the end of stack.
-- The contents of the stack area are relatively random, indicating the stack has actually been used. Beware though that if the cause of the corruption is a large array or structure on the stack then this may appear to be empty space (filled with the stack-fill value).
-This can be caught during runtime by instrumentation of the code or via checks at context-switch time. Relying on the OS to detect this at context switch time is less preferable to instrumented checking as it only checks periodically. Instrumented checks can catch the root-cause more easily though with more performance overhead.</p>
-
-<h3 id="causes-resolutions">Causes &amp; Resolutions</h3>
-
+<p>Detecting a stack overflow situation is relatively easy as there are telltale signs, namely:</p>
+<ul>
+<li>The stack pointer is past the end of stack.</li>
+<li>The contents of the stack area are relatively random, indicating the stack has actually been used. Beware though that if the cause of the corruption is a large array or structure on the stack then this may appear to be empty space (filled with the stack-fill value).
+This can be caught during runtime by instrumentation of the code or via checks at context-switch time. Relying on the OS to detect this at context switch time is less preferable to instrumented checking as it only checks periodically. Instrumented checks can catch the root-cause more easily though with more performance overhead.</li>
+</ul>
+<h3 id="causes--resolutions">Causes &amp; Resolutions</h3>
 <ul>
 <li>The obvious cause here is incorrect sizing of the stack. Although it is tempting to simply increase the size of the stack, RAM is typically a limited resource in embedded systems and as such should be conserved. Instead, try to identify the reason that a large amount of stack space is being allocated on the stack and ask whether it really needs to be.</li>
 <li>Recursion; rarely is this intended and is unwise in an embedded system with limited stack space. Refactor the code to avoid recursion.</li>
 <li>Incorrect array indexing; if a local array is indexed by for example, a negative value then this will not be trapped. Instead the data that lies adjacent to the array will be corrupted. This can cause secondary effect such as stack pointer corruption, data corruption and return-address corruption.</li>
 <li>Always remember that all these effects can be secondary effects of other types of corruption, for example stack pointer corruption would potentially also place the stack pointer outside of the stack making it (incorrectly) appear as though there is too much data on the stack.</li>
 </ul>
-
 <h2 id="stack-underflow">Stack underflow</h2>
-
 <p>Similar to the stack overflow situation, but this is in the other direction, i.e. it appears that too much data has been taken <em>off</em> the stack. This results in the stack pointer ending up <em>below</em> the start of the stack.
 The lack of an MPU/MMU means that the accesses <em>below</em> the stack are not trapped but instead are allowed to corrupt the data.</p>
-
 <h3 id="detection-1">Detection</h3>
-
 <p>This can be caught with at runtime with the same techniques as the overflow situation, namely instrumented code on entry/exit to functions and OS checking at context switch time.</p>
-
-<h3 id="causes-resolutions-1">Causes &amp; Resolutions</h3>
-
+<h3 id="causes--resolutions-1">Causes &amp; Resolutions</h3>
 <p>In contrast to the overflow situation, underflow cannot occur in the normal running of the application. This is because &ldquo;pop&rdquo; operations are always matched to &ldquo;push&rdquo; operations.
 For this reason, it should be considered a secondary effect, i.e. the root cause will always be another issue such as incorrect indexed local arrays corrupting a link-register.</p>
-
 <h2 id="stack-data-corruption">Stack data corruption</h2>
-
 <p>Although the underflow and overflow situations can be considered sstack corruption, here we are considering the data itself that resides on the stack rather than the stack metadata (SP and LR).</p>
-
 <h3 id="detection-2">Detection</h3>
-
 <p>The difficulty here is that the data on the stack can be modified in a perfectly legal and normal manner when passing data into a function by reference.
 Assuming that the corruption is not malicious (and hence targetted), then implementing canary values in local data does have some chance of catching this situtation. Unfortunately, I know of no current compiler that will place canaries around local data automatically, leaving it up to the programmer to implement this manually.</p>
-
 <p>This issue is inherently difficult (almost impossible) to detect, even with an MPU/MMU in larger systems.</p>
-
-<h3 id="causes-resolutions-2">Causes &amp; Resolutions</h3>
-
+<h3 id="causes--resolutions-2">Causes &amp; Resolutions</h3>
 <p>Limiting the use of pass-by-reference, possibly by coding standards and code review will go someway to making this more detectable in an automated way. An extended version of the Domain Protection system can enforce no passing-by-reference when crossing domains by using the MPU to make only the stack area for the current domain accessible. This is not a complete solution though.</p>
-
 <p>Further complicating the matter is that this may also be a secondary level effect of another type of corruption.</p>
-
 <h2 id="heap-data-corruption">Heap data corruption</h2>
-
 <p>Data can also be corrupted while in the heap, but this is typically a secondary effect, i.e. the root cause is another problem such as incorrect pointer arithmetic or bad array indexing.</p>
-
 <p>Since buffers allocated from the heap are not protected from each other in anyway whatsoever, they are susceptible to incorrect dereferencing in neighbouring buffers.</p>
-
 <h3 id="detection-3">Detection</h3>
-
 <p>There is no real telltale sign that heap data has been corrupted other than what you yourself can detect manually.</p>
-
 <h3 id="causes-and-resolutions">Causes and resolutions</h3>
-
 <p>One mechanism to prevent heap issues is to prevent use of  pointers into the heap directly.</p>
-
 <p>use-after-free can appear to corrupt data whereas the real cause is misuse of the heap.
 Accessing the heap through functions rather than directly gives you a single point to verify accesses.
 Language design can help here, for example C++ vectors are an improvement here due to bounds checking.</p>
-
 <p>dangling pointers from e.g. linked lists &amp; trees.</p>
-
 <h2 id="heap-metadata-corruption">heap metadata corruption.</h2>
-
 <pre><code>use-after-free.
 </code></pre>
-
 <h2 id="heap-leaking">Heap leaking.</h2>
-
 <pre><code>misplaced free.
 missing free.
 </code></pre>
-
 <h2 id="static-buffer-corruption">static buffer corruption.</h2>
-
 <pre><code>debugger &amp; watchpoints
 CRC of buffer can provide detection.
 </code></pre>
-
 <h2 id="pointer-arithmetic">Pointer arithmetic.</h2>
-
 <pre><code>pointer checks.
 address range is well-defined.
 range is further narrowed by Domain Protection.
 </code></pre>
-
 <h2 id="attempt-to-trap-fault-as-close-as-possible-to-the-original-fault">Attempt to trap fault as close as possible to the original fault.</h2>
-
 <pre><code>instrumentation.
 dedicated and specific checking code.
 instruction tracing.
 write-buffering causing loss of precision in fault catching.
 </code></pre>
-
 <h2 id="concurrency-as-a-source-of-corruption">Concurrency as a source of corruption.</h2>
-
 <pre><code>shared data.
 atomic access.
 multiprocessors &amp; caching (invalidation, flushing and non-cached areas).
@@ -183,15 +138,10 @@ interrupts.
 DMA transferring data into incorrect location.
 per-task heap? reduce contention &amp; synchronisation overhead.
 </code></pre>
-
 <h1 id="detection-mechanisms-in-detail">Detection mechanisms in detail.</h1>
-
 <p>Here, we will discuss the detail of the corruption detection mechanisms:</p>
-
 <h2 id="stack-filling">Stack filling</h2>
-
 <h2 id="code-instrumentation-for-stack-check">Code instrumentation for stack check.</h2>
-
 <h2 id="manual-canary-values-for-local-data">Manual canary values for local data.</h2>
 
 </div>

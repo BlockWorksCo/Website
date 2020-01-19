@@ -46,29 +46,25 @@
 
         
 <div class="section" id="content">
-    Fri Mar 01, 2019 &#183; 195 words
+    Fri Mar 01, 2019 &#183; 194 words
     
     <hr/>
     <p>A lot of developers are afraid of hard-faults or exceptions happening in
-their software, but they don&rsquo;t need to be. Quite often, (though not always)
+their software, but they don't need to be. Quite often, (though not always)
 they can be relatively easy problems to solve precisely because the hardware
 has frozen the machine state at the exact point the problem occurred.</p>
-
 <p>What do we mean by machine-state?</p>
-
 <p>two stacks</p>
-
 <p>Cortex-M example bug other architectures are similar.</p>
-
-<div class="highlight"><pre class="chroma"><code class="language-cpp" data-lang="cpp"><span class="kt">void</span> <span class="nf">HardFault_Handler</span><span class="p">()</span>
+<div class="highlight"><pre class="chroma"><code class="language-cpp" data-lang="cpp"><span class="kt">void</span> <span class="nf">HardFault_Handler</span><span class="p">(</span><span class="p">)</span>
 <span class="p">{</span>
-<span class="cp">#ifdef DEBUG
+<span class="cp">#</span><span class="cp">ifdef DEBUG</span><span class="cp">
 </span><span class="cp"></span>
    <span class="c1">// In debug mode, put a breakpoint on here, 
 </span><span class="c1"></span>   <span class="c1">// disable the watchdog allowing you opportunity
 </span><span class="c1"></span>   <span class="c1">// to debug te problem.
 </span><span class="c1"></span>   <span class="k">volatile</span> <span class="kt">bool</span>   <span class="n">returnFromHere</span>  <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
-   <span class="k">while</span><span class="p">(</span> <span class="n">returnFromHere</span> <span class="o">==</span> <span class="nb">false</span> <span class="p">);</span>
+   <span class="k">while</span><span class="p">(</span> <span class="n">returnFromHere</span> <span class="o">=</span><span class="o">=</span> <span class="nb">false</span> <span class="p">)</span><span class="p">;</span>
 
    <span class="c1">// return from here by setting the flag to 
 </span><span class="c1"></span>   <span class="c1">// escape the loop
@@ -77,7 +73,7 @@ has frozen the machine state at the exact point the problem occurred.</p>
 </span><span class="c1"></span>   <span class="c1">// user-mode at which point you can examine the 
 </span><span class="c1"></span>   <span class="c1">// entire machine-state such as the call stack.
 </span><span class="c1"></span>
-<span class="cp">#else
+<span class="cp">#</span><span class="cp">else</span><span class="cp">
 </span><span class="cp"></span>   <span class="c1">// Capture machine state
 </span><span class="c1"></span>
    <span class="c1">// Store machine state in a &#39;noinit&#39; area of RAM.
@@ -88,7 +84,7 @@ has frozen the machine state at the exact point the problem occurred.</p>
    <span class="c1">// On startup, check the &#39;noinit&#39; area for stored
 </span><span class="c1"></span>   <span class="c1">// crash data and
 </span><span class="c1"></span>   <span class="c1">// send it as an event.
-</span><span class="c1"></span><span class="cp">#endif
+</span><span class="c1"></span><span class="cp">#</span><span class="cp">endif</span><span class="cp">
 </span><span class="cp"></span><span class="p">}</span>
 </code></pre></div>
 

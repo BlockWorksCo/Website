@@ -59,12 +59,9 @@
     </div>
     
     <hr/>
-    
-
-<p>Many devices these days are battery powered. Being battery powered requires that we create software to make
+    <p>Many devices these days are battery powered. Being battery powered requires that we create software to make
 the most possible use of the battery.
 Software for low-power devices behaves very differently to normal software in a few regards:</p>
-
 <ul>
 <li>Spend most most of its time in low-power-mode (or even off).</li>
 <li>Startup very quickly.</li>
@@ -79,14 +76,11 @@ Software for low-power devices behaves very differently to normal software in a 
 <li>Store data in an appropriate manner (i.e. no filesystem).</li>
 <li>Likely super-loop driven rather than being multi-threaded.</li>
 </ul>
-
 <h1 id="architecting-for-low-power-operation">Architecting for low-power operation.</h1>
-
 <p>Bearing in mind the above points, what does the typical low-power-software look like?</p>
-
 <ul>
 <li>99% of the time is spent in the deepest low-power-mode possible, generally with no RAM retention. This means
-you&rsquo;re likely to be booting every time you want to do anything.</li>
+you're likely to be booting every time you want to do anything.</li>
 <li>Triggered to wake up by an interrupt, probably from an external device such as an RTC or a button generating an edge
 on a GPIO.</li>
 <li>The startup code must first discover <em>why</em> it was woken up. From this it can determine the minimum amount of work that
@@ -97,9 +91,7 @@ needs to be performed. Note that this is <em>before</em> normal initialisation.<
 <li>Setup trigger events for the next wake-period.</li>
 <li>Enter low-power-mode or turn off.</li>
 </ul>
-
 <h1 id="application-level-design-for-low-power-systems">Application-level design for low-power systems</h1>
-
 <ul>
 <li>Asynchronous communication; allow the device to respond in <em>its</em> own time, not the servers.</li>
 <li>Infrequent communication; Communication is generally power-hungry (i.e. radio)</li>
@@ -110,29 +102,23 @@ are tradeoffs aplenty here.</li>
 <li>Deterministic behaviour; Being predictable is important in order to be able to predict battery-life. This requires
 a known current-draw from the system. Often, the charactersistics of batteries power-loss are not able to be monitored
 so their life has to be predicted. This requires knowing <em>exactly</em> how the device behaves.</li>
-<li>Timeouts need to be short and appropriate. Think what condition you&rsquo;re trying to catch. You don&rsquo;t want to stay awake waiting for
+<li>Timeouts need to be short and appropriate. Think what condition you're trying to catch. You don't want to stay awake waiting for
 an event that will never happen.</li>
 </ul>
-
 <h1 id="trade-offs">Trade offs</h1>
-
 <ul>
 <li>Storage versus communication.</li>
 <li>Deep-sleep versus startup/shutdown duration.</li>
 <li>Fine-grained vs large-grained wake-cycle.</li>
 </ul>
-
 <h1 id="radio-communications">Radio communications.</h1>
-
 <ul>
 <li>Appropriate data rate for application.</li>
 <li>Choice of protocol (ZigBee, 6LoWPAN, LoRAWAN, etc).</li>
 <li>Topology; mesh versus star.</li>
 <li>Routing complexity versus efficiency.</li>
 </ul>
-
 <h1 id="inappropriate-common-patterns">Inappropriate common patterns.</h1>
-
 <ul>
 <li>Filesystems; over-generic and complex.</li>
 <li>Concurrency; overhead of context-switching is wasted energy.</li>

@@ -1,9 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://BlockWorks.co/</loc>
+    <lastmod>2019-03-06T22:27:18+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://BlockWorks.co/posts/debugginghardfaults/</loc>
+    <lastmod>2019-03-06T22:27:18+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://BlockWorks.co/posts/</loc>
     <lastmod>2019-03-06T22:27:18+00:00</lastmod>
   </url>
   
@@ -13,7 +23,22 @@
   </url>
   
   <url>
+    <loc>http://BlockWorks.co/tags/blog/</loc>
+    <lastmod>2019-01-29T20:06:19+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://BlockWorks.co/posts/complexity/</loc>
+    <lastmod>2019-01-29T20:06:19+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://BlockWorks.co/tags/story/</loc>
+    <lastmod>2019-01-29T20:06:19+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://BlockWorks.co/tags/</loc>
     <lastmod>2019-01-29T20:06:19+00:00</lastmod>
   </url>
   
@@ -43,7 +68,17 @@
   </url>
   
   <url>
+    <loc>http://BlockWorks.co/tags/ci/</loc>
+    <lastmod>2019-01-21T22:51:39+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://BlockWorks.co/posts/designfortest/</loc>
+    <lastmod>2019-01-21T22:51:39+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://BlockWorks.co/tags/testing/</loc>
     <lastmod>2019-01-21T22:51:39+00:00</lastmod>
   </url>
   
@@ -53,13 +88,38 @@
   </url>
   
   <url>
+    <loc>http://BlockWorks.co/tags/concurrency/</loc>
+    <lastmod>2019-01-21T23:31:54+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://BlockWorks.co/posts/concurrency/</loc>
     <lastmod>2019-01-21T21:01:16+00:00</lastmod>
   </url>
   
   <url>
+    <loc>http://BlockWorks.co/tags/tasks/</loc>
+    <lastmod>2019-01-21T23:31:54+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://BlockWorks.co/tags/threads/</loc>
+    <lastmod>2019-01-21T23:31:54+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://BlockWorks.co/posts/superloopversusthreads/</loc>
     <lastmod>2019-01-21T23:31:54+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://BlockWorks.co/tags/superloop/</loc>
+    <lastmod>2019-01-21T23:31:54+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://BlockWorks.co/tags/low-power/</loc>
+    <lastmod>2019-01-24T20:35:58+00:00</lastmod>
   </url>
   
   <url>
@@ -88,6 +148,11 @@
   </url>
   
   <url>
+    <loc>http://BlockWorks.co/tags/build/</loc>
+    <lastmod>2019-01-21T17:43:29+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://BlockWorks.co/posts/buildtimeprotection/</loc>
     <lastmod>2019-01-21T17:43:29+00:00</lastmod>
   </url>
@@ -103,13 +168,23 @@
   </url>
   
   <url>
-    <loc>http://BlockWorks.co/posts/errorpropagationprevention/</loc>
-    <lastmod>2019-01-20T19:20:20+00:00</lastmod>
+    <loc>http://BlockWorks.co/tags/error-handling/</loc>
+    <lastmod>2019-01-21T21:49:24+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://BlockWorks.co/posts/errorhandling/</loc>
     <lastmod>2019-01-21T21:49:24+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://BlockWorks.co/posts/errorpropagationprevention/</loc>
+    <lastmod>2019-01-20T19:20:20+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://BlockWorks.co/tags/exploits/</loc>
+    <lastmod>2019-01-21T23:35:59+00:00</lastmod>
   </url>
   
   <url>
@@ -138,8 +213,18 @@
   </url>
   
   <url>
+    <loc>http://BlockWorks.co/tags/robustness/</loc>
+    <lastmod>2019-01-21T23:35:59+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://BlockWorks.co/posts/safedatastorage/</loc>
     <lastmod>2019-01-20T23:14:25+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://BlockWorks.co/tags/security/</loc>
+    <lastmod>2019-01-21T17:44:23+00:00</lastmod>
   </url>
   
   <url>
@@ -148,121 +233,17 @@
   </url>
   
   <url>
+    <loc>http://BlockWorks.co/tags/static-analysis/</loc>
+    <lastmod>2019-01-21T17:43:29+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://BlockWorks.co/posts/versioncontrol/</loc>
     <lastmod>2019-01-20T19:22:08+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://BlockWorks.co/</loc>
-    <lastmod>2019-03-06T22:27:18+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://BlockWorks.co/tags/blog/</loc>
-    <lastmod>2019-01-29T20:06:19+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://BlockWorks.co/tags/build/</loc>
-    <lastmod>2019-01-21T17:43:29+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>http://BlockWorks.co/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://BlockWorks.co/tags/ci/</loc>
-    <lastmod>2019-01-21T22:51:39+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://BlockWorks.co/tags/concurrency/</loc>
-    <lastmod>2019-01-21T21:01:16+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://BlockWorks.co/tags/error-handling/</loc>
-    <lastmod>2019-01-21T17:42:44+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://BlockWorks.co/tags/exploits/</loc>
-    <lastmod>2019-01-21T23:35:59+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://BlockWorks.co/tags/low-power/</loc>
-    <lastmod>2019-01-24T20:35:58+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://BlockWorks.co/posts/</loc>
-    <lastmod>2019-03-06T22:27:18+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://BlockWorks.co/tags/robustness/</loc>
-    <lastmod>2019-01-21T23:35:59+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://BlockWorks.co/tags/security/</loc>
-    <lastmod>2019-01-21T17:44:23+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://BlockWorks.co/tags/static-analysis/</loc>
-    <lastmod>2019-01-21T17:43:29+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://BlockWorks.co/tags/story/</loc>
-    <lastmod>2019-01-29T20:06:19+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://BlockWorks.co/tags/superloop/</loc>
-    <lastmod>2019-01-21T23:31:54+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://BlockWorks.co/tags/</loc>
-    <lastmod>2019-01-29T20:06:19+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://BlockWorks.co/tags/tasks/</loc>
-    <lastmod>2019-01-21T21:01:16+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://BlockWorks.co/tags/testing/</loc>
-    <lastmod>2019-01-21T22:51:39+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://BlockWorks.co/tags/threads/</loc>
-    <lastmod>2019-01-21T21:01:16+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
 </urlset>

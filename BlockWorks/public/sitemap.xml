@@ -3,247 +3,247 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://BlockWorks.co/</loc>
+    <loc>http://tickle.dev/posts/debugginghardfaults/</loc>
+    <lastmod>2019-03-06T22:27:18+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://tickle.dev/posts/</loc>
+    <lastmod>2019-03-06T22:27:18+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://tickle.dev/</loc>
     <lastmod>2020-01-19T12:10:26+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://BlockWorks.co/posts/debugginghardfaults/</loc>
-    <lastmod>2019-03-06T22:27:18+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://BlockWorks.co/posts/</loc>
-    <lastmod>2019-03-06T22:27:18+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://BlockWorks.co/posts/cognitiveload/</loc>
+    <loc>http://tickle.dev/posts/cognitiveload/</loc>
     <lastmod>2019-02-22T05:50:18+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://BlockWorks.co/tags/blog/</loc>
+    <loc>http://tickle.dev/tags/blog/</loc>
     <lastmod>2019-01-29T20:06:19+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://BlockWorks.co/posts/complexity/</loc>
+    <loc>http://tickle.dev/posts/complexity/</loc>
     <lastmod>2019-01-29T20:06:19+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://BlockWorks.co/tags/story/</loc>
+    <loc>http://tickle.dev/tags/story/</loc>
     <lastmod>2019-01-29T20:06:19+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://BlockWorks.co/tags/</loc>
+    <loc>http://tickle.dev/tags/</loc>
     <lastmod>2019-01-29T20:06:19+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://BlockWorks.co/posts/abstraction/</loc>
+    <loc>http://tickle.dev/posts/abstraction/</loc>
     <lastmod>2019-01-27T10:49:11+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://BlockWorks.co/posts/useofcintheembeddedworld/</loc>
+    <loc>http://tickle.dev/posts/useofcintheembeddedworld/</loc>
     <lastmod>2019-01-27T23:33:55+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://BlockWorks.co/posts/errordetection/</loc>
+    <loc>http://tickle.dev/posts/errordetection/</loc>
     <lastmod>2019-01-24T23:44:47+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://BlockWorks.co/posts/characteristicsofembeddedsystems/</loc>
+    <loc>http://tickle.dev/posts/characteristicsofembeddedsystems/</loc>
     <lastmod>2019-01-22T23:31:19+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://BlockWorks.co/posts/errorrecovery/</loc>
+    <loc>http://tickle.dev/posts/errorrecovery/</loc>
     <lastmod>2019-01-24T22:40:57+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://BlockWorks.co/tags/ci/</loc>
+    <loc>http://tickle.dev/tags/ci/</loc>
     <lastmod>2019-01-21T22:51:39+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://BlockWorks.co/posts/designfortest/</loc>
+    <loc>http://tickle.dev/posts/designfortest/</loc>
     <lastmod>2019-01-21T22:51:39+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://BlockWorks.co/tags/testing/</loc>
+    <loc>http://tickle.dev/tags/testing/</loc>
     <lastmod>2019-01-21T22:51:39+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://BlockWorks.co/posts/resourcecontrainedsystems/</loc>
+    <loc>http://tickle.dev/posts/resourcecontrainedsystems/</loc>
     <lastmod>2019-01-21T21:17:57+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://BlockWorks.co/tags/concurrency/</loc>
+    <loc>http://tickle.dev/tags/concurrency/</loc>
     <lastmod>2019-01-21T23:31:54+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://BlockWorks.co/posts/concurrency/</loc>
+    <loc>http://tickle.dev/posts/concurrency/</loc>
     <lastmod>2019-01-21T21:01:16+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://BlockWorks.co/tags/tasks/</loc>
+    <loc>http://tickle.dev/tags/tasks/</loc>
     <lastmod>2019-01-21T23:31:54+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://BlockWorks.co/tags/threads/</loc>
+    <loc>http://tickle.dev/tags/threads/</loc>
     <lastmod>2019-01-21T23:31:54+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://BlockWorks.co/posts/superloopversusthreads/</loc>
+    <loc>http://tickle.dev/posts/superloopversusthreads/</loc>
     <lastmod>2019-01-21T23:31:54+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://BlockWorks.co/tags/superloop/</loc>
+    <loc>http://tickle.dev/tags/superloop/</loc>
     <lastmod>2019-01-21T23:31:54+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://BlockWorks.co/tags/low-power/</loc>
+    <loc>http://tickle.dev/tags/low-power/</loc>
     <lastmod>2019-01-24T20:35:58+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://BlockWorks.co/posts/lowpower/</loc>
+    <loc>http://tickle.dev/posts/lowpower/</loc>
     <lastmod>2019-01-24T20:35:58+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://BlockWorks.co/posts/accidentalcorruption/</loc>
+    <loc>http://tickle.dev/posts/accidentalcorruption/</loc>
     <lastmod>2019-01-21T17:42:44+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://BlockWorks.co/posts/wearandtear/</loc>
+    <loc>http://tickle.dev/posts/wearandtear/</loc>
     <lastmod>2019-01-24T23:54:32+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://BlockWorks.co/posts/architecture/</loc>
+    <loc>http://tickle.dev/posts/architecture/</loc>
     <lastmod>2019-01-21T21:48:47+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://BlockWorks.co/tags/build/</loc>
+    <loc>http://tickle.dev/tags/build/</loc>
     <lastmod>2019-01-21T17:43:29+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://BlockWorks.co/posts/buildtimeprotection/</loc>
+    <loc>http://tickle.dev/posts/buildtimeprotection/</loc>
     <lastmod>2019-01-21T17:43:29+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://BlockWorks.co/posts/defenseindepth/</loc>
+    <loc>http://tickle.dev/posts/defenseindepth/</loc>
     <lastmod>2019-01-21T23:35:59+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://BlockWorks.co/posts/domainprotection/</loc>
+    <loc>http://tickle.dev/posts/domainprotection/</loc>
     <lastmod>2019-01-21T17:44:23+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://BlockWorks.co/tags/error-handling/</loc>
+    <loc>http://tickle.dev/tags/error-handling/</loc>
     <lastmod>2019-01-21T21:49:24+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://BlockWorks.co/posts/errorhandling/</loc>
+    <loc>http://tickle.dev/posts/errorhandling/</loc>
     <lastmod>2019-01-21T21:49:24+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://BlockWorks.co/posts/errorpropagationprevention/</loc>
+    <loc>http://tickle.dev/posts/errorpropagationprevention/</loc>
     <lastmod>2019-01-20T19:20:20+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://BlockWorks.co/tags/exploits/</loc>
+    <loc>http://tickle.dev/tags/exploits/</loc>
     <lastmod>2019-01-21T23:35:59+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://BlockWorks.co/posts/recovery/</loc>
+    <loc>http://tickle.dev/posts/recovery/</loc>
     <lastmod>2019-01-20T19:21:46+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://BlockWorks.co/posts/floodingattacks/</loc>
+    <loc>http://tickle.dev/posts/floodingattacks/</loc>
     <lastmod>2019-01-20T19:20:34+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://BlockWorks.co/posts/heaprobustness/</loc>
+    <loc>http://tickle.dev/posts/heaprobustness/</loc>
     <lastmod>2019-01-20T19:20:48+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://BlockWorks.co/posts/maliciouscorruption/</loc>
+    <loc>http://tickle.dev/posts/maliciouscorruption/</loc>
     <lastmod>2019-01-20T19:21:07+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://BlockWorks.co/posts/performanceissuesandenhancements/</loc>
+    <loc>http://tickle.dev/posts/performanceissuesandenhancements/</loc>
     <lastmod>2019-01-20T19:21:25+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://BlockWorks.co/tags/robustness/</loc>
+    <loc>http://tickle.dev/tags/robustness/</loc>
     <lastmod>2019-01-21T23:35:59+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://BlockWorks.co/posts/safedatastorage/</loc>
+    <loc>http://tickle.dev/posts/safedatastorage/</loc>
     <lastmod>2019-01-20T23:14:25+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://BlockWorks.co/tags/security/</loc>
+    <loc>http://tickle.dev/tags/security/</loc>
     <lastmod>2019-01-21T17:44:23+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://BlockWorks.co/posts/stackrobustness/</loc>
+    <loc>http://tickle.dev/posts/stackrobustness/</loc>
     <lastmod>2019-01-20T19:21:57+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://BlockWorks.co/tags/static-analysis/</loc>
+    <loc>http://tickle.dev/tags/static-analysis/</loc>
     <lastmod>2019-01-21T17:43:29+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://BlockWorks.co/about/</loc>
+    <loc>http://tickle.dev/about/</loc>
     <lastmod>2020-01-19T12:10:26+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://BlockWorks.co/posts/versioncontrol/</loc>
+    <loc>http://tickle.dev/posts/versioncontrol/</loc>
     <lastmod>2019-01-20T19:22:08+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://BlockWorks.co/categories/</loc>
+    <loc>http://tickle.dev/categories/</loc>
   </url>
   
 </urlset>

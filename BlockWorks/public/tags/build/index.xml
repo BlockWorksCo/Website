@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>build on BlockWorks Co</title>
-    <link>http://BlockWorks.co/tags/build/</link>
-    <description>Recent content in build on BlockWorks Co</description>
+    <title>build on Tickle.Dev</title>
+    <link>http://tickle.dev/tags/build/</link>
+    <description>Recent content in build on Tickle.Dev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 20 Jan 2019 19:14:13 +0000</lastBuildDate>
     
-	<atom:link href="http://BlockWorks.co/tags/build/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://tickle.dev/tags/build/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Build Time Protection</title>
-      <link>http://BlockWorks.co/posts/buildtimeprotection/</link>
+      <link>http://tickle.dev/posts/buildtimeprotection/</link>
       <pubDate>Sun, 20 Jan 2019 19:14:13 +0000</pubDate>
       
-      <guid>http://BlockWorks.co/posts/buildtimeprotection/</guid>
+      <guid>http://tickle.dev/posts/buildtimeprotection/</guid>
       <description>Build Time Protection.  Static analysis. Simulation &amp;amp; host-based testing. Unit testing. Use C++ and vectors instead of arrays.  </description>
     </item>
     

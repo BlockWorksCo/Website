@@ -13,17 +13,17 @@
 <meta name="description" content="Call me Sam, a theme for Hugo.">
 
 <meta name="twitter:card" content="summary">
-<meta name="twitter:domain" content="http://BlockWorks.co/">
+<meta name="twitter:domain" content="http://tickle.dev/">
 
-<meta name="twitter:image" content="http://BlockWorks.co/tn.png">
-<meta name="twitter:title" property="og:title" itemprop="title name" content="BlockWorks Co">
+<meta name="twitter:image" content="http://tickle.dev/tn.png">
+<meta name="twitter:title" property="og:title" itemprop="title name" content="Tickle.Dev">
 <meta name="twitter:description" property="og:description" itemprop="description" content="Call me Sam, a theme for Hugo.">
 <meta name="og:type" content="website">
-<meta name="og:url" content="http://BlockWorks.co/">
-<meta name="og:image" itemprop="image primaryImageOfPage" content="http://BlockWorks.co/tn.png">
+<meta name="og:url" content="http://tickle.dev/">
+<meta name="og:image" itemprop="image primaryImageOfPage" content="http://tickle.dev/tn.png">
 
-<link rel="shortcut icon" href="http://BlockWorks.co/favicon.ico" id="favicon">
-<link rel="stylesheet" href="http://BlockWorks.co/css/style.css">
+<link rel="shortcut icon" href="http://tickle.dev/favicon.ico" id="favicon">
+<link rel="stylesheet" href="http://tickle.dev/css/style.css">
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Didact+Gothic">
 
@@ -58,7 +58,7 @@
 recovery mechanism.</li>
 <li>During development, we can turn off watchdog and busy-wait allowing an opportunity for a debugger to attach. This
 preserves processor state (stacks &amp; RAM contents) for examination.</li>
-<li>Boot time is typically very quick (100's of ms) and must be minimised as this is now a normal recovery mechanism.</li>
+<li>Boot time is typically very quick (100&rsquo;s of ms) and must be minimised as this is now a normal recovery mechanism.</li>
 <li>Low-power wake-cycle is also a natural reset-cycle and also requires boot time to be minimised.</li>
 </ul>
 <h1 id="live-recovery">Live recovery</h1>
@@ -75,7 +75,7 @@ This could be logged relatively easily by</p>
 <li>If we can recover from one state (the reset-state), then why should we attempt live-recovery? staying live
 does not gain us anything.</li>
 <li>There is effectively an infinity of possible bad internal states we have to recover from. It is not
-feasible to attempt to craft a recovery path from all of them; so don't. Just call PANIC.</li>
+feasible to attempt to craft a recovery path from all of them; so don&rsquo;t. Just call PANIC.</li>
 </ul>
 <p>What does our PANIC handler look like?</p>
 <pre><code>void PANIC( const char* message, 
@@ -130,7 +130,7 @@ There are numerous benefits:</p>
 log resets</p>
 </li>
 </ul>
-<p>What we're saying is that we treat reset as a normal part of program control flow. We can perform resets
+<p>What we&rsquo;re saying is that we treat reset as a normal part of program control flow. We can perform resets
 as a result of:</p>
 <ul>
 <li>Power cycles.</li>
@@ -245,7 +245,7 @@ back into the faulting-code.</li>
         
     
     &#183; 
-    <a href="http://BlockWorks.co/">
+    <a href="http://tickle.dev/">
         
     </a>
 
@@ -253,7 +253,7 @@ back into the faulting-code.</li>
 </div>
 
 
-        <div class="section footer"><a href="http://BlockWorks.co">BlockWorks.co</a>, an embedded software consultancy</div>
+        <div class="section footer"><a href="http://Tickle.Dev">Tickle.Dev</a>, an embedded software consultancy</div>
     </div>
 </body>
 

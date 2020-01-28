@@ -1,6 +1,6 @@
-baseURL = "http://BlockWorks.co/"
+baseURL = "http://tickle.dev/"
 languageCode = "en-us"
-title = "BlockWorks Co"
+title = "Tickle.Dev"
 theme = "sam"
 description = "Embedded and real-time software development"
 enableGitInfo = true
@@ -26,7 +26,7 @@ lastmod = ["lastmod", ":fileModTime", ":default"]
 
 
 [params]
-    footerText          = "[BlockWorks.co](http://BlockWorks.co), an embedded software consultancy"
+    footerText          = "[Tickle.Dev](http://Tickle.Dev), an embedded software consultancy"
     favicon             = "favicon.ico"
 
 [params.assets]

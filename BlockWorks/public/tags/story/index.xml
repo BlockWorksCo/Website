@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>story on BlockWorks Co</title>
-    <link>http://BlockWorks.co/tags/story/</link>
-    <description>Recent content in story on BlockWorks Co</description>
+    <title>story on Tickle.Dev</title>
+    <link>http://tickle.dev/tags/story/</link>
+    <description>Recent content in story on Tickle.Dev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 27 Jan 2019 19:59:54 +0000</lastBuildDate>
     
-	<atom:link href="http://BlockWorks.co/tags/story/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://tickle.dev/tags/story/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Complexity</title>
-      <link>http://BlockWorks.co/posts/complexity/</link>
+      <link>http://tickle.dev/posts/complexity/</link>
       <pubDate>Sun, 27 Jan 2019 19:59:54 +0000</pubDate>
       
-      <guid>http://BlockWorks.co/posts/complexity/</guid>
+      <guid>http://tickle.dev/posts/complexity/</guid>
       <description>Inherent complexity (a.k.a. Essential complexity)
 Given a task to solve, the inherent complexity of the problem is a statement about how complex the problem is, not about how complex your solution to the problem is.
 This is the complexity of the problem domain. You cannot do anything to change this.

@@ -1,4 +1,4 @@
-baseURL = "http://tickle.dev/"
+baseURL = "https://tickle.dev/"
 languageCode = "en-us"
 title = "Tickle.Dev"
 theme = "sam"
@@ -26,7 +26,7 @@ lastmod = ["lastmod", ":fileModTime", ":default"]
 
 
 [params]
-    footerText          = "[Tickle.Dev](http://Tickle.Dev), an embedded software consultancy"
+    footerText          = "[Tickle.Dev](https://Tickle.Dev), an embedded software consultancy"
     favicon             = "favicon.ico"
 
 [params.assets]

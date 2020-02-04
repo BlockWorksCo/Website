@@ -12,16 +12,14 @@
     
     
     <item>
-      <title>Debugging Hard Faults</title>
+      <title>Debugging Hard Faults on the Cortex-M</title>
       <link>https://tickle.dev/posts/debugginghardfaults/</link>
       <pubDate>Fri, 01 Mar 2019 22:05:50 +0000</pubDate>
       
       <guid>https://tickle.dev/posts/debugginghardfaults/</guid>
       <description>A lot of developers are afraid of hard-faults or exceptions happening in their software, but they don&amp;rsquo;t need to be. Quite often, (though not always) they can be relatively easy problems to solve precisely because the hardware has frozen the machine state at the exact point the problem occurred.
 What do we mean by machine-state?
-two stacks
-Cortex-M example bug other architectures are similar.
-void HardFault_Handler() { #ifdef DEBUG // In debug mode, put a breakpoint on here,  // disable the watchdog allowing you opportunity  // to debug te problem.</description>
+The Cortex-M architecture has two stacks, one for normal user-mode execution and the other for supervisor &amp;amp; exception mode.</description>
     </item>
     
     <item>
@@ -48,7 +46,7 @@ Accidental complexity The accidental complexity of a task on the other hand is a
     </item>
     
     <item>
-      <title>Abstraction</title>
+      <title>The right amount of abstraction</title>
       <link>https://tickle.dev/posts/abstraction/</link>
       <pubDate>Sun, 27 Jan 2019 08:19:18 +0000</pubDate>
       
@@ -63,7 +61,7 @@ Accidental complexity The accidental complexity of a task on the other hand is a
       <pubDate>Fri, 25 Jan 2019 05:55:32 +0000</pubDate>
       
       <guid>https://tickle.dev/posts/useofcintheembeddedworld/</guid>
-      <description>On the use of C in the embedded world </description>
+      <description>On the use of C in the embedded world  Momentum The right abstraction level The mindset; practical, product-focussed versus academic CS view. Efficiency History as a systems language. Standards  What are we missing?  Help from the compiler. &amp;lsquo;better&amp;rsquo; abstractions.   Whats in the future? </description>
     </item>
     
     <item>

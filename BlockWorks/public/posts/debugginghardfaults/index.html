@@ -35,18 +35,18 @@
     
     <title>
         
-        Debugging Hard Faults
+        Debugging Hard Faults on the Cortex-M
         
     </title>
 </head>
 
 <body>
     <div class="wrap">
-        <div class="section" id="title">Debugging Hard Faults</div>
+        <div class="section" id="title">Debugging Hard Faults on the Cortex-M</div>
 
         
 <div class="section" id="content">
-    Fri Mar 01, 2019 &#183; 194 words
+    Fri Mar 01, 2019 &#183; 429 words
     
     <hr/>
     <p>A lot of developers are afraid of hard-faults or exceptions happening in
@@ -54,12 +54,17 @@ their software, but they don&rsquo;t need to be. Quite often, (though not always
 they can be relatively easy problems to solve precisely because the hardware
 has frozen the machine state at the exact point the problem occurred.</p>
 <p>What do we mean by machine-state?</p>
-<p>two stacks</p>
-<p>Cortex-M example bug other architectures are similar.</p>
+<p>The Cortex-M architecture has two stacks, one for normal user-mode execution
+and the other for supervisor &amp; exception mode.
+When an exception handler executes, for example during a hard-fault condtion
+then what you see in the debuggers call stack does not seem to make sense.</p>
+<p>What you need to do in order to fix the fault is to obtain the call stack
+for the user-mode stack.
+Here, I&rsquo;m going to demonstrate an easy method for doing exactly that.</p>
+<p><em>Note that although we&rsquo;re looking specifically at a Cortex-M here, the technique
+is broadly applicable to other architectures.</em></p>
 <div class="highlight"><pre class="chroma"><code class="language-cpp" data-lang="cpp"><span class="kt">void</span> <span class="nf">HardFault_Handler</span><span class="p">(</span><span class="p">)</span>
 <span class="p">{</span>
-<span class="cp">#</span><span class="cp">ifdef DEBUG</span><span class="cp">
-</span><span class="cp"></span>
    <span class="c1">// In debug mode, put a breakpoint on here, 
 </span><span class="c1"></span>   <span class="c1">// disable the watchdog allowing you opportunity
 </span><span class="c1"></span>   <span class="c1">// to debug te problem.
@@ -72,21 +77,29 @@ has frozen the machine state at the exact point the problem occurred.</p>
 </span><span class="c1"></span>   <span class="c1">// Returning will switch stacks back to the 
 </span><span class="c1"></span>   <span class="c1">// user-mode at which point you can examine the 
 </span><span class="c1"></span>   <span class="c1">// entire machine-state such as the call stack.
-</span><span class="c1"></span>
-<span class="cp">#</span><span class="cp">else</span><span class="cp">
-</span><span class="cp"></span>   <span class="c1">// Capture machine state
-</span><span class="c1"></span>
-   <span class="c1">// Store machine state in a &#39;noinit&#39; area of RAM.
-</span><span class="c1"></span>
-   <span class="c1">// Sit in a tight loop, waiting for the watchdog 
-</span><span class="c1"></span>   <span class="c1">// to kick in.
-</span><span class="c1"></span>
-   <span class="c1">// On startup, check the &#39;noinit&#39; area for stored
-</span><span class="c1"></span>   <span class="c1">// crash data and
-</span><span class="c1"></span>   <span class="c1">// send it as an event.
-</span><span class="c1"></span><span class="cp">#</span><span class="cp">endif</span><span class="cp">
-</span><span class="cp"></span><span class="p">}</span>
+</span><span class="c1"></span><span class="p">}</span>
 </code></pre></div>
+<p>With a hard-fault handler looking like the above, what we&rsquo;re going to do is to
+place a breakpoint on the &lsquo;while&rsquo; loop line.</p>
+<p>When the debugger stops at this breakpoint we can now see that the stack trace
+looks nothing like what we expect.</p>
+<div class="highlight"><pre class="chroma"><code class="language-cpp" data-lang="cpp"><span class="n">stack</span> <span class="n">trace</span> <span class="n">from</span> <span class="n">hard</span><span class="o">-</span><span class="n">fault</span> <span class="n">handler</span><span class="p">.</span>
+</code></pre></div>
+<p>Now, let the debugger go a few times around this loop by letting it continue
+for a few cycles. This is done to ensure that the line above (the variable initialisation)
+has actually completed.</p>
+<p>We&rsquo;re nearly there&hellip; now, set the loop variable &ldquo;returnFromHere&rdquo; to true. and continue to
+step using the debugger.</p>
+<p>The aim now is to step just enough so the processor returns from the handler and switches
+the stack back to the user mode.
+When this happens, look at the call stack again and voila&hellip; the processor has stopped
+at exactly the point the crash occured.</p>
+<div class="highlight"><pre class="chroma"><code class="language-cpp" data-lang="cpp"><span class="n">stack</span> <span class="n">trace</span> <span class="n">from</span> <span class="n">application</span><span class="p">.</span>
+</code></pre></div>
+<p>From here, the entire machine-state is open to our view. We can walk up and down the stack
+examining local and global variables, look at the state of semaphores, mutexes, queues
+and threads, etc.</p>
+<p>In short, it should now be possible to track your bug down successfully.</p>
 
 </div>
 
